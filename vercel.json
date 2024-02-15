@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Permissions-Policy",
+          "value": "interest-cohort=(), attribution-reporting=(), run-ad-auction=(), join-ad-interest-group=(), browsing-topics=()"
+        }
+      ]
+    }
+  ]
+}
