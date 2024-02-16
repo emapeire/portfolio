@@ -3,6 +3,7 @@ import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Head } from '@/components/head'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 
 const metadata: Metadata = {
@@ -21,7 +22,10 @@ export default function RootLayout({
       className={`${GeistSans.variable} ${GeistMono.variable} dark`}
     >
       <Head metadata={metadata} />
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
