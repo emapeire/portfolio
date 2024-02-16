@@ -11,7 +11,13 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'next-env.d.ts', 'tsconfig.json'],
+  ignorePatterns: [
+    'dist',
+    '.eslintrc.cjs',
+    'next-env.d.ts',
+    'tsconfig.json',
+    'next.config.mjs'
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
