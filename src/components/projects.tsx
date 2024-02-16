@@ -6,13 +6,13 @@ import { BadgeTag } from './ui/badge-tag'
 
 export function Projects() {
   return (
-    <div className='flex flex-col gap-12'>
+    <div className='flex flex-col gap-24'>
       {projects.map(({ title, description, tags, image, link }) => (
         <article key={link.href}>
           <a href={link.href} target='_blank' rel='noopener noreferrer'>
             <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
               <LinkIcon className='size-6' />
-              <span className='text-blue-200'>{title}</span>
+              <span className='text-blue-100'>{title}</span>
             </h3>
           </a>
           <div className='ml-10'>
@@ -36,7 +36,7 @@ export function Projects() {
               </ul>
               {image && (
                 <Image
-                  className='rounded-xl shadow-2xl shadow-white/10 border border-white/10'
+                  className='rounded-xl shadow-2xl shadow-white/5 border border-white/10'
                   width={800}
                   height={400}
                   src={image}

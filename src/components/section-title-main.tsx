@@ -2,7 +2,7 @@ import { Badge } from './ui/badge'
 
 export function SectionTitleMain() {
   return (
-    <div className='flex flex-col md:flex-row md:gap-5 gap-2 pb-8'>
+    <div className='flex flex-col md:flex-row md:gap-5 gap-2 pb-12'>
       <h1 className='flex items-center text-gray-100 text-4xl md:text-5xl font-bold text-balance'>
         Hey, I&apos;m Emanuel Peire
       </h1>
