@@ -24,14 +24,14 @@ export default function Home() {
 
         <SectionTitleMain />
 
-        <div className='flex flex-col font-normal gap-4 text-lg md:text-xl text-slate-300 text-pretty'>
+        <div className='flex flex-col font-normal gap-4 text-lg md:text-xl text-gray-300 text-pretty'>
           <About title={about.title} description={about.description} />
         </div>
 
         <Navigation />
       </Section>
 
-      <Section id='career' className='pb-32'>
+      <Section id='career' className='pb-40'>
         <SectionSecondaryTitle>
           <BriefCaseIcon className='size-8' />
           Career

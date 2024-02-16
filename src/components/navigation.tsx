@@ -6,7 +6,7 @@ import { MailIcon } from '@/icons/mail'
 
 export function Navigation() {
   return (
-    <nav className='flex md:flex-row flex-col gap-x-5 mt-8 px-4 text-sm md:text-base overflow-x-auto whitespace-nowrap'>
+    <nav className='flex md:flex-row flex-col gap-x-5 my-8 px-8 text-sm md:text-base overflow-x-auto whitespace-nowrap'>
       <ButtonSocialPill href='https://x.com/emapeire'>
         <XIcon className='size-6' />
         The everything app
