@@ -27,7 +27,7 @@ export default function Home() {
         <Navigation />
       </Section>
 
-      <Section id='career' className='md:pb-32 pb-24'>
+      <Section id='career' className='pb-32'>
         <SectionSecondaryTitle>
           <BriefCaseIcon class='size-8' />
           Career
@@ -48,7 +48,7 @@ export default function Home() {
         <Career />
       </Section>
 
-      <Section id='projects' className='md:pb-32 pb-24'>
+      <Section id='projects' className='pb-32'>
         <SectionSecondaryTitle>
           <CodeIcon class='size-8' />
           Projects
