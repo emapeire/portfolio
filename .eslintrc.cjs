@@ -11,7 +11,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'next-env.d.ts', 'tsconfig.json'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -19,12 +19,15 @@ module.exports = {
   },
   plugins: ['react-refresh', 'react'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true }
-    ],
-    'react/jsx-no-target-blank': [2, { allowReferrer: false }],
-    'react/prop-types': 'off'
+    '@typescript-eslint/indent': 'off',
+    '@next/next/no-head-element': 'off',
+    'multiline-ternary': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    'react-refresh/only-export-components': 'off',
+    'react/prop-types': 'off',
+    'react/jsx-no-target-blank': [2, { allowReferrer: false }]
   },
   overrides: [
     {
