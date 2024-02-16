@@ -8,7 +8,7 @@ export function Section({
   children: React.ReactNode
 }) {
   return (
-    <section id={id} className={`${className} w-full lg:w-[740px] mx-auto`}>
+    <section id={id} className={`${className} w-full md:w-[740px] mx-auto`}>
       {children}
     </section>
   )
