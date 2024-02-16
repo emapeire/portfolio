@@ -16,10 +16,10 @@ import { ResumeIcon } from '@/icons/resume'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24 px-6'>
+    <main className='flex min-h-screen flex-col items-center justify-between p-24 px-8'>
       <Header />
 
-      <Section id='about' className='pb-32'>
+      <Section id='about' className='pb-40'>
         <Avatar />
 
         <SectionTitleMain />
