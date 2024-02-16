@@ -10,14 +10,14 @@ export function CareerItem({
 }: CareerProps) {
   return (
     <>
-      <div className='absolute w-3 h-3 bg-slate-200 rounded-full mt-1.5 -start-1.5 border border-white'></div>
-      <time className='text-lg font-normal leading-none text-slate-300'>
+      <div className='absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -start-1.5 border border-white' />
+      <time className='text-lg font-normal leading-none text-gray-200'>
         {start} to {end}
       </time>
-      <h3 className='text-xl md:text-2xl mt-2 mb-4 font-bold text-blue-200'>
+      <h3 className='text-xl md:text-2xl mt-2 mb-4 font-bold text-blue-100'>
         {title}
       </h3>
-      <p className='mb-4 text-lg md:text-xl font-normal text-slate-300 text-pretty'>
+      <p className='mb-4 text-lg md:text-xl font-normal text-gray-200 text-pretty'>
         {description}
       </p>
       <ButtonViewMore href={link} />

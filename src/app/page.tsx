@@ -31,7 +31,7 @@ export default function Home() {
         <Navigation />
       </Section>
 
-      <Section id='career' className='pb-40'>
+      <Section id='career' className='pb-32'>
         <SectionSecondaryTitle>
           <BriefCaseIcon className='size-8' />
           Career
@@ -39,7 +39,7 @@ export default function Home() {
             href='https://cv.emapeire.xyz'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex justify-center items-center ml-2'
+            className='flex justify-center items-center ml-3 hover:scale-105 transition-all ease-in-out'
           >
             <Badge>
               <div className='flex items-center'>
