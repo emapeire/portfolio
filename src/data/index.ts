@@ -102,7 +102,7 @@ export const PROJECTS = [
   },
   {
     title: 'Eloquent JavaScript Chat',
-    tag: [
+    tags: [
       TAGS.NEXT,
       TAGS.OPENAI,
       TAGS.REACT,
@@ -121,7 +121,7 @@ export const PROJECTS = [
   },
   {
     title: 'Image 2 Code',
-    tag: [
+    tags: [
       TAGS.NEXT,
       TAGS.OPENAI,
       TAGS.REACT,
