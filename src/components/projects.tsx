@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import { BadgeTag } from './ui/badge-tag'
 
-export function Project() {
+export function Projects() {
   return (
     <div className='flex flex-col gap-12'>
       {projects.map(({ title, description, tags, image, link }) => (
