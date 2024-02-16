@@ -1,4 +1,4 @@
-export const LikedInIcon = ({ ...props }) => {
+export const LinkedInIcon = ({ ...props }) => {
   return (
     <svg
       {...props}
