@@ -1,9 +1,16 @@
 import { About } from '@/components/about'
+import { Career } from '@/components/career'
 import { Navigation } from '@/components/navigation'
+import { Projects } from '@/components/projects'
 import { Section } from '@/components/section'
+import { SectionSecondaryTitle } from '@/components/section-secondary-title'
 import { SectionTitleMain } from '@/components/section-title-main'
 import { Avatar } from '@/components/ui/avatar'
+import { Badge } from '@/components/ui/badge'
 import { ABOUT as about } from '@/data'
+import { BriefCaseIcon } from '@/icons/brief-case'
+import { CodeIcon } from '@/icons/code'
+import { ResumeIcon } from '@/icons/resume'
 
 export default function Home() {
   return (
@@ -19,59 +26,35 @@ export default function Home() {
 
         <Navigation />
       </Section>
+
+      <Section id='career' className='md:pb-32 pb-24'>
+        <SectionSecondaryTitle>
+          <BriefCaseIcon class='size-8' />
+          Career
+          <a
+            href='https://cv.emapeire.xyz'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='flex justify-center items-center ml-2'
+          >
+            <Badge>
+              <div className='flex items-center'>
+                <ResumeIcon class='size-4 mr-1' />
+                Resume
+              </div>
+            </Badge>
+          </a>
+        </SectionSecondaryTitle>
+        <Career />
+      </Section>
+
+      <Section id='projects' className='md:pb-32 pb-24'>
+        <SectionSecondaryTitle>
+          <CodeIcon class='size-8' />
+          Projects
+        </SectionSecondaryTitle>
+        <Projects />
+      </Section>
     </main>
   )
 }
-
-// import Layout from '../layouts/layout.astro'
-// import Badge from '../components/ui/badge.astro'
-// import SectionMainTitle from '../components/section-main-title.astro'
-// import Section from '../components/section.astro'
-// import Avatar from '../components/ui/avatar.astro'
-// import About from '../components/about.astro'
-// import Navigation from '../components/navigation.astro'
-// import Career from '../components/career.astro'
-// import Projects from '../components/projects.astro'
-// import SectionTitle from '../components/section-secondary-title.astro'
-// import ResumeIcon from '../icons/Resume.astro'
-// import BriefCaseIcon from '../icons/BriefCase.astro'
-// import CodeIcon from '../icons/Code.astro'
-
-//     <Section id='career' class='md:pb-32 pb-24'>
-//       <SectionTitle>
-//         <BriefCaseIcon class='size-8' />
-//         Career
-//         <a
-//           href='https://cv.emapeire.xyz'
-//           target='_blank'
-//           rel='noopener noreferrer'
-//           class='flex justify-center items-center ml-2'
-//         >
-//           <Badge>
-//             <div class='flex items-center'>
-//               <ResumeIcon class='size-4 mr-1' />
-//               Resume
-//             </div>
-//           </Badge>
-//         </a>
-//       </SectionTitle>
-//       <Career />
-//     </Section>
-
-//     <Section id='projects' class='md:pb-32 pb-24'>
-//       <SectionTitle>
-//         <CodeIcon class='size-8' />
-//         Projects
-//       </SectionTitle>
-//       <Projects />
-//     </Section>
-
-//     <!-- <Section id='contact' class='md:pb-32 pb-24'>
-//       <SectionTitle>
-//         <PersonIcon class='size-8' />
-//         Contact
-//       </SectionTitle>
-//       <Contact />
-//     </Section> -->
-//   </main>
-// </Layout>
