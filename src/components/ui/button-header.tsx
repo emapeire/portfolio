@@ -7,7 +7,7 @@ export function ButtonHeader({
 }) {
   return (
     <a
-      className='border-s rounded-lg md:px-5 px-3 py-1 md:py-1.5 bg-black/50 border-white/10 shadow-lg shadow-black/70 hover:scale-105 md:hover:scale-110 transition-all ease-in-out hover:bg-black/60 hover:shadow-black/80'
+      className='border rounded-lg px-5 py-1.5 bg-white/10 border-white/10 shadow-lg shadow-white/10 hover:scale-110 transition-all ease-in-out hover:bg-white/20 hover:shadow-white/20'
       href={href}
     >
       {children}

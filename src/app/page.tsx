@@ -33,7 +33,7 @@ export default function Home() {
 
       <Section id='career' className='pb-32'>
         <SectionSecondaryTitle>
-          <BriefCaseIcon class='size-8' />
+          <BriefCaseIcon className='size-8' />
           Career
           <a
             href='https://cv.emapeire.xyz'
@@ -43,7 +43,7 @@ export default function Home() {
           >
             <Badge>
               <div className='flex items-center'>
-                <ResumeIcon class='size-4 mr-1' />
+                <ResumeIcon className='size-4 mr-1' />
                 Resume
               </div>
             </Badge>
@@ -54,7 +54,7 @@ export default function Home() {
 
       <Section id='projects' className='pb-32'>
         <SectionSecondaryTitle>
-          <CodeIcon class='size-8' />
+          <CodeIcon className='size-8' />
           Projects
         </SectionSecondaryTitle>
         <Projects />
