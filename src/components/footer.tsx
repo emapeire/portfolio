@@ -1,10 +1,12 @@
 export function Footer() {
   const year = new Date().getFullYear()
+
   return (
-    <footer className='text-slate-400 text-center text-sm md:text-base md:pt-16 pt-8 pb-16'>
-      <div className='flex bg-white/5 rounded-xl border border-white/5 shadow-lg shadow-white/5 md:mx-[20rem] mx-6 md:py-3 py-2 justify-evenly items-center backdrop-blur-lg'>
-        {`${year}`} <span>|</span>
-        <span className='hover:underline hover:text-blue-400'>
+    <footer className='flex flex-col items-center justify-center py-3.5 my-16 mx-auto w-full max-w-[40rem] md:max-w-[46rem] font-semibold text-gray-300 text-center text-xs md:text-sm border border-white/5 bg-white/5 shadow-xl shadow-white/5 rounded-xl'>
+      <div className='flex items-center justify-center space-x-16 md:space-x-40'>
+        <span>{`${year}`}</span>
+        <span>|</span>
+        <span className='hover:underline hover:text-blue-500'>
           <a
             href='https://x.com/emapeire'
             target='_blank'
