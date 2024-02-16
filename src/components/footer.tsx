@@ -16,7 +16,7 @@ export function Footer() {
           </a>
         </span>
         <span>|</span>
-        <div>
+        <section>
           <span>by</span>{' '}
           <span className='hover:underline hover:text-blue-500'>
             <a
@@ -27,7 +27,7 @@ export function Footer() {
               @emapeire
             </a>
           </span>
-        </div>
+        </section>
       </div>
     </footer>
   )
