@@ -6,7 +6,7 @@ export function Avatar() {
       className='rounded-full mb-8 shadow-lg shadow-white/10 hover:scale-110 transition-transform duration-300 ease-in-out'
       height={28}
       width={28}
-      src='images/avatar.png'
+      src='/images/avatar.png'
       alt='avatar'
     />
   )

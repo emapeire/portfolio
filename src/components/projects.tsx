@@ -11,7 +11,7 @@ export function Projects() {
         <article key={link.href}>
           <a href={link.href} target='_blank' rel='noopener noreferrer'>
             <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
-              <LinkIcon class='size-6' />
+              <LinkIcon className='size-6' />
               <span className='text-blue-200'>{title}</span>
             </h3>
           </a>
