@@ -1,12 +1,12 @@
-import { CSSIcon } from '@/icons/tags/CSS'
-import { HTMLIcon } from '@/icons/tags/HTML'
-import { JavaScriptIcon } from '@/icons/tags/JavaScript'
-import { NextJSIcon } from '@/icons/tags/NextJS'
-import { OpenAIIcon } from '@/icons/tags/OpenAI'
-import { ReactIcon } from '@/icons/tags/React'
-import { SWCIcon } from '@/icons/tags/SWC'
-import { TypeScriptIcon } from '@/icons/tags/TypeScript'
-import { ViteIcon } from '@/icons/tags/Vite'
+import { CSSIcon } from '@/icons/tags/css'
+import { HTMLIcon } from '@/icons/tags/html'
+import { JavaScriptIcon } from '@/icons/tags/javascript'
+import { NextJSIcon } from '@/icons/tags/nextjs'
+import { OpenAIIcon } from '@/icons/tags/openai'
+import { ReactIcon } from '@/icons/tags/react'
+import { SWCIcon } from '@/icons/tags/swc'
+import { TypeScriptIcon } from '@/icons/tags/typescript'
+import { ViteIcon } from '@/icons/tags/vite'
 import { ShadcnIcon } from '@/icons/tags/shadcn-ui'
 import { TailwindCSSIcon } from '@/icons/tags/tailwind-css'
 
@@ -35,7 +35,7 @@ export const CAREER = [
   }
 ]
 
-export const TAGS = {
+const TAGS = {
   NEXT: {
     name: 'Next.js',
     icon: NextJSIcon
@@ -80,12 +80,12 @@ export const TAGS = {
     name: 'OpenAI',
     icon: OpenAIIcon
   }
-}
+} as const
 
 export const PROJECTS = [
   {
     title: 'SWC Router',
-    tag: [
+    tags: [
       TAGS.CSS,
       TAGS.HTML,
       TAGS.JAVASCRIPT,
