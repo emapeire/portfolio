@@ -19,7 +19,7 @@ export default function Home() {
     <main className='flex min-h-screen flex-col items-center justify-between p-24 px-8'>
       <Header />
 
-      <Section id='about' className='pb-40'>
+      <Section id='about' className='pb-32'>
         <Avatar />
 
         <SectionTitleMain />
@@ -31,7 +31,7 @@ export default function Home() {
         <Navigation />
       </Section>
 
-      <Section id='career' className='pb-32'>
+      <Section id='career' className='pb-40'>
         <SectionSecondaryTitle>
           <BriefCaseIcon className='size-8' />
           Career
@@ -52,7 +52,7 @@ export default function Home() {
         <Career />
       </Section>
 
-      <Section id='projects' className='pb-32'>
+      <Section id='projects' className='pb-40'>
         <SectionSecondaryTitle>
           <CodeIcon className='size-8' />
           Projects
