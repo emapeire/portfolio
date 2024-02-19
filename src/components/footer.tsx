@@ -3,7 +3,7 @@ export function Footer() {
 
   return (
     <footer className='flex flex-col items-center justify-center py-4 md:py-3.5 my-16 mx-auto w-full max-w-[40rem] md:max-w-[46rem] font-semibold text-gray-300 text-center text-xs md:text-sm border border-white/10 bg-white/5 shadow-xl shadow-white/5 rounded-xl'>
-      <div className='flex items-center justify-center space-x-8 md:space-x-20'>
+      <div className='flex items-center justify-center space-x-6 md:space-x-20'>
         <span>{`${year}`}</span>
         <span>|</span>
         <span className='hover:underline hover:text-blue-500'>
