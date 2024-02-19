@@ -11,6 +11,8 @@ import { ShadcnIcon } from '@/icons/tags/shadcn-ui'
 import { TailwindCSSIcon } from '@/icons/tags/tailwind-css'
 
 export const ABOUT = {
+  name: 'Emanuel Peire',
+  initials: 'EP',
   title: `Frontend Engineer, OSS Developer, LLMs technical researcher and DX
   Architect. Always influenced by design. Based in Rosario, Argentina 🇦🇷`,
   description: `As a Web Developer with Machine Learning research experience, I'm

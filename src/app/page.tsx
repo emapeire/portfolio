@@ -1,6 +1,6 @@
 import { Header } from '@/components/header'
 import { Section } from '@/components/section'
-import { Avatar } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
 import { SectionTitleMain } from '@/components/section-title-main'
 import { SectionSecondaryTitle } from '@/components/section-secondary-title'
@@ -20,7 +20,10 @@ export default function Home() {
       <Header />
 
       <Section id='about' className='pb-32'>
-        <Avatar />
+        <Avatar className='mb-8 size-28 shadow-xl shadow-white/5 hover:scale-105 transition-all ease-in-out duration-300'>
+          <AvatarImage alt={about.name} src={'/images/avatar.png'} />
+          <AvatarFallback>{about.initials}</AvatarFallback>
+        </Avatar>
 
         <SectionTitleMain />
 
