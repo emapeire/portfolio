@@ -26,7 +26,7 @@ export function Projects() {
                     'gap-6': image ?? video
                   })}
                 >
-                  <ul className='md:flex grid grid-cols-2 md:gap-x-4 gap-x-0 gap-4 items-center justify-items-start'>
+                  <ul className='md:flex md:overflow-x-auto md:whitespace-nowrap grid grid-cols-2 md:gap-x-4 gap-x-0 gap-4 items-center justify-items-start'>
                     {tags.map((t) => (
                       <li key={t.name}>
                         <BadgeTag>
