@@ -188,7 +188,7 @@ export const PROJECTS = [
   },
   {
     title: 'Spotify Clone',
-    techStack: [
+    tags: [
       TAGS.ASTRO,
       TAGS.JAVASCRIPT,
       TAGS.REACT,
@@ -223,7 +223,7 @@ export const PROJECTS = [
   },
   {
     title: 'View-Transitions-API',
-    techStack: [TAGS.ASTRO, TAGS.JAVASCRIPT],
+    tags: [TAGS.ASTRO, TAGS.JAVASCRIPT],
     description:
       'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
     link: {
