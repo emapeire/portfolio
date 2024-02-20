@@ -18,7 +18,7 @@ export function Projects() {
                 </h3>
               </a>
               <div className='ml-10'>
-                <p className='text-base md:text-lg mb-4 text-pretty'>
+                <p className='text-base md:text-lg mb-6 text-pretty'>
                   {description}
                 </p>
                 <div
@@ -26,7 +26,7 @@ export function Projects() {
                     'gap-6': image ?? video
                   })}
                 >
-                  <ul className='md:flex md:overflow-x-auto md:whitespace-nowrap grid grid-cols-2 md:gap-x-4 gap-x-0 gap-4 items-center justify-items-start'>
+                  <ul className='md:flex md:overflow-x-auto md:whitespace-nowrap md:pb-6 pb-2 grid grid-cols-2 md:gap-x-4 gap-x-0 gap-4 items-center justify-items-start'>
                     {tags.map((t) => (
                       <li key={t.name}>
                         <BadgeTag>
