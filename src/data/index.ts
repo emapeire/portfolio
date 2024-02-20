@@ -257,5 +257,19 @@ export const PROJECTS = [
       'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
     link: 'https://github.com/emapeire/view-transitions-api',
     video: '/videos/view-transitions-api.webm'
+  },
+  {
+    title: 'TODO App TS',
+    techStack: [
+      TAGS.CSS,
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.VITE
+    ],
+    description: 'A simple todo app made with React and TypeScript.',
+    link: 'https://github.com/emapeire/todo-app-ts',
+    image: '/images/todo-app-ts.webp'
   }
 ]
