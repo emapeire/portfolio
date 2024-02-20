@@ -43,6 +43,19 @@ export function Projects() {
                   alt={title}
                 />
               )}
+              {video && (
+                <video
+                  className='rounded-xl shadow-2xl shadow-white/5 border border-white/10'
+                  width={800}
+                  height={400}
+                  controls
+                  muted
+                  autoPlay
+                  loop
+                >
+                  <source src={video} type='video/webm' />
+                </video>
+              )}
             </div>
           </div>
         </article>

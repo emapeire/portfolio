@@ -71,7 +71,7 @@ export const CAREER = [
   {
     company: 'El Chaperón',
     badges: ['On-site'],
-    title: 'Web Desinger and Community Manager',
+    title: 'Web Designer and Community Manager',
     start: 'Jan, 2016',
     end: 'Jan, 2019',
     description: `Responsive website development and design in WordPress.
