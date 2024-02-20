@@ -145,10 +145,7 @@ export const PROJECTS = [
     ],
     description:
       'In this app you will be able to interact with a intelligent llama that will answer your questions about JavaScript.',
-    link: {
-      label: 'github.com/emapeire/eloquent-js-chat',
-      href: 'https://github.com/emapeire/eloquent-js-chat'
-    },
+    link: 'https://github.com/emapeire/eloquent-js-chat',
     image: '/images/eloquent-js-chat.webp'
   },
   {
@@ -163,10 +160,7 @@ export const PROJECTS = [
     ],
     description:
       'This is a tool that converts images to code. It uses AI to generate code from images. It is based on the GPT-4-vision-preview model.',
-    link: {
-      label: 'github.com/emapeire/image-to-code',
-      href: 'https://github.com/emapeire/image-to-code'
-    },
+    link: 'https://github.com/emapeire/image-to-code',
     video: '/video/image-2-code.webm'
   },
   {
@@ -180,10 +174,7 @@ export const PROJECTS = [
       TAGS.TYPESCRIPT
     ],
     description: 'Native screen recorder made with MediaRecorder web-api',
-    link: {
-      label: 'github.com/emapeire/screen-recorder',
-      href: 'https://github.com/emapeire/screen-recorder'
-    },
+    link: 'https://github.com/emapeire/screen-recorder',
     video: '/videos/screen-recorder.webm'
   },
   {
@@ -197,10 +188,7 @@ export const PROJECTS = [
       TAGS.TYPESCRIPT
     ],
     description: 'An open-source Spotify clone built with Svelte and Astro.',
-    link: {
-      label: 'github.com/emapeire/spotify-clone',
-      href: 'https://github.com/emapeire/spotify-clone'
-    },
+    link: 'https://github.com/emapeire/spotify-clone',
     image: '/images/spotify-clone.webp'
   },
   {
@@ -215,10 +203,7 @@ export const PROJECTS = [
     ],
     description:
       'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
-    link: {
-      label: 'npmjs.com/package/swc-router',
-      href: 'https://npmjs.com/package/swc-router'
-    },
+    link: 'https://npmjs.com/package/swc-router',
     image: '/images/swc-router.webp'
   },
   {
@@ -226,10 +211,7 @@ export const PROJECTS = [
     tags: [TAGS.ASTRO, TAGS.JAVASCRIPT],
     description:
       'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
-    link: {
-      label: 'github.com/emapeire/view-transitions-api',
-      href: 'https://github.com/emapeire/view-transitions-api'
-    },
+    link: 'https://github.com/emapeire/view-transitions-api',
     videos: '/videos/view-transitions-api.webm'
   }
 ]

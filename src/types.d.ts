@@ -1,14 +1,15 @@
 export interface AboutProps {
+  name: string
+  ininitials: string
   title: string
   description: string
 }
 
 export interface CareerProps {
   company: string
-  link: string
+  link?: string
   badges: string[]
   title: string
-  logo: string
   start: string
   end: string
   description: string
@@ -16,8 +17,9 @@ export interface CareerProps {
 
 export interface ProjectProps {
   title: string
-  link: string
-  description: string
   tags: string[]
+  description: string
+  link: string
   image?: string
+  video?: string
 }
