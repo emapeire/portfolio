@@ -153,7 +153,7 @@ const TAGS = {
 export const PROJECTS = [
   {
     title: 'Cohere Chat',
-    techStack: [TAGS.JAVASCRIPT, TAGS.NODE],
+    tags: [TAGS.JAVASCRIPT, TAGS.NODE],
     description:
       'A chatbot that uses the Cohere API to generate responses to user input.',
     link: 'https://github.com/emapeire/cohere-chat',
@@ -176,7 +176,7 @@ export const PROJECTS = [
   },
   {
     title: 'Google Translate Clone',
-    techStack: [
+    tags: [
       TAGS.BOOTSTRAP,
       TAGS.CSS,
       TAGS.OPENAI,
@@ -209,14 +209,7 @@ export const PROJECTS = [
   },
   {
     title: 'Screen Recorder',
-    tags: [
-      TAGS.ASTRO,
-      TAGS.JAVASCRIPT,
-      TAGS.REACT,
-      TAGS.SVELTE,
-      TAGS.TAILWIND,
-      TAGS.TYPESCRIPT
-    ],
+    tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT],
     description: 'Native screen recorder made with MediaRecorder web-api',
     link: 'https://github.com/emapeire/screen-recorder',
     video: '/videos/screen-recorder.webm'
@@ -260,7 +253,7 @@ export const PROJECTS = [
   },
   {
     title: 'TODO App TS',
-    techStack: [
+    tags: [
       TAGS.CSS,
       TAGS.HTML,
       TAGS.JAVASCRIPT,
