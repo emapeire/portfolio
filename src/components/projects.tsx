@@ -12,7 +12,7 @@ export function Projects() {
           <a href={link} target='_blank' rel='noopener noreferrer'>
             <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
               <LinkIcon className='size-6' />
-              <span className='text-blue-100'>{title}</span>
+              <span className='text-blue-100 hover:underline'>{title}</span>
             </h3>
           </a>
           <div className='ml-10'>
