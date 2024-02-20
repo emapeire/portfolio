@@ -14,6 +14,7 @@ import { SvelteIcon } from '@/components/icons/tags/svelte'
 import { NodeJSIcon } from '@/components/icons/tags/nodejs'
 import { VitestIcon } from '@/components/icons/tags/vitest'
 import { BootstrapIcon } from '@/components/icons/tags/bootstrap'
+import { SupabaseIcon } from '@/components/icons/tags/supabase'
 
 export const AVATAR = {
   name: 'Emanuel Peire',
@@ -147,6 +148,10 @@ const TAGS = {
   BOOTSTRAP: {
     name: 'Bootstrap',
     icon: BootstrapIcon
+  },
+  SUPABASE: {
+    name: 'Supabase',
+    icon: SupabaseIcon
   }
 } as const
 
@@ -278,5 +283,20 @@ export const PROJECTS = [
     description: 'A simple todo app made with React and TypeScript.',
     link: 'https://github.com/emapeire/todo-app-ts',
     image: '/images/todo-app-ts.webp'
+  },
+  {
+    title: 'Twitter Clone',
+    techStack: [
+      TAGS.JAVASCRIPT,
+      TAGS.NEXT,
+      TAGS.REACT,
+      TAGS.SUPABASE,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description:
+      'An open-source Twitter clone built with Next.js and Supabase.',
+    link: 'https://github.com/emapeire/twitter-clone',
+    image: '/images/twitter-clone.webp'
   }
 ]
