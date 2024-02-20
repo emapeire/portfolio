@@ -10,9 +10,9 @@ import { Career } from '@/components/career'
 import { Projects } from '@/components/projects'
 import { Footer } from '@/components/footer'
 import { ABOUT as about } from '@/data'
-import { BriefCaseIcon } from '@/icons/brief-case'
-import { CodeIcon } from '@/icons/code'
-import { ResumeIcon } from '@/icons/resume'
+import { BriefCaseIcon } from '@/components/icons/brief-case'
+import { CodeIcon } from '@/components/icons/code'
+import { ResumeIcon } from '@/components/icons/resume'
 
 export default function Home() {
   return (

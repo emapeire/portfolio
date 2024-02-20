@@ -1,5 +1,5 @@
 import { PROJECTS as projects } from '@/data'
-import { LinkIcon } from '@/icons/link'
+import { LinkIcon } from '@/components/icons/link'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { BadgeTag } from './ui/badge-tag'

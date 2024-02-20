@@ -1,14 +1,16 @@
-import { CSSIcon } from '@/icons/tags/css'
-import { HTMLIcon } from '@/icons/tags/html'
-import { JavaScriptIcon } from '@/icons/tags/javascript'
-import { NextJSIcon } from '@/icons/tags/nextjs'
-import { OpenAIIcon } from '@/icons/tags/openai'
-import { ReactIcon } from '@/icons/tags/react'
-import { SWCIcon } from '@/icons/tags/swc'
-import { TypeScriptIcon } from '@/icons/tags/typescript'
-import { ViteIcon } from '@/icons/tags/vite'
-import { ShadcnIcon } from '@/icons/tags/shadcn-ui'
-import { TailwindCSSIcon } from '@/icons/tags/tailwind-css'
+import { CSSIcon } from '@/components/icons/tags/css'
+import { HTMLIcon } from '@/components/icons/tags/html'
+import { JavaScriptIcon } from '@/components/icons/tags/javascript'
+import { NextJSIcon } from '@/components/icons/tags/nextjs'
+import { OpenAIIcon } from '@/components/icons/tags/openai'
+import { ReactIcon } from '@/components/icons/tags/react'
+import { SWCIcon } from '@/components/icons/tags/swc'
+import { TypeScriptIcon } from '@/components/icons/tags/typescript'
+import { ViteIcon } from '@/components/icons/tags/vite'
+import { ShadcnIcon } from '@/components/icons/tags/shadcn-ui'
+import { TailwindCSSIcon } from '@/components/icons/tags/tailwind-css'
+import { AstroIcon } from '@/components/icons/tags/astro'
+import { SvelteIcon } from '@/components/icons/tags/svelte'
 
 export const ABOUT = {
   name: 'Emanuel Peire',
@@ -24,16 +26,54 @@ export const ABOUT = {
 
 export const CAREER = [
   {
+    company: 'Frontend Lab',
+    link: 'https://github.com/thefrontendlab',
+    badges: ['Hybrid'],
+    title: 'Software Developer and Technical Researcher',
+    start: 'Jul, 2021',
+    end: 'Present',
+    description:
+      'Developing and researching new technologies and tools for the frontend community.'
+  },
+  {
+    company: 'Next.js Argentina',
+    link: 'https://github.com/nextjsargentina',
+    badges: ['Hybrid'],
+    title: 'Developer Experience Architect',
+    start: 'Aug, 2023',
+    end: 'Present',
+    description: 'Building a non-profit open community of Next.js Argentina.'
+  },
+  {
     company: 'Smat SA.',
     link: 'https://smat.io',
     badges: ['Remote'],
     title: 'QA Tester and Frontend Developer',
-    logo: 'https://assets-global.website-files.com/63055fe72615549c6cfae8e0/63c55f389bcbb423249e730f_Frame%20560.png',
-    start: '2022',
-    end: '2023',
+    start: 'Aug, 2022',
+    end: 'Aug, 2023',
     description: `Led QA testing, using Jest and Playwright, ensuring web applications perform flawlessly.
     Collaborated on TDD implementation, optimizing code quality and minimizing bugs.
     Also, contributed to developing user-friendly interfaces with React.js, significantly enhancing user experiences.`
+  },
+  {
+    company: 'MakerDAO',
+    link: 'https://makerdao.com',
+    badges: ['Remote'],
+    title: 'Technical Writer and Translator',
+    start: 'Feb, 2022',
+    end: 'Aug, 2022',
+    description: `Authored and translated technical documentation, including whitepapers,
+    guides, and tutorials, to facilitate user understanding of blockchain and DeFi concepts.`
+  },
+  {
+    company: 'El Chaperón',
+    badges: ['On-site'],
+    title: 'Web Desinger and Community Manager',
+    start: 'Jan, 2016',
+    end: 'Jan, 2019',
+    description: `Responsive website development and design in WordPress.
+    Online tourist services of the city of Rosario.
+    Endorsed by the Rosario Hotel Association and Tourist Entity (ETUR).`
   }
 ]
 
@@ -81,27 +121,18 @@ const TAGS = {
   OPENAI: {
     name: 'OpenAI',
     icon: OpenAIIcon
+  },
+  ASTRO: {
+    name: 'Astro',
+    icon: AstroIcon
+  },
+  SVELTE: {
+    name: 'Svelte',
+    icon: SvelteIcon
   }
 } as const
 
 export const PROJECTS = [
-  {
-    title: 'SWC Router',
-    tags: [
-      TAGS.CSS,
-      TAGS.HTML,
-      TAGS.JAVASCRIPT,
-      TAGS.REACT,
-      TAGS.SWC,
-      TAGS.VITE
-    ],
-    description:
-      'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
-    link: {
-      label: 'npmjs.com/package/swc-router',
-      href: 'https://npmjs.com/package/swc-router'
-    }
-  },
   {
     title: 'Eloquent JavaScript Chat',
     tags: [
@@ -118,8 +149,7 @@ export const PROJECTS = [
       label: 'github.com/emapeire/eloquent-js-chat',
       href: 'https://github.com/emapeire/eloquent-js-chat'
     },
-    image:
-      'https://github.com/emapeire/eloquent-js-chat/assets/63935846/29ecbabb-bdd0-4df3-89f7-ff49a3692963'
+    image: '/images/eloquent-js-chat.webp'
   },
   {
     title: 'Image 2 Code',
@@ -136,6 +166,70 @@ export const PROJECTS = [
     link: {
       label: 'github.com/emapeire/image-to-code',
       href: 'https://github.com/emapeire/image-to-code'
-    }
+    },
+    video: '/video/image-2-code.webm'
+  },
+  {
+    title: 'Screen Recorder',
+    tags: [
+      TAGS.ASTRO,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.SVELTE,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description: 'Native screen recorder made with MediaRecorder web-api',
+    link: {
+      label: 'github.com/emapeire/screen-recorder',
+      href: 'https://github.com/emapeire/screen-recorder'
+    },
+    video: '/videos/screen-recorder.webm'
+  },
+  {
+    title: 'Spotify Clone',
+    techStack: [
+      TAGS.ASTRO,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.SVELTE,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description: 'An open-source Spotify clone built with Svelte and Astro.',
+    link: {
+      label: 'github.com/emapeire/spotify-clone',
+      href: 'https://github.com/emapeire/spotify-clone'
+    },
+    image: '/images/spotify-clone.webp'
+  },
+  {
+    title: 'SWC Router',
+    tags: [
+      TAGS.CSS,
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.SWC,
+      TAGS.VITE
+    ],
+    description:
+      'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
+    link: {
+      label: 'npmjs.com/package/swc-router',
+      href: 'https://npmjs.com/package/swc-router'
+    },
+    image: '/images/swc-router.webp'
+  },
+  {
+    title: 'View-Transitions-API',
+    techStack: [TAGS.ASTRO, TAGS.JAVASCRIPT],
+    description:
+      'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
+    link: {
+      label: 'github.com/emapeire/view-transitions-api',
+      href: 'https://github.com/emapeire/view-transitions-api'
+    },
+    videos: '/videos/view-transitions-api.webm'
   }
 ]

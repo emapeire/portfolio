@@ -1,8 +1,8 @@
-import { XIcon } from '@/icons/x'
+import { XIcon } from '@/components/icons/x'
 import { ButtonSocialPill } from './ui/button-social-pill'
-import { GitHubIcon } from '@/icons/github'
-import { LinkedInIcon } from '@/icons/linkedin'
-import { MailIcon } from '@/icons/mail'
+import { GitHubIcon } from '@/components/icons/github'
+import { LinkedInIcon } from '@/components/icons/linkedin'
+import { MailIcon } from '@/components/icons/mail'
 
 export function Navigation() {
   return (

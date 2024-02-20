@@ -1,4 +1,4 @@
-import { ArrowIcon } from '@/icons/arrow'
+import { ArrowIcon } from '@/components/icons/arrow'
 
 export function ButtonViewMore({ href }: { href: string }) {
   return (
