@@ -286,7 +286,7 @@ export const PROJECTS = [
   },
   {
     title: 'Twitter Clone',
-    techStack: [
+    tags: [
       TAGS.JAVASCRIPT,
       TAGS.NEXT,
       TAGS.REACT,
