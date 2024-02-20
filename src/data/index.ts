@@ -11,6 +11,7 @@ import { ShadcnIcon } from '@/components/icons/tags/shadcn-ui'
 import { TailwindCSSIcon } from '@/components/icons/tags/tailwind-css'
 import { AstroIcon } from '@/components/icons/tags/astro'
 import { SvelteIcon } from '@/components/icons/tags/svelte'
+import { NodeJSIcon } from '@/components/icons/tags/nodejs'
 
 export const AVATAR = {
   name: 'Emanuel Peire',
@@ -132,10 +133,24 @@ const TAGS = {
   SVELTE: {
     name: 'Svelte',
     icon: SvelteIcon
+  },
+  NODE: {
+    name: 'Node.js',
+    icon: NodeJSIcon
   }
 } as const
 
 export const PROJECTS = [
+  {
+    title: 'Cohere Chat',
+    techStack: [TAGS.JAVASCRIPT, TAGS.NODE],
+    description:
+      'A chatbot that uses the Cohere API to generate responses to user input.',
+    link: {
+      label: 'github.com/emapeire/cohere-chat',
+      href: 'https://github.com/emapeire/cohere-chat'
+    }
+  },
   {
     title: 'Eloquent JavaScript Chat',
     tags: [
@@ -210,7 +225,7 @@ export const PROJECTS = [
     image: '/images/swc-router.webp'
   },
   {
-    title: 'View-Transitions-API',
+    title: 'View Transitions API',
     tags: [TAGS.ASTRO, TAGS.JAVASCRIPT],
     description:
       'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
