@@ -164,7 +164,7 @@ export const PROJECTS = [
     description:
       'This is a tool that converts images to code. It uses AI to generate code from images. It is based on the GPT-4-vision-preview model.',
     link: 'https://github.com/emapeire/image-to-code',
-    video: '/video/image-2-code.webm'
+    video: '/videos/image-2-code.webm'
   },
   {
     title: 'Screen Recorder',
@@ -215,6 +215,6 @@ export const PROJECTS = [
     description:
       'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
     link: 'https://github.com/emapeire/view-transitions-api',
-    videos: '/videos/view-transitions-api.webm'
+    video: '/videos/view-transitions-api.webm'
   }
 ]
