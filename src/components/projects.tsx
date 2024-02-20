@@ -6,8 +6,8 @@ import { BadgeTag } from './ui/badge-tag'
 
 export function Projects() {
   return (
-    <div className='flex flex-col gap-24'>
-      {projects.map(({ title, description, tags, image, link }) => (
+    <div className='flex flex-col gap-16'>
+      {projects.map(({ title, description, tags, image, video, link }) => (
         <article key={link}>
           <a href={link} target='_blank' rel='noopener noreferrer'>
             <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
@@ -21,7 +21,7 @@ export function Projects() {
             </p>
             <div
               className={clsx('flex flex-col', {
-                'gap-6': image
+                'gap-6': image ?? video
               })}
             >
               <ul className='md:flex grid grid-cols-2 md:gap-x-4 gap-x-0 gap-4 items-center justify-items-start'>
