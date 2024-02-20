@@ -208,6 +208,13 @@ export const PROJECTS = [
     video: '/videos/image-2-code.webm'
   },
   {
+    title: 'React GPT',
+    tags: [TAGS.OPENAI, TAGS.REACT],
+    description: 'An AI-driven web engineering expert for React community.',
+    link: 'https://chat.openai.com/g/g-HNcbE0A5n-reactgpt',
+    image: '/images/react-gpt.webp'
+  },
+  {
     title: 'Screen Recorder',
     tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT],
     description: 'Native screen recorder made with MediaRecorder web-api',
