@@ -9,7 +9,7 @@ import { About } from '@/components/about'
 import { Career } from '@/components/career'
 import { Projects } from '@/components/projects'
 import { Footer } from '@/components/footer'
-import { ABOUT as about } from '@/data'
+import { ABOUT as about, AVATAR as avatar } from '@/data'
 import { BriefCaseIcon } from '@/components/icons/brief-case'
 import { CodeIcon } from '@/components/icons/code'
 import { ResumeIcon } from '@/components/icons/resume'
@@ -21,8 +21,8 @@ export default function Home() {
 
       <Section id='about' className='pb-32'>
         <Avatar className='mb-8 size-28 shadow-xl shadow-white/5 hover:scale-105 transition-all ease-in-out duration-300'>
-          <AvatarImage alt={about.name} src={'/images/avatar.png'} />
-          <AvatarFallback>{about.initials}</AvatarFallback>
+          <AvatarImage alt={avatar.name} src={'/images/avatar.png'} />
+          <AvatarFallback>{avatar.initials}</AvatarFallback>
         </Avatar>
 
         <SectionTitleMain />

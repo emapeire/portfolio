@@ -1,6 +1,4 @@
 export interface AboutProps {
-  name: string
-  ininitials: string
   title: string
   description: string
 }

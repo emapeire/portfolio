@@ -12,9 +12,12 @@ import { TailwindCSSIcon } from '@/components/icons/tags/tailwind-css'
 import { AstroIcon } from '@/components/icons/tags/astro'
 import { SvelteIcon } from '@/components/icons/tags/svelte'
 
-export const ABOUT = {
+export const AVATAR = {
   name: 'Emanuel Peire',
-  initials: 'EP',
+  initials: 'EP'
+}
+
+export const ABOUT = {
   title: `Frontend Engineer, OSS Developer, LLMs technical researcher and DX
   Architect. Always influenced by design. Based in Rosario, Argentina 🇦🇷`,
   description: `As a Web Developer with Machine Learning research experience, I'm
