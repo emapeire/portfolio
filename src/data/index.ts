@@ -12,6 +12,8 @@ import { TailwindCSSIcon } from '@/components/icons/tags/tailwind-css'
 import { AstroIcon } from '@/components/icons/tags/astro'
 import { SvelteIcon } from '@/components/icons/tags/svelte'
 import { NodeJSIcon } from '@/components/icons/tags/nodejs'
+import { VitestIcon } from '@/components/icons/tags/vitest'
+import { BootstrapIcon } from '@/components/icons/tags/bootstrap'
 
 export const AVATAR = {
   name: 'Emanuel Peire',
@@ -137,6 +139,14 @@ const TAGS = {
   NODE: {
     name: 'Node.js',
     icon: NodeJSIcon
+  },
+  VITEST: {
+    name: 'Vitest',
+    icon: VitestIcon
+  },
+  BOOTSTRAP: {
+    name: 'Bootstrap',
+    icon: BootstrapIcon
   }
 } as const
 
@@ -146,10 +156,8 @@ export const PROJECTS = [
     techStack: [TAGS.JAVASCRIPT, TAGS.NODE],
     description:
       'A chatbot that uses the Cohere API to generate responses to user input.',
-    link: {
-      label: 'github.com/emapeire/cohere-chat',
-      href: 'https://github.com/emapeire/cohere-chat'
-    }
+    link: 'https://github.com/emapeire/cohere-chat',
+    image: '/images/cohere-chat.webp'
   },
   {
     title: 'Eloquent JavaScript Chat',
@@ -165,6 +173,24 @@ export const PROJECTS = [
       'In this app you will be able to interact with a intelligent llama that will answer your questions about JavaScript.',
     link: 'https://github.com/emapeire/eloquent-js-chat',
     image: '/images/eloquent-js-chat.webp'
+  },
+  {
+    title: 'Google Translate Clone',
+    techStack: [
+      TAGS.BOOTSTRAP,
+      TAGS.CSS,
+      TAGS.OPENAI,
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.VITE,
+      TAGS.VITEST
+    ],
+    description:
+      'This is a simple API that uses the OpenAI GPT-4-vision-preview model to generate code from images.',
+    link: 'https://github.com/emapeire/google-translate-clone',
+    image: '/images/google-translate-clone.webp'
   },
   {
     title: 'Image 2 Code',
