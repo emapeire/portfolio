@@ -20,7 +20,7 @@ export function CareerItem({
       <p className='mb-4 text-lg md:text-xl font-normal text-gray-200 text-pretty'>
         {description}
       </p>
-      <ButtonViewMore href={link} />
+      {link && <ButtonViewMore href={link} />}
     </>
   )
 }
