@@ -161,7 +161,7 @@ export const PROJECTS = [
     tags: [TAGS.JAVASCRIPT, TAGS.REACT],
     description: 'A simple calculator app made with React and JavaScript.',
     link: 'https://github.com/emapeire/calculator',
-    image: '/images/calculator-app.webp'
+    image: '/images/calculator-app.png'
   },
   {
     title: 'Cohere Chat',
@@ -169,7 +169,7 @@ export const PROJECTS = [
     description:
       'A chatbot that uses the Cohere API to generate responses to user input.',
     link: 'https://github.com/emapeire/cohere-chat',
-    image: '/images/cohere-chat.webp'
+    image: '/images/cohere-chat.png'
   },
   {
     title: 'Eloquent JavaScript Chat',
@@ -184,7 +184,7 @@ export const PROJECTS = [
     description:
       'In this app you will be able to interact with a intelligent llama that will answer your questions about JavaScript.',
     link: 'https://github.com/emapeire/eloquent-js-chat',
-    image: '/images/eloquent-js-chat.webp'
+    image: '/images/eloquent-js-chat.png'
   },
   {
     title: 'Google Translate Clone',
@@ -202,7 +202,7 @@ export const PROJECTS = [
     description:
       'This is a simple API that uses the OpenAI GPT-4-vision-preview model to generate code from images.',
     link: 'https://github.com/emapeire/google-translate-clone',
-    image: '/images/google-translate-clone.webp'
+    image: '/images/google-translate-clone.png'
   },
   {
     title: 'Image 2 Code',
@@ -224,7 +224,7 @@ export const PROJECTS = [
     tags: [TAGS.OPENAI, TAGS.REACT],
     description: 'An AI-driven web engineering expert for React community.',
     link: 'https://chat.openai.com/g/g-HNcbE0A5n-reactgpt',
-    image: '/images/react-gpt.webp'
+    image: '/images/react-gpt.png'
   },
   {
     title: 'Screen Recorder',
@@ -245,7 +245,7 @@ export const PROJECTS = [
     ],
     description: 'An open-source Spotify clone built with Svelte and Astro.',
     link: 'https://github.com/emapeire/spotify-clone',
-    image: '/images/spotify-clone.webp'
+    image: '/images/spotify-clone.png'
   },
   {
     title: 'SWC Router',
@@ -260,7 +260,7 @@ export const PROJECTS = [
     description:
       'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
     link: 'https://npmjs.com/package/swc-router',
-    image: '/images/swc-router.webp'
+    image: '/images/swc-router.png'
   },
   {
     title: 'View Transitions API',
@@ -282,7 +282,7 @@ export const PROJECTS = [
     ],
     description: 'A simple todo app made with React and TypeScript.',
     link: 'https://github.com/emapeire/todo-app-ts',
-    image: '/images/todo-app-ts.webp'
+    image: '/images/todo-app-ts.png'
   },
   {
     title: 'Twitter Clone',
@@ -297,6 +297,6 @@ export const PROJECTS = [
     description:
       'An open-source Twitter clone built with Next.js and Supabase.',
     link: 'https://github.com/emapeire/twitter-clone',
-    image: '/images/twitter-clone.webp'
+    image: '/images/twitter-clone.png'
   }
 ]
