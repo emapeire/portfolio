@@ -164,6 +164,21 @@ export const PROJECTS = [
     image: '/images/calculator-app.png'
   },
   {
+    title: 'Chat With Vader',
+    tags: [
+      TAGS.JAVASCRIPT,
+      TAGS.NEXT,
+      TAGS.OPENAI,
+      TAGS.REACT,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description:
+      'A simple chat app that uses the OpenAI API and Vercel AI SDK to chat with Darth Vader.',
+    link: 'https://github.com/emapeire/chat-with-vader',
+    image: '/images/chat-with-vader.png'
+  },
+  {
     title: 'Cohere Chat',
     tags: [TAGS.JAVASCRIPT, TAGS.NODE],
     description:
