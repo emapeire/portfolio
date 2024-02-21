@@ -202,7 +202,7 @@ export const PROJECTS = [
     image: '/images/eloquent-js-chat.png'
   },
   {
-    title: 'Google Translate Clone',
+    title: 'Google Translate UI',
     tags: [
       TAGS.BOOTSTRAP,
       TAGS.CSS,
@@ -257,7 +257,7 @@ export const PROJECTS = [
     image: '/images/spacex-launches.png'
   },
   {
-    title: 'Spotify Clone',
+    title: 'Spotify UI',
     tags: [
       TAGS.ASTRO,
       TAGS.JAVASCRIPT,
@@ -294,7 +294,15 @@ export const PROJECTS = [
     video: '/videos/view-transitions-api.webm'
   },
   {
-    title: 'TODO App TS',
+    title: 'Tesla Landing UI',
+    tags: [TAGS.ASTRO, TAGS.JAVASCRIPT, TAGS.TAILWIND],
+    description:
+      'An open-source Tesla landing page built with Astro and Tailwind CSS.',
+    link: 'https://github.com/emapeire/tesla-landing',
+    video: '/videos/tesla-landing-clone.webm'
+  },
+  {
+    title: 'Todo App',
     tags: [
       TAGS.CSS,
       TAGS.HTML,
@@ -308,7 +316,7 @@ export const PROJECTS = [
     image: '/images/todo-app-ts.png'
   },
   {
-    title: 'Twitter Clone',
+    title: 'Twitter UI',
     tags: [
       TAGS.JAVASCRIPT,
       TAGS.NEXT,
