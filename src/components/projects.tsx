@@ -39,8 +39,8 @@ export function Projects() {
                   {image && (
                     <Image
                       className='rounded-xl shadow-2xl shadow-white/5 border border-white/10'
-                      width={800}
-                      height={400}
+                      width={1920}
+                      height={1280}
                       src={image}
                       alt={title}
                     />
@@ -48,8 +48,8 @@ export function Projects() {
                   {video && (
                     <video
                       className='rounded-xl shadow-2xl shadow-white/5 border border-white/10'
-                      width={800}
-                      height={400}
+                      width={1920}
+                      height={1280}
                       controls
                       muted
                       autoPlay
