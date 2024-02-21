@@ -15,6 +15,7 @@ import { NodeJSIcon } from '@/components/icons/tags/nodejs'
 import { VitestIcon } from '@/components/icons/tags/vitest'
 import { BootstrapIcon } from '@/components/icons/tags/bootstrap'
 import { SupabaseIcon } from '@/components/icons/tags/supabase'
+import { ReduxIcon } from '@/components/icons/tags/redux'
 
 export const AVATAR = {
   name: 'Emanuel Peire',
@@ -152,6 +153,10 @@ const TAGS = {
   SUPABASE: {
     name: 'Supabase',
     icon: SupabaseIcon
+  },
+  REDUX: {
+    name: 'Redux',
+    icon: ReduxIcon
   }
 } as const
 
@@ -178,6 +183,35 @@ export const PROJECTS = [
       'A chatbot that uses the Cohere API to generate responses to user input.',
     link: 'https://github.com/emapeire/cohere-chat',
     image: '/images/cohere-chat.png'
+  },
+  {
+    title: 'Comments App',
+    tags: [
+      TAGS.CSS,
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.VITE
+    ],
+    description: 'A simple comments app made with React and Vite.',
+    link: 'https://github.com/emapeire/comments-react-query',
+    image: '/images/comments-app.png'
+  },
+  {
+    title: 'Crud App',
+    tags: [
+      TAGS.CSS,
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.REDUX,
+      TAGS.TYPESCRIPT,
+      TAGS.VITE
+    ],
+    description: 'A simple CRUD app made with React and Vite.',
+    link: 'https://github.com/emapeire/crud-react-redux',
+    image: '/images/crud-app.png'
   },
   {
     title: 'Eloquent JavaScript Chat',
