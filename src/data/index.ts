@@ -309,6 +309,14 @@ export const PROJECTS = [
     image: '/images/todo-app-ts.png'
   },
   {
+    title: 'Twitter Follow Card UI',
+    tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
+    description:
+      'An open-source Twitter follow card built with React and Vite.',
+    link: 'https://github.com/emapeire/twitter-follow-card',
+    image: '/images/twitter-follow-card.png'
+  },
+  {
     title: 'Twitter UI',
     tags: [
       TAGS.JAVASCRIPT,
