@@ -234,6 +234,14 @@ export const PROJECTS = [
     video: '/videos/screen-recorder.webm'
   },
   {
+    title: 'Space X Launches',
+    tags: [TAGS.ASTRO, TAGS.JAVASCRIPT, TAGS.TYPESCRIPT],
+    description:
+      'A simple app that lists all SpaceX launches. Built with Astro and TypeScript.',
+    link: 'https://github.com/emapeire/spacex-launches',
+    image: '/images/spacex-launches.png'
+  },
+  {
     title: 'Spotify Clone',
     tags: [
       TAGS.ASTRO,
