@@ -283,6 +283,13 @@ export const PROJECTS = [
     video: '/videos/mouse-follower.webm'
   },
   {
+    title: 'Movie Search App',
+    tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
+    description: 'A simple movie search app made with React and Vite.',
+    link: 'https://github.com/emapeire/react-movie-search',
+    image: '/images/movie-search.png'
+  },
+  {
     title: 'React GPT',
     tags: [TAGS.OPENAI, TAGS.REACT],
     description: 'An AI-driven web engineering expert for React community.',
@@ -355,6 +362,13 @@ export const PROJECTS = [
       'An open-source Tesla landing page built with Astro and Tailwind CSS.',
     link: 'https://github.com/emapeire/tesla-landing',
     video: '/videos/tesla-landing-clone.webm'
+  },
+  {
+    title: 'Tic Tac Toe',
+    tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
+    description: 'A simple tic-tac-toe game made with React and TypeScript.',
+    link: 'https://github.com/emapeire/tic-tac-toe',
+    image: '/images/tic-tac-toe.png'
   },
   {
     title: 'Todo App',
