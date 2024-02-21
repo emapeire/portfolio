@@ -157,13 +157,6 @@ const TAGS = {
 
 export const PROJECTS = [
   {
-    title: 'Calculator App',
-    tags: [TAGS.JAVASCRIPT, TAGS.REACT],
-    description: 'A simple calculator app made with React and JavaScript.',
-    link: 'https://github.com/emapeire/calculator',
-    image: '/images/calculator-app.png'
-  },
-  {
     title: 'Chat With Vader',
     tags: [
       TAGS.JAVASCRIPT,
