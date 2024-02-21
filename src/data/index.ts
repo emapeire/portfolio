@@ -297,6 +297,13 @@ export const PROJECTS = [
     video: '/videos/screen-recorder.webm'
   },
   {
+    title: 'Shopping Cart',
+    tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
+    description: 'A simple shopping cart app made with React and Vite.',
+    link: 'https://github.com/emapeire/shopping-cart',
+    image: '/images/shopping-cart.png'
+  },
+  {
     title: 'Space X Launches',
     tags: [TAGS.ASTRO, TAGS.JAVASCRIPT, TAGS.TYPESCRIPT],
     description:
