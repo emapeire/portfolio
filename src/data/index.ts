@@ -276,6 +276,13 @@ export const PROJECTS = [
     image: '/images/javascript-quiz.png'
   },
   {
+    title: 'Mouse Follower',
+    tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
+    description: 'A simple mouse follower app made with React and Vite.',
+    link: 'https://github.com/emapeire/mouse-follower',
+    video: '/videos/mouse-follower.webm'
+  },
+  {
     title: 'React GPT',
     tags: [TAGS.OPENAI, TAGS.REACT],
     description: 'An AI-driven web engineering expert for React community.',
