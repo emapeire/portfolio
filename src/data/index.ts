@@ -262,6 +262,20 @@ export const PROJECTS = [
     video: '/videos/image-2-code.webm'
   },
   {
+    title: 'JavaScript Quiz',
+    tags: [
+      TAGS.CSS,
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.VITE
+    ],
+    description: 'A simple quiz app made with React and Zustand.',
+    link: 'https://github.com/emapeire/javascript-quiz',
+    image: '/images/javascript-quiz.png'
+  },
+  {
     title: 'React GPT',
     tags: [TAGS.OPENAI, TAGS.REACT],
     description: 'An AI-driven web engineering expert for React community.',
