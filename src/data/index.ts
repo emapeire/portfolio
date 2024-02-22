@@ -54,7 +54,7 @@ export const CAREER = [
     description: 'Building a non-profit open community of Next.js Argentina.'
   },
   {
-    company: 'Smat SA.',
+    company: 'Smat.io',
     link: 'https://smat.io',
     badges: ['Remote'],
     title: 'QA Tester and Frontend Developer',
@@ -65,7 +65,7 @@ export const CAREER = [
     Also, contributed to developing user-friendly interfaces with React.js, significantly enhancing user experiences.`
   },
   {
-    company: 'MakerDAO',
+    company: 'Maker DAO',
     link: 'https://makerdao.com',
     badges: ['Remote'],
     title: 'Technical Writer and Translator',

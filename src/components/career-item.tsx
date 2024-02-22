@@ -3,6 +3,7 @@ import { ButtonViewMore } from './ui/button-view-more'
 
 export function CareerItem({
   link,
+  company,
   title,
   start,
   end,
@@ -15,8 +16,9 @@ export function CareerItem({
         {start} - {end}
       </time>
       <h3 className='text-xl md:text-2xl mt-2 mb-4 font-bold text-blue-100'>
-        {title}
+        {company}
       </h3>
+      <h4 className='text-lg md:text-xl my-2 font-bold text-white'>{title}</h4>
       <p className='text-lg md:text-xl font-normal text-gray-200 text-pretty'>
         {description}
       </p>
