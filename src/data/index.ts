@@ -16,6 +16,7 @@ import { VitestIcon } from '@/components/icons/tags/vitest'
 import { BootstrapIcon } from '@/components/icons/tags/bootstrap'
 import { SupabaseIcon } from '@/components/icons/tags/supabase'
 import { ReduxIcon } from '@/components/icons/tags/redux'
+import { PNPMIcon } from '@/components/icons/tags/pnpm'
 
 export const AVATAR = {
   name: 'Emanuel Peire',
@@ -157,6 +158,10 @@ const TAGS = {
   REDUX: {
     name: 'Redux',
     icon: ReduxIcon
+  },
+  PNPM: {
+    name: 'PNPM',
+    icon: PNPMIcon
   }
 } as const
 
@@ -288,6 +293,24 @@ export const PROJECTS = [
     description: 'A simple movie search app made with React and Vite.',
     link: 'https://github.com/emapeire/react-movie-search',
     image: '/images/movie-search.png'
+  },
+  {
+    title: 'Next.js Releases App',
+    tags: [
+      TAGS.CSS,
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.NEXT,
+      TAGS.PNPM,
+      TAGS.REACT,
+      TAGS.SHADCN,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description:
+      "NextJS Releases is an App that tracks new releases on NextJS's GitHub repo.",
+    link: 'https://github.com/nextjsargentina/nextjs-releases',
+    image: '/images/nextjs-releases-app.png'
   },
   {
     title: 'React GPT',
