@@ -15,10 +15,13 @@ export function CareerItem({
       <time className='text-lg font-normal leading-none text-gray-200'>
         {start} - {end}
       </time>
-      <h3 className='text-xl md:text-2xl mt-2 mb-4 font-bold text-blue-100'>
+      <h3 className='text-xl md:text-2xl mt-4 mb-2 font-bold text-blue-100'>
         {company}
       </h3>
-      <h4 className='text-lg md:text-xl my-2 font-bold text-white'>{title}</h4>
+      <div className='flex items-center gap-x-2 my-2'>
+        <span>{'->'}</span>
+        <h4 className='text-lg md:text-xl font-bold text-white'>{title}</h4>
+      </div>
       <p className='text-lg md:text-xl font-normal text-gray-200 text-pretty'>
         {description}
       </p>
