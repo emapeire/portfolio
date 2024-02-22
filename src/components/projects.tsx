@@ -9,8 +9,8 @@ export function Projects() {
     <div className='flex flex-col gap-16'>
       {projects.map(
         ({ title, description, tags, image, video, link }, index) => (
-          <>
-            <article key={index}>
+          <div key={index}>
+            <article>
               <a href={link} target='_blank' rel='noopener noreferrer'>
                 <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
                   <LinkIcon className='size-6' />
@@ -62,9 +62,12 @@ export function Projects() {
               </div>
             </article>
             {index < projects.length - 1 && (
-              <div key={index} className='border-b ml-2 border-white/20' />
+              <div
+                key={index}
+                className='border-b pb-16 ml-2 border-white/20'
+              />
             )}
-          </>
+          </div>
         )
       )}
     </div>
