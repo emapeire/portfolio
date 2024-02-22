@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
-    "@vercel/analytics": "^1.2.0",
+    "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
-    "@types/react": "^18.2.55",
+    "@types/react": "^18.2.57",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",

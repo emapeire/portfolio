@@ -10,7 +10,7 @@ export function Projects() {
       {projects.map(
         ({ title, description, tags, image, video, link }, index) => (
           <>
-            <article key={link}>
+            <article key={index}>
               <a href={link} target='_blank' rel='noopener noreferrer'>
                 <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
                   <LinkIcon className='size-6' />
@@ -27,11 +27,11 @@ export function Projects() {
                   })}
                 >
                   <ul className='md:flex md:overflow-x-auto md:whitespace-nowrap md:pb-6 pb-2 grid grid-cols-2 md:gap-x-4 gap-x-0 gap-4 items-center justify-items-start'>
-                    {tags.map((t) => (
-                      <li key={t.name}>
+                    {tags.map((tag, index) => (
+                      <li key={index}>
                         <BadgeTag>
-                          <t.icon className='size-4' />
-                          {t.name}
+                          <tag.icon className='size-4' />
+                          {tag.name}
                         </BadgeTag>
                       </li>
                     ))}
