@@ -62,7 +62,7 @@ export function Projects() {
               </div>
             </article>
             {index < projects.length - 1 && (
-              <div className='border-b ml-2 border-white/20' />
+              <div key={index} className='border-b ml-2 border-white/20' />
             )}
           </>
         )
