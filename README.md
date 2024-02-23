@@ -1,3 +1,3 @@
 # ✨ My personal portfolio: showcasing my work and skills.
 
-![emapeire xyz](https://github.com/emapeire/portfolio/assets/63935846/1a23f98f-5c50-4a3b-b461-0960ed199bfb)
+![Portfolio](https://github.com/emapeire/portfolio/assets/63935846/c0058024-0cdb-460e-be10-990aebce3fde)
