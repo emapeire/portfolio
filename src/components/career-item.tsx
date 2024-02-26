@@ -1,5 +1,6 @@
 import { type CareerProps } from '@/types'
 import { ButtonViewMore } from './ui/button-view-more'
+import { ArrowIcon } from './icons/arrow'
 
 export function CareerItem({
   link,
@@ -18,8 +19,8 @@ export function CareerItem({
       <h3 className='text-xl md:text-2xl mt-4 mb-2 font-bold text-blue-100'>
         {company}
       </h3>
-      <div className='flex items-center gap-x-2 my-2'>
-        <span>{'->'}</span>
+      <div className='flex md:items-center items-baseline my-2'>
+        <ArrowIcon className='me-2' />
         <h4 className='text-lg md:text-xl font-bold text-white'>{title}</h4>
       </div>
       <p className='text-lg md:text-xl font-normal text-gray-200 text-pretty'>
