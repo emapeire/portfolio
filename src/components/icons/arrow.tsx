@@ -1,7 +1,7 @@
-export const ArrowIcon = ({ className }: { className: string }) => {
+export const ArrowIcon = ({ ...props }) => {
   return (
     <svg
-      className={`${className} w-3 h-3 rtl:rotate-180`}
+      {...props}
       aria-hidden='true'
       xmlns='http://www.w3.org/2000/svg'
       fill='none'

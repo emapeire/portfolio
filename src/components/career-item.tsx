@@ -20,7 +20,7 @@ export function CareerItem({
         {company}
       </h3>
       <div className='flex md:items-center items-baseline my-2'>
-        <ArrowIcon className='me-2' />
+        <ArrowIcon className='me-2 size-3 min-h-3 min-w-3' />
         <h4 className='text-lg md:text-xl font-bold text-white'>{title}</h4>
       </div>
       <p className='text-lg md:text-xl font-normal text-gray-200 text-pretty'>
