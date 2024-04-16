@@ -14,7 +14,9 @@ export function Projects() {
               <a href={link} target='_blank' rel='noopener noreferrer'>
                 <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
                   <LinkIcon className='size-6' />
-                  <span className='text-blue-100 hover:underline'>{title}</span>
+                  <span className='text-neutral-100 hover:underline'>
+                    {title}
+                  </span>
                 </h3>
               </a>
               <div className='ml-10'>
@@ -38,7 +40,7 @@ export function Projects() {
                   </ul>
                   {image && (
                     <Image
-                      className='rounded-xl shadow-2xl shadow-white/5 border border-white/10'
+                      className='rounded-xl shadow border'
                       width={1920}
                       height={1280}
                       src={image}
@@ -47,7 +49,7 @@ export function Projects() {
                   )}
                   {video && (
                     <video
-                      className='rounded-xl shadow-2xl shadow-white/5 border border-white/10'
+                      className='rounded-xl shadow border'
                       width={1920}
                       height={1280}
                       controls
@@ -62,10 +64,7 @@ export function Projects() {
               </div>
             </article>
             {index < projects.length - 1 && (
-              <div
-                key={index}
-                className='border-b pb-16 ml-2 border-white/20'
-              />
+              <div key={index} className='border-b pb-16 ml-2' />
             )}
           </div>
         )

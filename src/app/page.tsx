@@ -8,7 +8,6 @@ import { Navigation } from '@/components/navigation'
 import { About } from '@/components/about'
 import { Career } from '@/components/career'
 import { Projects } from '@/components/projects'
-import { Footer } from '@/components/footer'
 import { ABOUT as about, AVATAR as avatar } from '@/data'
 import { BriefCaseIcon } from '@/components/icons/brief-case'
 import { CodeIcon } from '@/components/icons/code'
@@ -20,10 +19,16 @@ export default function Home() {
       <Header />
 
       <Section id='about' className='pb-32'>
-        <Avatar className='mb-8 size-28 shadow-xl shadow-white/5 hover:scale-105 transition-all ease-in-out duration-300'>
-          <AvatarImage alt={avatar.name} src={'/images/avatar.png'} />
-          <AvatarFallback>{avatar.initials}</AvatarFallback>
-        </Avatar>
+        <a
+          href='https://github.com/emapeire'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <Avatar className='mb-8 size-28 shadow hover:scale-105 transition-all ease-in-out duration-300'>
+            <AvatarImage alt={avatar.name} src={'/images/avatar.png'} />
+            <AvatarFallback>{avatar.initials}</AvatarFallback>
+          </Avatar>
+        </a>
 
         <SectionTitleMain />
 
@@ -62,8 +67,6 @@ export default function Home() {
         </SectionSecondaryTitle>
         <Projects />
       </Section>
-
-      <Footer />
     </main>
   )
 }

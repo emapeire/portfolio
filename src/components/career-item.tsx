@@ -12,11 +12,11 @@ export function CareerItem({
 }: CareerProps) {
   return (
     <>
-      <div className='absolute w-3 h-3 bg-neutral-100 rounded-full mt-1.5 -start-1.5 border border-white' />
+      <div className='absolute w-3 h-3 bg-neutral-100 rounded-full mt-1.5 -start-1.5 border' />
       <time className='text-lg font-normal leading-none text-neutral-200'>
         {start} - {end}
       </time>
-      <h3 className='text-xl md:text-2xl mt-4 mb-2 font-bold text-blue-100'>
+      <h3 className='text-xl md:text-2xl mt-4 mb-2 font-bold text-neutral-100'>
         {company}
       </h3>
       <div className='flex md:items-center items-baseline my-2'>

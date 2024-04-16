@@ -6,6 +6,7 @@ import { Head } from '@/components/head'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
+import { Footer } from '@/components/footer'
 
 const metadata: Metadata = {
   title: 'Portfolio | Emanuel Peire',
@@ -25,6 +26,7 @@ export default function RootLayout({
       <Head metadata={metadata} />
       <body>
         {children}
+        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>
