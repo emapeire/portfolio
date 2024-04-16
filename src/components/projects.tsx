@@ -38,28 +38,31 @@ export function Projects() {
                       </li>
                     ))}
                   </ul>
-                  {image && (
-                    <Image
-                      className='rounded-xl shadow border'
-                      width={1920}
-                      height={1280}
-                      src={image}
-                      alt={title}
-                    />
-                  )}
-                  {video && (
-                    <video
-                      className='rounded-xl shadow border'
-                      width={1920}
-                      height={1280}
-                      controls
-                      muted
-                      autoPlay
-                      loop
-                    >
-                      <source src={video} type='video/webm' />
-                    </video>
-                  )}
+
+                  <a href={link} target='_blank' rel='noopener noreferrer'>
+                    {image && (
+                      <Image
+                        className='rounded-xl shadow border'
+                        width={1920}
+                        height={1280}
+                        src={image}
+                        alt={title}
+                      />
+                    )}
+                    {video && (
+                      <video
+                        className='rounded-xl shadow border'
+                        width={1920}
+                        height={1280}
+                        controls
+                        muted
+                        autoPlay
+                        loop
+                      >
+                        <source src={video} type='video/webm' />
+                      </video>
+                    )}
+                  </a>
                 </div>
               </div>
             </article>
