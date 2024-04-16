@@ -12,7 +12,7 @@ export function CareerItem({
 }: CareerProps) {
   return (
     <>
-      <div className='absolute w-3 h-3 bg-neutral-100 rounded-full mt-1.5 -start-1.5 border' />
+      <div className='absolute w-3 h-3 bg-neutral-100 rounded-full mt-1.5 -start-1.5 border border-white' />
       <time className='text-lg font-normal leading-none text-neutral-200'>
         {start} - {end}
       </time>
