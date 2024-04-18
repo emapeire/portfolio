@@ -26,7 +26,7 @@ export function Header() {
 
   return (
     <header className='fixed top-0 z-10 flex items-center justify-center w-full mx-auto bg-white dark:bg-black border-b py-2'>
-      <nav className='flex px-4 py-1 md:px-48 justify-center items-center'>
+      <nav className='flex justify-center items-center'>
         {navItems.map((link) => (
           <a
             key={link.label}
