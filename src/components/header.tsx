@@ -25,8 +25,8 @@ export function Header() {
   ]
 
   return (
-    <header className='fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-4 gap-x-8'>
-      <nav className='flex w-full max-w-2xl border text-sm font-semibold rounded-md text-neutral-800 dark:text-neutral-100 justify-center items-center'>
+    <header className='fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-4'>
+      <nav className='nav-header flex px-4 md:px-48 text-sm font-semibold rounded-md text-neutral-800 dark:text-neutral-100 justify-center items-center'>
         {navItems.map((link) => (
           <a
             key={link.label}
@@ -37,8 +37,8 @@ export function Header() {
             {link.title}
           </a>
         ))}
+        <ModeToggle />
       </nav>
-      <ModeToggle />
     </header>
   )
 }
