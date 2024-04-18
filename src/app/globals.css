@@ -84,15 +84,3 @@ html {
     scroll-behavior: auto;
   }
 }
-
-nav.nav-header {
-  animation: nav-shadow 1s linear both;
-  animation-timeline: scroll();
-  animation-range: 0 100px;
-}
-
-@keyframes nav-shadow {
-  to {
-    @apply shadow-md ring-1 backdrop-blur-xl bg-black/10 ring-neutral-800;
-  }
-}
