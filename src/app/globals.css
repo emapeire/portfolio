@@ -93,6 +93,6 @@ nav.nav-header {
 
 @keyframes nav-shadow {
   to {
-    @apply shadow-md ring-1 backdrop-blur bg-black/10 ring-white/10;
+    @apply shadow-md ring-1 backdrop-blur-xl bg-black/10 ring-neutral-800;
   }
 }

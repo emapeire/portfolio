@@ -32,7 +32,7 @@ export function Header() {
             key={link.label}
             aria-label={link.label}
             href={link.url}
-            className='relative block mx-1 transition-colors ease-in-out py-2 px-4 rounded-sm hover:dark:bg-neutral-800 hover:bg-neutral-300'
+            className='relative block mx-1 transition-colors ease-in-out py-2 px-4 rounded-sm hover:dark:bg-neutral-800 hover:bg-neutral-100'
           >
             {link.title}
           </a>
