@@ -3,10 +3,12 @@ import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Head } from '@/components/head'
+import { ThemeProvider } from '@/components/theme-provider'
+import { Footer } from '@/components/footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { cn } from '@/lib/utils'
 import './globals.css'
-import { Footer } from '@/components/footer'
 
 const metadata: Metadata = {
   title: 'Portfolio | Emanuel Peire',
@@ -21,12 +23,24 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${GeistSans.variable} ${GeistMono.variable} dark`}
+      className={cn(
+        'min-h-screen bg-background font-sans antialiased',
+        GeistSans.variable,
+        GeistMono.variable
+      )}
+      suppressHydrationWarning
     >
       <Head metadata={metadata} />
       <body>
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Footer />
+        </ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>
