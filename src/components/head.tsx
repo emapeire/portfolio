@@ -11,6 +11,24 @@ export function Head({ metadata }: { metadata: Metadata }) {
       <meta name='author' content='Emanuel Peire' />
       <meta name='robots' content='index, follow' />
 
+      <meta property='og:title' content={metadata.title?.toString()} />
+      <meta
+        property='og:description'
+        content={metadata.description?.toString()}
+      />
+      <meta property='og:type' content='website' />
+      <meta property='og:url' content='https://emapeire.xyz' />
+      <meta property='og:image' content='/assets/og-image.png' />
+
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:creator' content='@emapeire' />
+      <meta name='twitter:title' content={metadata.title?.toString()} />
+      <meta
+        name='twitter:description'
+        content={metadata.description?.toString()}
+      />
+      <meta name='twitter:image' content='/assets/og-image.png' />
+
       <meta name='msapplication-TileColor' content='#000000' />
       <meta name='theme-color' content='#000000'></meta>
 
