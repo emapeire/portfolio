@@ -13,34 +13,20 @@ export function Header() {
     const handleHashChange = () => {
       setCurrentHash(window.location.hash)
     }
+
     window.addEventListener('hashchange', handleHashChange)
     handleHashChange()
+
     return () => {
       window.removeEventListener('hashchange', handleHashChange)
     }
   }, [])
 
   const navItems = [
-    {
-      title: 'About',
-      label: 'about',
-      url: '#about'
-    },
-    {
-      title: 'Career',
-      label: 'career',
-      url: '#career'
-    },
-    {
-      title: 'Projects',
-      label: 'projects',
-      url: '#projects'
-    },
-    {
-      title: 'Contact',
-      label: 'contact',
-      url: '#contact'
-    }
+    { title: 'About', label: 'about', url: '#about' },
+    { title: 'Career', label: 'career', url: '#career' },
+    { title: 'Projects', label: 'projects', url: '#projects' },
+    { title: 'Contact', label: 'contact', url: '#contact' }
   ]
 
   return (
@@ -64,7 +50,7 @@ export function Header() {
             {link.title}
           </a>
         ))}
-        <div className='flex items-center ms-2'>
+        <div className='flex items-center ms-1'>
           <ModeToggle />
         </div>
       </nav>
