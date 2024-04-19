@@ -17,6 +17,10 @@ import { BootstrapIcon } from '@/components/icons/tags/bootstrap'
 import { SupabaseIcon } from '@/components/icons/tags/supabase'
 import { ReduxIcon } from '@/components/icons/tags/redux'
 import { PNPMIcon } from '@/components/icons/tags/pnpm'
+import { GitHubIcon } from '@/components/icons/github'
+import { LinkedInIcon } from '@/components/icons/linkedin'
+import { XIcon } from '@/components/icons/x'
+import { FileTextIcon, MailIcon } from 'lucide-react'
 
 export const AVATAR = {
   name: 'Emanuel Peire',
@@ -32,6 +36,34 @@ export const ABOUT = {
   accessibility and performance in web applications. My main goal is to
   enhance user experience, making the web a better place for everyone.`
 }
+
+export const LINKS = [
+  {
+    title: 'GitHub',
+    url: 'https://github.com/emapeire',
+    icon: GitHubIcon
+  },
+  {
+    title: 'LinkedIn',
+    url: 'https://linkedin.com/in/emanuelpeire',
+    icon: LinkedInIcon
+  },
+  {
+    title: 'X (Twitter)',
+    url: 'https://x.com/emapeire',
+    icon: XIcon
+  },
+  {
+    title: 'Resume',
+    url: 'https://cv.emapeire.xyz',
+    icon: FileTextIcon
+  },
+  {
+    title: 'Email',
+    url: 'mailto:me@emapeire.xyz',
+    icon: MailIcon
+  }
+]
 
 export const CAREER = [
   {

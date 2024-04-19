@@ -1,6 +1,17 @@
+export interface AvatarProps {
+  name: string
+  initials: string
+}
+
 export interface AboutProps {
   title: string
   description: string
+}
+
+export interface LinksProps {
+  title: string
+  url: string
+  icon: any
 }
 
 export interface CareerProps {
