@@ -6,13 +6,13 @@ import clsx from 'clsx'
 export function Footer() {
   const year = new Date().getFullYear()
 
-  const [contactHash, setContactClass] = useState(
+  const [contactHash, setContactHash] = useState(
     typeof window !== 'undefined' ? window.location.hash : ''
   )
 
   useEffect(() => {
     const handleHashChange = () => {
-      setContactClass(
+      setContactHash(
         window.location.hash === '#contact' ? 'contact-highlight' : ''
       )
     }
