@@ -39,7 +39,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className='flex min-h-screen flex-col items-center justify-center pt-32 pb-8 px-4'>
+          <main className='flex flex-col items-center justify-center min-h-screen pt-32 pb-8 px-4'>
             <Header />
             {children}
             <Footer />

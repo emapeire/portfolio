@@ -1,5 +1,21 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+
 export function Footer() {
   const year = new Date().getFullYear()
+  const [highlightClass, setHighlightClass] = useState('')
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setHighlightClass(window.location.hash === '#contact' ? 'highlight' : '')
+    }
+    window.addEventListener('hashchange', handleHashChange)
+    handleHashChange()
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [])
 
   return (
     <footer className='flex justify-center items-center w-full mx-auto md:max-w-2xl container'>
@@ -32,7 +48,7 @@ export function Footer() {
             <a
               id='contact'
               href='mailto:me@emapeire.xyz'
-              className='hover:underline hover:underline-offset-4'
+              className={`hover:underline hover:underline-offset-4 ${highlightClass}`}
             >
               Contact
             </a>

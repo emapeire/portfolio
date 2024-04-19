@@ -84,3 +84,17 @@ html {
     scroll-behavior: auto;
   }
 }
+
+.highlight {
+  animation: highlight-animation 3s ease-in-out infinite;
+}
+
+@keyframes highlight-animation {
+  0%,
+  100% {
+    transform: scale(1.1); /* Agrandado al 110% */
+  }
+  50% {
+    transform: scale(1); /* Tamaño normal */
+  }
+}

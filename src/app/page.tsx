@@ -14,7 +14,7 @@ import { ResumeIcon } from '@/components/icons/resume'
 
 export default function Home() {
   return (
-    <div>
+    <div className='flex flex-col'>
       <Section id='about' className='pb-32'>
         <div className='flex'>
           <a
