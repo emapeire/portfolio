@@ -20,7 +20,7 @@ export function Header() {
     {
       title: 'Contact',
       label: 'contact',
-      url: 'mailto:me@emapeire.xyz'
+      url: '/#contact'
     }
   ]
 

@@ -1,4 +1,3 @@
-import { Header } from '@/components/header'
 import { Section } from '@/components/ui/section'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/badge'
@@ -15,9 +14,7 @@ import { ResumeIcon } from '@/components/icons/resume'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center py-32 px-4'>
-      <Header />
-
+    <div>
       <Section id='about' className='pb-32'>
         <div className='flex'>
           <a
@@ -72,6 +69,6 @@ export default function Home() {
         </SectionSecondaryTitle>
         <Projects />
       </Section>
-    </main>
+    </div>
   )
 }
