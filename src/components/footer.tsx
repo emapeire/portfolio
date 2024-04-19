@@ -6,9 +6,7 @@ import clsx from 'clsx'
 export function Footer() {
   const year = new Date().getFullYear()
 
-  const [contactHash, setContactHash] = useState(
-    typeof window !== 'undefined' ? window.location.hash : ''
-  )
+  const [contactHash, setContactHash] = useState('')
 
   useEffect(() => {
     const handleHashChange = () => {

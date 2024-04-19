@@ -5,9 +5,7 @@ import { ModeToggle } from './mode-toggle'
 import clsx from 'clsx'
 
 export function Header() {
-  const [currentHash, setCurrentHash] = useState(
-    typeof window !== 'undefined' ? window.location.hash : ''
-  )
+  const [currentHash, setCurrentHash] = useState('')
 
   useEffect(() => {
     const handleHashChange = () => {
