@@ -1,5 +1,5 @@
 import { Header } from '@/components/header'
-import { Section } from '@/components/section'
+import { Section } from '@/components/ui/section'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/badge'
 import { SectionTitleMain } from '@/components/section-title-main'
@@ -15,20 +15,25 @@ import { ResumeIcon } from '@/components/icons/resume'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center py-24 px-4'>
+    <main className='flex min-h-screen flex-col items-center justify-center py-32 px-4'>
       <Header />
 
       <Section id='about' className='pb-32'>
-        <a
-          href='https://github.com/emapeire'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Avatar className='mb-8 size-28 shadow hover:scale-105 transition-all ease-in-out duration-300'>
-            <AvatarImage alt={avatar.name} src={'/images/avatar.png'} />
-            <AvatarFallback>{avatar.initials}</AvatarFallback>
-          </Avatar>
-        </a>
+        <div className='flex'>
+          <a
+            href='https://github.com/emapeire'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='rounded-full'
+          >
+            <Avatar className='size-28 shadow border'>
+              <AvatarImage alt={avatar.name} src={'/images/avatar.png'} />
+              <AvatarFallback className='font-mono font-bold'>
+                {avatar.initials}
+              </AvatarFallback>
+            </Avatar>
+          </a>
+        </div>
 
         <SectionTitleMain />
 

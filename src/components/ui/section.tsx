@@ -6,7 +6,11 @@ export type BadgeProps = React.HTMLAttributes<HTMLDivElement>
 export function Section({ className, ...props }: BadgeProps) {
   return (
     <section
-      className={cn('flex min-h-0 flex-col gap-y-3', className)}
+      id={props.id}
+      className={cn(
+        'flex flex-col min-h-0 gap-y-3 scroll-mt-32 w-full md:max-w-2xl mx-auto',
+        className
+      )}
       {...props}
     />
   )
