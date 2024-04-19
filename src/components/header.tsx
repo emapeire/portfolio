@@ -52,9 +52,12 @@ export function Header() {
             aria-label={link.label}
             href={link.url}
             className={clsx(
-              'relative block mx-1 transition-colors ease-in-out py-2 px-4 rounded-sm text-sm font-semibold text-neutral-800 dark:text-neutral-100 hover:dark:bg-neutral-800 hover:bg-neutral-100',
+              'relative block mx-1 transition-colors ease-in-out py-2 px-4 rounded-sm text-sm font-semibold text-neutral-800 dark:text-neutral-100',
               currentHash === link.url
                 ? 'bg-neutral-100 dark:bg-neutral-800'
+                : '',
+              currentHash !== link.url
+                ? 'hover:bg-neutral-100 dark:hover:bg-neutral-800'
                 : ''
             )}
           >
