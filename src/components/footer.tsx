@@ -1,14 +1,20 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import clsx from 'clsx'
 
 export function Footer() {
   const year = new Date().getFullYear()
-  const [highlightClass, setHighlightClass] = useState('')
+
+  const [contactHash, setContactClass] = useState(
+    typeof window !== 'undefined' ? window.location.hash : ''
+  )
 
   useEffect(() => {
     const handleHashChange = () => {
-      setHighlightClass(window.location.hash === '#contact' ? 'highlight' : '')
+      setContactClass(
+        window.location.hash === '#contact' ? 'contact-highlight' : ''
+      )
     }
     window.addEventListener('hashchange', handleHashChange)
     handleHashChange()
@@ -19,7 +25,7 @@ export function Footer() {
 
   return (
     <footer className='flex justify-center items-center w-full mx-auto md:max-w-2xl container'>
-      <div className='w-full mx-auto md:flex md:items-center md:justify-between text-sm font-medium text-neutral-800 dark:text-neutral-300'>
+      <div className='w-full mx-auto md:flex md:items-center md:justify-between text-sm font-medium text-neutral-700 dark:text-neutral-300'>
         <p>
           © {year}
           <span className='ms-2 me-2'>•</span>
@@ -48,7 +54,10 @@ export function Footer() {
             <a
               id='contact'
               href='mailto:me@emapeire.xyz'
-              className={`hover:underline hover:underline-offset-4 ${highlightClass}`}
+              className={clsx(
+                'hover:underline hover:underline-offset-4',
+                contactHash
+              )}
             >
               Contact
             </a>

@@ -1,26 +1,45 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import { ModeToggle } from './mode-toggle'
+import clsx from 'clsx'
 
 export function Header() {
+  const [currentHash, setCurrentHash] = useState(
+    typeof window !== 'undefined' ? window.location.hash : ''
+  )
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setCurrentHash(window.location.hash)
+    }
+    window.addEventListener('hashchange', handleHashChange)
+    handleHashChange()
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [])
+
   const navItems = [
     {
       title: 'About',
       label: 'about',
-      url: '/#about'
+      url: '#about'
     },
     {
       title: 'Career',
       label: 'career',
-      url: '/#career'
+      url: '#career'
     },
     {
       title: 'Projects',
       label: 'projects',
-      url: '/#projects'
+      url: '#projects'
     },
     {
       title: 'Contact',
       label: 'contact',
-      url: '/#contact'
+      url: '#contact'
     }
   ]
 
@@ -32,7 +51,12 @@ export function Header() {
             key={link.label}
             aria-label={link.label}
             href={link.url}
-            className='relative block mx-1 transition-colors ease-in-out py-2 px-4 rounded-sm text-sm font-semibold text-neutral-800 dark:text-neutral-100 hover:dark:bg-neutral-800 hover:bg-neutral-100'
+            className={clsx(
+              'relative block mx-1 transition-colors ease-in-out py-2 px-4 rounded-sm text-sm font-semibold text-neutral-800 dark:text-neutral-100 hover:dark:bg-neutral-800 hover:bg-neutral-100',
+              currentHash === link.url
+                ? 'bg-neutral-100 dark:bg-neutral-800'
+                : ''
+            )}
           >
             {link.title}
           </a>
