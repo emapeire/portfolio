@@ -11,10 +11,8 @@ export function Header() {
     const handleHashChange = () => {
       setCurrentHash(window.location.hash)
     }
-
     window.addEventListener('hashchange', handleHashChange)
     handleHashChange()
-
     return () => {
       window.removeEventListener('hashchange', handleHashChange)
     }
