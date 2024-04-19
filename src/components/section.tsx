@@ -10,7 +10,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={`${className} scroll-mt-24 w-full md:w-[740px] mx-auto`}
+      className={`${className} scroll-mt-24 w-full md:max-w-2xl mx-auto`}
     >
       {children}
     </section>

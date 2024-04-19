@@ -1,5 +1,5 @@
 import { type CareerProps } from '@/types'
-import { ButtonViewMore } from './ui/button-view-more'
+import { ButtonViewMore } from './button-view-more'
 import { ArrowIcon } from './icons/arrow'
 
 export function CareerItem({

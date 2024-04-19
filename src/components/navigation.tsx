@@ -1,5 +1,5 @@
 import { XIcon } from '@/components/icons/x'
-import { ButtonSocialPill } from './ui/button-social-pill'
+import { ButtonSocialPill } from './button-social-pill'
 import { GitHubIcon } from '@/components/icons/github'
 import { LinkedInIcon } from '@/components/icons/linkedin'
 import { MailIcon } from '@/components/icons/mail'

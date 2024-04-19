@@ -2,7 +2,7 @@ import { PROJECTS as projects } from '@/data'
 import { LinkIcon } from '@/components/icons/link'
 import clsx from 'clsx'
 import Image from 'next/image'
-import { BadgeTag } from './ui/badge-tag'
+import { BadgeTag } from './badge-tag'
 
 export function Projects() {
   return (
