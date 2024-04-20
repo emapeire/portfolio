@@ -31,6 +31,7 @@ export function CareerItem({
           variant='default'
           size='default'
           className='mt-4 px-2 dark:hover:text-blue-800 hover:text-blue-400'
+          asChild
         >
           <a
             href={link}
