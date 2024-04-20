@@ -1,5 +1,5 @@
 import { CareerItem } from './career-item'
-import { BriefcaseIcon } from 'lucide-react'
+import { LaptopIcon } from 'lucide-react'
 import { data } from '@/constants'
 
 export function Career() {
@@ -7,14 +7,14 @@ export function Career() {
 
   return (
     <>
-      <h2 className='text-neutral-100 flex gap-x-2 items-center text-3xl md:text-4xl font-bold pb-12 text-balance'>
-        <BriefcaseIcon className='size-8' />
+      <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
+        <LaptopIcon className='size-6' />
         Career
       </h2>
 
-      <ol className='relative border-s border-white ml-[14.5px] flex flex-col gap-16'>
+      <ol className='relative border-s dark:border-neutral-600 border-neutral-400 ml-[11.5px] flex flex-col gap-8'>
         {career.map((item, index) => (
-          <li key={index} className='ms-6'>
+          <li key={index} className='ms-7'>
             <CareerItem {...item} />
           </li>
         ))}

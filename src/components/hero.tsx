@@ -51,7 +51,7 @@ export function Hero() {
               rel='noopener noreferrer'
               className='md:hidden flex hover:scale-105 transition-all ease-in-out duration-300'
             >
-              <BadgeCheckIcon className='size-8 dark:fill-blue-400 fill-blue-200' />
+              <BadgeCheckIcon className='size-6 dark:fill-blue-400 fill-blue-200' />
             </a>
           </TooltipTrigger>
           <TooltipContent>
