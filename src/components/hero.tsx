@@ -34,7 +34,7 @@ export function Hero() {
           href='https://linkedin.com/in/emanuelpeire'
           target='_blank'
           rel='noopener noreferrer'
-          className='hidden md:flex'
+          className='hidden md:flex rounded-full'
         >
           <Badge
             variant='default'
@@ -71,6 +71,7 @@ export function Hero() {
             <TooltipTrigger asChild>
               <Button
                 variant='secondary'
+                size='default'
                 key={link.title}
                 className='px-2 shadow rounded-lg'
                 asChild
