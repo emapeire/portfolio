@@ -67,7 +67,12 @@ export function Hero() {
 
       <nav className='flex gap-x-4'>
         {links.map((link) => (
-          <Button variant='secondary' key={link.title} className='px-2' asChild>
+          <Button
+            variant='secondary'
+            key={link.title}
+            className='px-2 shadow rounded-lg'
+            asChild
+          >
             <a
               key={link.title}
               href={link.url}
