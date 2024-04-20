@@ -65,25 +65,32 @@ export function Hero() {
         <h3>{about.description}</h3>
       </div>
 
-      <nav className='flex gap-x-4'>
+      <nav className='flex gap-x-4 pt-4'>
         {links.map((link) => (
-          <Button
-            variant='secondary'
-            key={link.title}
-            className='px-2 shadow rounded-lg'
-            asChild
-          >
-            <a
-              key={link.title}
-              href={link.url}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='flex justify-center items-center md:gap-2'
-            >
-              <link.icon className='size-6' />
-              <p className='hidden md:block'>{link.title}</p>
-            </a>
-          </Button>
+          <Tooltip key={link.title}>
+            <TooltipTrigger asChild>
+              <Button
+                variant='secondary'
+                key={link.title}
+                className='px-2 shadow rounded-lg'
+                asChild
+              >
+                <a
+                  key={link.title}
+                  href={link.url}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='flex justify-center items-center md:gap-2'
+                >
+                  <link.icon className='size-6' />
+                  <p className='hidden md:block'>{link.title}</p>
+                </a>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent side='bottom'>
+              <p>{link.title}</p>
+            </TooltipContent>
+          </Tooltip>
         ))}
       </nav>
     </>
