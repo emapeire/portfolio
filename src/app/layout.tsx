@@ -6,6 +6,7 @@ import { Head } from '@/components/head'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
+import { TooltipProvider } from '@/components/ui/tooltip'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { cn } from '@/lib/utils'
@@ -39,11 +40,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className='flex flex-col items-center justify-center min-h-screen pt-32 pb-8 px-4'>
-            <Header />
-            {children}
-            <Footer />
-          </main>
+          <TooltipProvider>
+            <main className='flex flex-col items-center justify-center min-h-screen pt-32 pb-8 px-4'>
+              <Header />
+              {children}
+              <Footer />
+            </main>
+          </TooltipProvider>
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />

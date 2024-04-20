@@ -3,6 +3,7 @@ import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import { BadgeCheckIcon } from 'lucide-react'
 import { data } from '../constants'
+import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 
 export function Hero() {
   const { avatar, about, links } = data
@@ -42,14 +43,21 @@ export function Hero() {
             Available
           </Badge>
         </a>
-        <a
-          href='https://linkedin.com/in/emanuelpeire'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='md:hidden flex hover:scale-105 transition-all ease-in-out duration-300'
-        >
-          <BadgeCheckIcon className='size-8 dark:fill-blue-400 fill-blue-200' />
-        </a>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <a
+              href='https://linkedin.com/in/emanuelpeire'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='md:hidden flex hover:scale-105 transition-all ease-in-out duration-300'
+            >
+              <BadgeCheckIcon className='size-8 dark:fill-blue-400 fill-blue-200' />
+            </a>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Available</p>
+          </TooltipContent>
+        </Tooltip>
       </div>
 
       <div className='flex flex-col font-mono gap-4 dark:text-neutral-200 text-neutral-800 text-pretty'>
