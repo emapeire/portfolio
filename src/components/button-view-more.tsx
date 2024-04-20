@@ -1,4 +1,4 @@
-import { ArrowIcon } from '@/components/icons/arrow'
+import { ArrowRightIcon } from 'lucide-react'
 
 export function ButtonViewMore({ href }: { href: string }) {
   return (
@@ -9,7 +9,7 @@ export function ButtonViewMore({ href }: { href: string }) {
       className='inline-flex items-center px-4 py-2 mt-4 text-sm md:text-base font-medium text-neutral-900 bg-white border rounded-xl hover:bg-neutral-100 hover:text-blue-800 focus:z-10 focus:ring-4 focus:outline-none focus:ring-neutral-200 focus:text-blue-800'
     >
       View more
-      <ArrowIcon className='ms-2 size-3' />
+      <ArrowRightIcon className='ms-2 size-3' />
     </a>
   )
 }

@@ -41,7 +41,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>
-            <main className='flex flex-col items-center justify-center min-h-screen pt-32 pb-8 px-4'>
+            <main className='flex flex-col items-center justify-center min-h-screen pt-24 pb-8 px-4'>
               <Header />
               {children}
               <Footer />

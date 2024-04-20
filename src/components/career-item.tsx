@@ -1,6 +1,6 @@
 import { type CareerProps } from '@/types'
 import { ButtonViewMore } from './button-view-more'
-import { ArrowIcon } from './icons/arrow'
+import { MoveRightIcon } from 'lucide-react'
 
 export function CareerItem({
   link,
@@ -20,7 +20,7 @@ export function CareerItem({
         {company}
       </h3>
       <div className='flex md:items-center items-baseline my-2'>
-        <ArrowIcon className='me-2 size-3 min-h-3 min-w-3' />
+        <MoveRightIcon className='me-2 size-3 min-h-3 min-w-3' />
         <h4 className='text-lg md:text-xl font-bold text-white'>{title}</h4>
       </div>
       <p className='text-lg md:text-xl font-normal text-neutral-200 text-pretty'>

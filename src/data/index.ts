@@ -85,6 +85,16 @@ export const CAREER = [
     description: 'Building a non-profit open community of Next.js Argentina.'
   },
   {
+    company: 'BaseHub',
+    link: 'https://basehub.com',
+    badges: ['Remote'],
+    title: 'Developer Relations',
+    start: 'Mar, 2024',
+    end: 'Apr, 2024',
+    description:
+      'Working on the product developer team to help developers build better apps with BaseHub CMS and its native AI.'
+  },
+  {
     company: 'Smat.io',
     link: 'https://smat.io',
     badges: ['Remote'],
