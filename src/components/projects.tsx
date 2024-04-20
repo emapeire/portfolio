@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import clsx from 'clsx'
+import { Badge } from './ui/badge'
 import { CodeIcon, LinkIcon } from 'lucide-react'
 import { data } from '@/constants'
-import { BadgeTag } from './badge-tag'
 
 export function Projects() {
   const { projects } = data
@@ -14,12 +14,12 @@ export function Projects() {
         Projects
       </h2>
 
-      <div className='flex flex-col gap-16'>
+      <div className='flex flex-col gap-y-8'>
         {projects.map(
           ({ title, description, tags, image, video, link }, index) => (
             <div key={index}>
               <article>
-                <a href={link} target='_blank' rel='noopener noreferrer'>
+                <a href={link.github} target='_blank' rel='noopener noreferrer'>
                   <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
                     <LinkIcon className='size-6' />
                     <span className='text-neutral-100 hover:underline'>
@@ -39,15 +39,19 @@ export function Projects() {
                     <ul className='md:flex md:overflow-x-auto md:whitespace-nowrap md:pb-6 pb-2 grid grid-cols-2 md:gap-x-4 gap-x-0 gap-4 items-center justify-items-start'>
                       {tags.map((tag, index) => (
                         <li key={index}>
-                          <BadgeTag>
+                          <Badge className='shadow'>
                             <tag.icon className='size-4' />
-                            {tag.name}
-                          </BadgeTag>
+                            <p className='hidden md:block'>{tag.name}</p>
+                          </Badge>
                         </li>
                       ))}
                     </ul>
 
-                    <a href={link} target='_blank' rel='noopener noreferrer'>
+                    <a
+                      href={link.github}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
                       {image && (
                         <Image
                           className='rounded-xl shadow border'

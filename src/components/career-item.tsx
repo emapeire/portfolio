@@ -30,7 +30,7 @@ export function CareerItem({
         <Button
           variant='default'
           size='default'
-          className='mt-4 px-2 dark:hover:text-blue-800 hover:text-blue-400'
+          className='shadow mt-4 px-2 dark:hover:text-blue-800 hover:text-blue-400'
           asChild
         >
           <a

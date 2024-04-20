@@ -24,11 +24,21 @@ export interface CareerProps {
   description: string
 }
 
+export interface TagsProps {
+  name: string
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
+}
+
+export interface ProjectLinkProps {
+  github?: string
+  preview?: string
+}
+
 export interface ProjectProps {
   title: string
-  tags: string[]
+  tags: TagsProps[]
   description: string
-  link: string
+  link: ProjectLinkProps
   image?: string
   video?: string
 }
