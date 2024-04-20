@@ -3,7 +3,6 @@ import { Hero } from '@/components/hero'
 import { SectionSecondaryTitle } from '@/components/section-secondary-title'
 import { Career } from '@/components/career'
 import { Projects } from '@/components/projects'
-import { AVATAR, ABOUT, LINKS } from '@/data'
 import { BriefCaseIcon } from '@/components/icons/brief-case'
 import { CodeIcon } from '@/components/icons/code'
 
@@ -11,7 +10,7 @@ export default function Home() {
   return (
     <div className='flex flex-col'>
       <Section id='about' className='pb-24'>
-        <Hero avatar={AVATAR} about={ABOUT} links={LINKS} />
+        <Hero />
       </Section>
 
       {/* TODO */}

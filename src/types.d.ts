@@ -11,7 +11,7 @@ export interface AboutProps {
 export interface LinksProps {
   title: string
   url: string
-  icon: any
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
 }
 
 export interface CareerProps {

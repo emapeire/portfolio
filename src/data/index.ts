@@ -28,11 +28,10 @@ export const AVATAR = {
 }
 
 export const ABOUT = {
-  title: `Frontend Engineer, OSS Developer, LLMs technical researcher and DX
-  Architect. Always influenced by design. Based in Rosario, Argentina 🇦🇷`,
-  description: `As a Web Developer with Machine Learning research experience, I'm
-  passionate about creating innovative tech solutions for social impact.
-  I focus on using advanced frontend technologies to improve
+  title: `Frontend Engineer, Developer Relations and AI research enthusiast.
+  Always influenced by design. Based in Rosario, Argentina 🇦🇷`,
+  description: `Passionate about creating innovative tech solutions for social impact.
+  Focused on using advanced frontend technologies to improve
   accessibility and performance in web applications. My main goal is to
   enhance user experience, making the web a better place for everyone.`
 }
