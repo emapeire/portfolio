@@ -1,9 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import { Badge } from './ui/badge'
-// import { Button } from './ui/button'
+import { Button } from './ui/button'
 import { BadgeCheckIcon } from 'lucide-react'
 import { data } from '../constants'
-import { Button } from './ui/button'
 
 export function Hero() {
   const { avatar, about, links } = data
@@ -38,7 +37,7 @@ export function Hero() {
         >
           <Badge
             variant='default'
-            className='font-mono font-bold text-xs hover:bg-blue-100 hover:scale-105 transition-all ease-in-out duration-300'
+            className='font-mono font-bold text-xs dark:hover:bg-blue-200 hover:bg-blue-800 hover:scale-105 transition-all ease-in-out duration-300'
           >
             Available
           </Badge>

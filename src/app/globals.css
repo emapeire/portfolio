@@ -95,6 +95,6 @@ html {
     @apply opacity-100;
   }
   50% {
-    @apply opacity-50;
+    @apply text-blue-500;
   }
 }
