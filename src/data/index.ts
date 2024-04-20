@@ -204,7 +204,7 @@ const TAGS = {
     name: 'PNPM',
     icon: PNPMIcon
   }
-} as const
+}
 
 export const PROJECTS = [
   {

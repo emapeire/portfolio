@@ -1,8 +1,7 @@
 import { Section } from '@/components/ui/section'
 import { Hero } from '@/components/hero'
 import { Career } from '@/components/career'
-// import { Projects } from '@/components/projects'
-// import { CodeIcon } from '@/components/icons/code'
+import { Projects } from '@/components/projects'
 
 export default function Home() {
   return (
@@ -15,15 +14,9 @@ export default function Home() {
         <Career />
       </Section>
 
-      {/* TODO */}
-
-      {/* <Section id='projects' className='pb-24'>
-        <SectionSecondaryTitle>
-          <CodeIcon className='size-8' />
-          Projects
-        </SectionSecondaryTitle>
+      <Section id='projects' className='pb-24'>
         <Projects />
-      </Section> */}
+      </Section>
     </div>
   )
 }
