@@ -87,7 +87,7 @@ export function Hero() {
                 </a>
               </Button>
             </TooltipTrigger>
-            <TooltipContent side='bottom'>
+            <TooltipContent side='bottom' className='md:hidden'>
               <p>{link.title}</p>
             </TooltipContent>
           </Tooltip>
