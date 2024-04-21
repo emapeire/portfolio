@@ -24,14 +24,11 @@ export function Projects() {
 
       <div className='flex flex-col gap-y-8'>
         {projects.map(({ title, description, tags, image, video, link }) => (
-          <Card
-            key={title}
-            className='flex flex-col md:flex-row items-center border shadow'
-          >
-            <div className='w-full md:max-w-xs md:p-1 pt-1 px-1'>
+          <Card key={title} className='flex flex-col md:flex-row border shadow'>
+            <div className='flex flex-row w-full md:py-1 md:pl-1 md:pr-0 pt-1 px-1'>
               {image && (
                 <Image
-                  className='rounded-md object-cover shadow'
+                  className='rounded-md object-fill shadow'
                   width={1920}
                   height={1280}
                   src={image}
@@ -41,7 +38,7 @@ export function Projects() {
               )}
               {video && (
                 <video
-                  className='rounded-md object-cover shadow'
+                  className='rounded-md object-fill shadow'
                   width={1920}
                   height={1280}
                   controls
