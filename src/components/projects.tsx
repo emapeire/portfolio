@@ -24,8 +24,11 @@ export function Projects() {
 
       <div className='flex flex-col gap-y-8'>
         {projects.map(({ title, description, tags, image, video, link }) => (
-          <Card key={title} className='flex flex-row border shadow'>
-            <div className='p-1'>
+          <Card
+            key={title}
+            className='flex flex-row items-center border shadow'
+          >
+            <div className='w-full max-w-xs p-1'>
               {image && (
                 <Image
                   className='rounded-md object-cover'
@@ -75,7 +78,7 @@ export function Projects() {
               </CardHeader>
 
               <CardContent className='flex flex-col'>
-                <div className='mt-2 flex gap-1'>
+                <div className='mt-2 flex flex-wrap gap-1'>
                   {tags.map((tag) => (
                     <Badge
                       className='px-1 py-0 text-xs'
