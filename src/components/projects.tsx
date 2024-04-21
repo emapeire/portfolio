@@ -36,6 +36,7 @@ export function Projects() {
                   height={1280}
                   src={image}
                   alt={title}
+                  loading='lazy'
                 />
               )}
               {video && (
@@ -53,15 +54,15 @@ export function Projects() {
               )}
             </div>
 
-            <div className='flex flex-col'>
+            <div className='flex flex-col w-full'>
               <CardHeader>
-                <div className='space-y-1'>
+                <div className='space-y-2'>
                   <CardTitle className='text-xl'>
                     {link ? (
                       <a
                         href={link.github}
                         target='_blank'
-                        className='inline-flex items-center gap-1 hover:underline'
+                        className='inline-flex items-center hover:underline underline-offset-4'
                         rel='noreferrer'
                       >
                         {title}
@@ -77,35 +78,54 @@ export function Projects() {
                 </div>
               </CardHeader>
 
-              <CardContent className='flex flex-col'>
-                <div className='mt-2 flex flex-wrap gap-1'>
+              <CardContent className='flex flex-col gap-y-4'>
+                <div className='flex flex-wrap gap-2'>
                   {tags.map((tag) => (
                     <Badge
-                      className='px-1 py-0 text-xs'
+                      className='p-1 gap-1 rounded-md'
                       variant='secondary'
                       key={tag.name}
                     >
-                      {tag.name}
+                      <tag.icon className='size-4' />
+                      <p className='text-xs'>{tag.name}</p>
                     </Badge>
                   ))}
                 </div>
-                <div className='flex'>
+
+                <div className='flex gap-x-2'>
                   {link.github && (
-                    <Button variant='secondary' size='default' asChild>
+                    <Button
+                      variant='default'
+                      size='default'
+                      className='px-2'
+                      asChild
+                    >
                       <a
                         href={link.github}
                         target='_blank'
-                        className='flex items-center gap-1'
                         rel='noreferrer'
+                        className='flex items-center gap-1'
                       >
                         <GitHubIcon className='size-4' />
+                        <p className='hidden md:block'>GitHub</p>
                       </a>
                     </Button>
                   )}
-                  {link.preview && (
-                    <Button variant='secondary' size='default' asChild>
-                      <a href={link.github} target='_blank' rel='noreferrer'>
+                  {link && (
+                    <Button
+                      variant='default'
+                      size='default'
+                      className='px-2'
+                      asChild
+                    >
+                      <a
+                        href={link.preview}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='flex items-center gap-1'
+                      >
                         <LinkIcon className='size-4' />
+                        <p className='hidden md:block'>Preview</p>
                       </a>
                     </Button>
                   )}
