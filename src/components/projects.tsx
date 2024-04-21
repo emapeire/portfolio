@@ -24,11 +24,14 @@ export function Projects() {
 
       <div className='flex flex-col gap-y-8'>
         {projects.map(({ title, description, tags, image, video, link }) => (
-          <Card key={title} className='flex flex-col md:flex-row border shadow'>
+          <Card
+            key={title}
+            className='flex flex-col md:flex-row border shadow w-full'
+          >
             <div className='flex flex-row w-full md:py-1 md:pl-1 md:pr-0 pt-1 px-1'>
               {image && (
                 <Image
-                  className='rounded-md object-fill shadow'
+                  className='rounded-md object-fill shadow w-full'
                   width={1920}
                   height={1280}
                   src={image}
@@ -38,7 +41,7 @@ export function Projects() {
               )}
               {video && (
                 <video
-                  className='rounded-md object-fill shadow'
+                  className='rounded-md object-fill shadow w-full'
                   width={1920}
                   height={1280}
                   controls
@@ -52,7 +55,7 @@ export function Projects() {
             </div>
 
             <div className='flex flex-col w-full'>
-              <CardHeader className='flex p-4 md:pt-2'>
+              <CardHeader className='flex p-4'>
                 <div className='space-y-2'>
                   <CardTitle className='text-xl'>
                     {link ? (
@@ -75,7 +78,7 @@ export function Projects() {
                 </div>
               </CardHeader>
 
-              <CardContent className='flex md:flex-1 flex-col gap-y-4 px-4 pb-4'>
+              <CardContent className='flex flex-col gap-y-4 px-4 pb-4'>
                 <div className='flex flex-wrap gap-2'>
                   {tags.map((tag) => (
                     <Badge
@@ -89,7 +92,7 @@ export function Projects() {
                   ))}
                 </div>
 
-                <div className='flex gap-x-2 md:mt-auto'>
+                <div className='flex gap-x-2'>
                   {link.github && (
                     <Button
                       variant='default'
