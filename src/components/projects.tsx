@@ -75,7 +75,7 @@ export function Projects() {
                 </div>
               </CardHeader>
 
-              <CardContent className='flex flex-col gap-y-4 px-4 pb-4'>
+              <CardContent className='flex md:flex-1 flex-col gap-y-4 px-4 pb-4'>
                 <div className='flex flex-wrap gap-2'>
                   {tags.map((tag) => (
                     <Badge
@@ -89,7 +89,7 @@ export function Projects() {
                   ))}
                 </div>
 
-                <div className='flex gap-x-2'>
+                <div className='flex gap-x-2 md:mt-auto'>
                   {link.github && (
                     <Button
                       variant='default'
