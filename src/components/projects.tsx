@@ -52,7 +52,7 @@ export function Projects() {
             </div>
 
             <div className='flex flex-col w-full'>
-              <CardHeader className='flex p-4'>
+              <CardHeader className='flex p-4 md:pt-2'>
                 <div className='space-y-2'>
                   <CardTitle className='text-xl'>
                     {link ? (
