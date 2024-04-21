@@ -11,9 +11,6 @@ importers:
       '@radix-ui/react-avatar':
         specifier: ^1.0.4
         version: 1.0.4(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@radix-ui/react-dialog':
-        specifier: ^1.0.5
-        version: 1.0.5(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.0.6
         version: 2.0.6(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -35,9 +32,6 @@ importers:
       clsx:
         specifier: ^2.1.0
         version: 2.1.0
-      cmdk:
-        specifier: ^1.0.0
-        version: 1.0.0(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       geist:
         specifier: ^1.2.2
         version: 1.2.2(next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
@@ -62,9 +56,6 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.1)
-      vaul:
-        specifier: ^0.9.0
-        version: 0.9.0(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     devDependencies:
       '@types/node':
         specifier: ^20.11.19
@@ -335,19 +326,6 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0
     peerDependenciesMeta:
       '@types/react':
-        optional: true
-
-  '@radix-ui/react-dialog@1.0.5':
-    resolution: {integrity: sha512-GjWJX/AUpB703eEBanuBnIWdIXg6NvJFCXcNlSZk4xdszCdhrJgBoUd1cGk67vFO+WdA2pfI/plOpqz/5GUP6Q==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0
-      react-dom: ^16.8 || ^17.0 || ^18.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
         optional: true
 
   '@radix-ui/react-direction@1.0.1':
@@ -888,12 +866,6 @@ packages:
   clsx@2.1.0:
     resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
-
-  cmdk@1.0.0:
-    resolution: {integrity: sha512-gDzVf0a09TvoJ5jnuPvygTB77+XdOSwEmJ88L6XPFPlv7T3RxbP9jgenfylrAMD0+Le1aO0nVjQUzl2g+vjz5Q==}
-    peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -2094,12 +2066,6 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  vaul@0.9.0:
-    resolution: {integrity: sha512-bZSySGbAHiTXmZychprnX/dE0EsSige88xtyyL3/MCRbrFotRPQZo7UdydGXZWw+CKbNOw5Ow8gwAo93/nB/Cg==}
-    peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0
-      react-dom: ^16.8 || ^17.0 || ^18.0
-
   which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
 
@@ -2330,29 +2296,6 @@ snapshots:
       react: 18.2.0
     optionalDependencies:
       '@types/react': 18.2.57
-
-  '@radix-ui/react-dialog@1.0.5(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
-    dependencies:
-      '@babel/runtime': 7.23.9
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.57)(react@18.2.0)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.2.57)(react@18.2.0)
-      '@radix-ui/react-dismissable-layer': 1.0.5(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@radix-ui/react-focus-guards': 1.0.1(@types/react@18.2.57)(react@18.2.0)
-      '@radix-ui/react-focus-scope': 1.0.4(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@radix-ui/react-id': 1.0.1(@types/react@18.2.57)(react@18.2.0)
-      '@radix-ui/react-portal': 1.0.4(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@radix-ui/react-presence': 1.0.1(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.2.57)(react@18.2.0)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.2.57)(react@18.2.0)
-      aria-hidden: 1.2.4
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-remove-scroll: 2.5.5(@types/react@18.2.57)(react@18.2.0)
-    optionalDependencies:
-      '@types/react': 18.2.57
-      '@types/react-dom': 18.2.19
 
   '@radix-ui/react-direction@1.0.1(@types/react@18.2.57)(react@18.2.0)':
     dependencies:
@@ -2938,16 +2881,6 @@ snapshots:
   clsx@2.0.0: {}
 
   clsx@2.1.0: {}
-
-  cmdk@1.0.0(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
 
   color-convert@2.0.1:
     dependencies:
@@ -4322,15 +4255,6 @@ snapshots:
       '@types/react': 18.2.57
 
   util-deprecate@1.0.2: {}
-
-  vaul@0.9.0(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.2.19)(@types/react@18.2.57)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
 
   which-boxed-primitive@1.0.2:
     dependencies:
