@@ -26,12 +26,12 @@ export function Projects() {
         {projects.map(({ title, description, tags, image, video, link }) => (
           <Card
             key={title}
-            className='flex flex-row items-center border shadow'
+            className='flex flex-col md:flex-row items-center border shadow'
           >
-            <div className='w-full max-w-xs p-1'>
+            <div className='w-full md:max-w-xs md:p-1 pt-1 px-1'>
               {image && (
                 <Image
-                  className='rounded-md object-cover'
+                  className='rounded-md object-cover shadow'
                   width={1920}
                   height={1280}
                   src={image}
@@ -41,7 +41,7 @@ export function Projects() {
               )}
               {video && (
                 <video
-                  className='rounded-md object-cover'
+                  className='rounded-md object-cover shadow'
                   width={1920}
                   height={1280}
                   controls
@@ -55,7 +55,7 @@ export function Projects() {
             </div>
 
             <div className='flex flex-col w-full'>
-              <CardHeader>
+              <CardHeader className='flex p-4'>
                 <div className='space-y-2'>
                   <CardTitle className='text-xl'>
                     {link ? (
@@ -78,11 +78,11 @@ export function Projects() {
                 </div>
               </CardHeader>
 
-              <CardContent className='flex flex-col gap-y-4'>
+              <CardContent className='flex flex-col gap-y-4 px-4 pb-4'>
                 <div className='flex flex-wrap gap-2'>
                   {tags.map((tag) => (
                     <Badge
-                      className='p-1 gap-1 rounded-md'
+                      className='p-1 gap-1 rounded-md shadow'
                       variant='secondary'
                       key={tag.name}
                     >
@@ -97,7 +97,7 @@ export function Projects() {
                     <Button
                       variant='default'
                       size='default'
-                      className='px-2'
+                      className='px-2 shadow'
                       asChild
                     >
                       <a
@@ -107,15 +107,15 @@ export function Projects() {
                         className='flex items-center gap-1'
                       >
                         <GitHubIcon className='size-4' />
-                        <p className='hidden md:block'>GitHub</p>
+                        <p>GitHub</p>
                       </a>
                     </Button>
                   )}
-                  {link && (
+                  {link.preview && (
                     <Button
                       variant='default'
                       size='default'
-                      className='px-2'
+                      className='px-2 shadow'
                       asChild
                     >
                       <a
@@ -125,7 +125,7 @@ export function Projects() {
                         className='flex items-center gap-1'
                       >
                         <LinkIcon className='size-4' />
-                        <p className='hidden md:block'>Preview</p>
+                        <p>Preview</p>
                       </a>
                     </Button>
                   )}
