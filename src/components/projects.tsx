@@ -1,77 +1,140 @@
-import { PROJECTS as projects } from '@/data'
-import { LinkIcon } from '@/components/icons/link'
-import clsx from 'clsx'
 import Image from 'next/image'
-import { BadgeTag } from './ui/badge-tag'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle
+} from './ui/card'
+import { Badge } from './ui/badge'
+import { Button } from './ui/button'
+import { CodeIcon, LinkIcon } from 'lucide-react'
+import { GitHubIcon } from './icons/github'
+import { data } from '@/constants'
 
 export function Projects() {
-  return (
-    <div className='flex flex-col gap-16'>
-      {projects.map(
-        ({ title, description, tags, image, video, link }, index) => (
-          <div key={index}>
-            <article>
-              <a href={link} target='_blank' rel='noopener noreferrer'>
-                <h3 className='flex items-center gap-x-2 text-xl md:text-2xl font-semibold mb-4 ml-1.5'>
-                  <LinkIcon className='size-6' />
-                  <span className='text-neutral-100 hover:underline'>
-                    {title}
-                  </span>
-                </h3>
-              </a>
-              <div className='ml-10'>
-                <p className='text-base md:text-lg mb-6 text-pretty'>
-                  {description}
-                </p>
-                <div
-                  className={clsx('flex flex-col', {
-                    'gap-6': image ?? video
-                  })}
-                >
-                  <ul className='md:flex md:overflow-x-auto md:whitespace-nowrap md:pb-6 pb-2 grid grid-cols-2 md:gap-x-4 gap-x-0 gap-4 items-center justify-items-start'>
-                    {tags.map((tag, index) => (
-                      <li key={index}>
-                        <BadgeTag>
-                          <tag.icon className='size-4' />
-                          {tag.name}
-                        </BadgeTag>
-                      </li>
-                    ))}
-                  </ul>
+  const { projects } = data
 
-                  <a href={link} target='_blank' rel='noopener noreferrer'>
-                    {image && (
-                      <Image
-                        className='rounded-xl shadow border'
-                        width={1920}
-                        height={1280}
-                        src={image}
-                        alt={title}
-                      />
-                    )}
-                    {video && (
-                      <video
-                        className='rounded-xl shadow border'
-                        width={1920}
-                        height={1280}
-                        controls
-                        muted
-                        autoPlay
-                        loop
+  return (
+    <>
+      <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
+        <CodeIcon className='size-6' />
+        Projects
+      </h2>
+
+      <div className='flex flex-col gap-y-8'>
+        {projects.map(({ title, description, tags, image, video, link }) => (
+          <Card
+            key={title}
+            className='flex flex-col md:flex-row border shadow w-full'
+          >
+            <div className='flex flex-row w-full md:py-1 md:pl-1 md:pr-0 pt-1 px-1'>
+              {image && (
+                <Image
+                  className='rounded-md object-fill shadow w-full'
+                  width={1920}
+                  height={1280}
+                  src={image}
+                  alt={title}
+                  loading='lazy'
+                />
+              )}
+              {video && (
+                <video
+                  className='rounded-md object-fill shadow w-full'
+                  width={1920}
+                  height={1280}
+                  controls
+                  muted
+                  autoPlay
+                  loop
+                >
+                  <source src={video} type='video/webm' />
+                </video>
+              )}
+            </div>
+
+            <div className='flex flex-col w-full'>
+              <CardHeader className='flex p-4'>
+                <div className='space-y-2'>
+                  <CardTitle className='text-xl'>
+                    {link ? (
+                      <a
+                        href={link.github}
+                        target='_blank'
+                        className='inline-flex items-center hover:underline underline-offset-4'
+                        rel='noreferrer'
                       >
-                        <source src={video} type='video/webm' />
-                      </video>
+                        {title}
+                      </a>
+                    ) : (
+                      title
                     )}
-                  </a>
+                  </CardTitle>
+
+                  <CardDescription className='font-mono text-sm'>
+                    {description}
+                  </CardDescription>
                 </div>
-              </div>
-            </article>
-            {index < projects.length - 1 && (
-              <div key={index} className='border-b pb-16 ml-2' />
-            )}
-          </div>
-        )
-      )}
-    </div>
+              </CardHeader>
+
+              <CardContent className='flex flex-col gap-y-4 px-4 pb-4'>
+                <div className='flex flex-wrap gap-2'>
+                  {tags.map((tag) => (
+                    <Badge
+                      className='p-1 gap-1 rounded-md shadow'
+                      variant='secondary'
+                      key={tag.name}
+                    >
+                      <tag.icon className='size-4' />
+                      <p className='text-xs'>{tag.name}</p>
+                    </Badge>
+                  ))}
+                </div>
+
+                <div className='flex gap-x-2'>
+                  {link.github && (
+                    <Button
+                      variant='default'
+                      size='default'
+                      className='px-2 shadow'
+                      asChild
+                    >
+                      <a
+                        href={link.github}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='flex items-center gap-1'
+                      >
+                        <GitHubIcon className='size-4' />
+                        <p>GitHub</p>
+                      </a>
+                    </Button>
+                  )}
+                  {link.preview && (
+                    <Button
+                      variant='default'
+                      size='default'
+                      className='px-2 shadow'
+                      asChild
+                    >
+                      <a
+                        href={link.preview}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='flex items-center gap-1'
+                      >
+                        <LinkIcon className='size-4' />
+                        <p>Preview</p>
+                      </a>
+                    </Button>
+                  )}
+                </div>
+              </CardContent>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </>
   )
 }

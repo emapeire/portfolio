@@ -84,3 +84,17 @@ html {
     scroll-behavior: auto;
   }
 }
+
+.contact-highlight {
+  animation: highlight-animation 3s ease-in-out infinite;
+}
+
+@keyframes highlight-animation {
+  0%,
+  100% {
+    @apply opacity-100;
+  }
+  50% {
+    @apply text-blue-500;
+  }
+}

@@ -1,33 +1,66 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import clsx from 'clsx'
+
 export function Footer() {
   const year = new Date().getFullYear()
 
+  const [contactHash, setContactHash] = useState('')
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setContactHash(
+        window.location.hash === '#contact' ? 'contact-highlight' : ''
+      )
+    }
+    window.addEventListener('hashchange', handleHashChange)
+    handleHashChange()
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [])
+
   return (
-    <footer className='flex flex-col items-center justify-center mb-8 mx-auto w-full max-w-[40rem] md:max-w-[46rem] font-semibold text-neutral-300 text-center text-xs md:text-sm'>
-      <div className='flex items-center justify-center space-x-6 md:space-x-20'>
-        <span>{`${year}`}</span>
-        <span>|</span>
-        <span className='hover:underline hover:text-blue-600'>
+    <footer className='flex justify-center items-center w-full mx-auto md:max-w-3xl container'>
+      <div className='w-full mx-auto md:flex md:items-center md:justify-between text-sm font-medium text-neutral-700 dark:text-neutral-300'>
+        <p>
+          © {year}
+          <span className='ms-2 me-2'>•</span>
           <a
             href='https://link.emapeire.xyz'
             target='_blank'
             rel='noopener noreferrer'
+            className='hover:underline hover:underline-offset-4'
           >
-            My socials
+            Emanuel Peire
           </a>
-        </span>
-        <span>|</span>
-        <section>
-          <span>By</span>{' '}
-          <span className='hover:underline hover:text-blue-600'>
+          <span className='ms-2 me-2'>—</span>
+          All rights reserved.
+        </p>
+        <ul className='flex flex-wrap items-center pt-2 md:pt-0'>
+          <li>
             <a
-              href='https://x.com/emapeire'
-              target='_blank'
-              rel='noopener noreferrer'
+              href='/#about'
+              className='hover:underline hover:underline-offset-4'
             >
-              @emapeire
+              About
             </a>
-          </span>
-        </section>
+          </li>
+          <span className='ms-4 me-4'>|</span>
+          <li>
+            <a
+              id='contact'
+              href='mailto:me@emapeire.xyz'
+              className={clsx(
+                'hover:underline hover:underline-offset-4',
+                contactHash
+              )}
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   )

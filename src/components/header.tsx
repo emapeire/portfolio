@@ -1,12 +1,51 @@
-import { ButtonHeader } from './ui/button-header'
+'use client'
+
+import { useEffect, useState } from 'react'
+import { ModeToggle } from './mode-toggle'
+import clsx from 'clsx'
 
 export function Header() {
+  const [currentHash, setCurrentHash] = useState('')
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setCurrentHash(window.location.hash)
+    }
+    window.addEventListener('hashchange', handleHashChange)
+    handleHashChange()
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [])
+
+  const navItems = [
+    { title: 'About', label: 'about', url: '#about' },
+    { title: 'Career', label: 'career', url: '#career' },
+    { title: 'Projects', label: 'projects', url: '#projects' },
+    { title: 'Contact', label: 'contact', url: '#contact' }
+  ]
+
   return (
-    <header className='flex justify-center font-medium text-base items-center pt-16 pb-32 md:pb-40 w-full mx-auto'>
-      <nav className='flex flex-row text-neutral-100 items-center justify-center text-center border bg-neutral-800/30 shadow rounded-xl'>
-        <ButtonHeader href='#about'>About</ButtonHeader>
-        <ButtonHeader href='#career'>Career</ButtonHeader>
-        <ButtonHeader href='#projects'>Projects</ButtonHeader>
+    <header className='fixed top-0 z-10 flex items-center justify-center w-full mx-auto bg-white dark:bg-black border-b py-2'>
+      <nav className='flex justify-center items-center'>
+        {navItems.map((link) => (
+          <a
+            key={link.label}
+            aria-label={link.label}
+            href={link.url}
+            className={clsx(
+              'relative block mx-1 transition-colors ease-in-out py-2 px-4 rounded-md text-sm font-semibold text-neutral-800 dark:text-neutral-100',
+              currentHash === link.url && 'bg-neutral-100 dark:bg-neutral-800',
+              currentHash !== link.url &&
+                'hover:bg-neutral-100 dark:hover:bg-neutral-800'
+            )}
+          >
+            {link.title}
+          </a>
+        ))}
+        <div className='flex items-center ms-1'>
+          <ModeToggle />
+        </div>
       </nav>
     </header>
   )

@@ -81,7 +81,7 @@ export const PNPMIcon = ({ ...props }) => {
           <use
             xlinkHref='#b1Lv79ypvm'
             opacity='1'
-            fill='#ffffff'
+            fill='currentColor'
             fillOpacity='1'
           ></use>
         </g>
@@ -89,7 +89,7 @@ export const PNPMIcon = ({ ...props }) => {
           <use
             xlinkHref='#hy1IZWwLX'
             opacity='1'
-            fill='#ffffff'
+            fill='currentColor'
             fillOpacity='1'
           ></use>
         </g>
@@ -97,7 +97,7 @@ export const PNPMIcon = ({ ...props }) => {
           <use
             xlinkHref='#akQfjxQes'
             opacity='1'
-            fill='#ffffff'
+            fill='currentColor'
             fillOpacity='1'
           ></use>
         </g>
@@ -105,7 +105,7 @@ export const PNPMIcon = ({ ...props }) => {
           <use
             xlinkHref='#bdSrwE5pk'
             opacity='1'
-            fill='#ffffff'
+            fill='currentColor'
             fillOpacity='1'
           ></use>
         </g>

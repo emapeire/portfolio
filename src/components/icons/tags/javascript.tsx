@@ -6,6 +6,7 @@ export const JavaScriptIcon = ({ ...props }) => {
       width='2500'
       height='2500'
       viewBox='0 0 1052 1052'
+      className={`rounded-[2px] ${props.className || ''}`}
     >
       <path fill='#f0db4f' d='M0 0h1052v1052H0z'></path>
       <path
