@@ -8,7 +8,7 @@ export function Section({ className, ...props }: BadgeProps) {
     <section
       id={props.id}
       className={cn(
-        'flex flex-col min-h-0 gap-y-4 scroll-mt-24 w-full md:max-w-2xl mx-auto',
+        'flex flex-col min-h-0 gap-y-4 scroll-mt-24 w-full md:max-w-3xl mx-auto',
         className
       )}
       {...props}
