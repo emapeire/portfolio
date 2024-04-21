@@ -12,6 +12,9 @@ export const NextJSIcon = ({ ...props }) => {
       viewBox='0 0 720 720'
       enableBackground='new 0 0 720 720'
       xmlSpace='preserve'
+      className={`rounded-full border-0 dark:border border-white ${
+        props.className || ''
+      }`}
     >
       <path
         fill='#000000'
