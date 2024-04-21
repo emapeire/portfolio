@@ -20,7 +20,7 @@ import { PNPMIcon } from '@/components/icons/tags/pnpm'
 import { GitHubIcon } from '@/components/icons/github'
 import { LinkedInIcon } from '@/components/icons/linkedin'
 import { XIcon } from '@/components/icons/x'
-import { FileTextIcon, MailIcon } from 'lucide-react'
+import { FileTextIcon, LinkIcon, MailIcon } from 'lucide-react'
 
 export const AVATAR = {
   name: 'Emanuel Peire',
@@ -61,6 +61,11 @@ export const LINKS = [
     title: 'Email',
     url: 'mailto:me@emapeire.xyz',
     icon: MailIcon
+  },
+  {
+    title: 'Other Links',
+    url: 'https://link.emapeire.xyz',
+    icon: LinkIcon
   }
 ]
 
