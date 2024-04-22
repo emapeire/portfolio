@@ -38,29 +38,25 @@ export function Footer() {
           <span className='ms-2 me-2'>—</span>
           All rights reserved.
         </p>
-        <ul className='flex flex-wrap items-center pt-2 md:pt-0'>
-          <li>
-            <a
-              href='/#about'
-              className='hover:underline hover:underline-offset-4'
-            >
-              About
-            </a>
-          </li>
+        <div className='flex flex-wrap items-center pt-2 md:pt-0'>
+          <a
+            href='/#about'
+            className='hover:underline hover:underline-offset-4'
+          >
+            About
+          </a>
           <span className='ms-4 me-4'>|</span>
-          <li>
-            <a
-              id='contact'
-              href='mailto:me@emapeire.xyz'
-              className={clsx(
-                'hover:underline hover:underline-offset-4',
-                contactHash
-              )}
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+          <a
+            id='contact'
+            href='mailto:me@emapeire.xyz'
+            className={clsx(
+              'hover:underline hover:underline-offset-4',
+              contactHash
+            )}
+          >
+            Contact
+          </a>
+        </div>
       </div>
     </footer>
   )
