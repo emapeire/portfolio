@@ -49,6 +49,7 @@ export function Hero() {
               href='https://linkedin.com/in/emanuelpeire'
               target='_blank'
               rel='noopener noreferrer'
+              aria-label='Available'
               className='md:hidden flex rounded-full hover:scale-105 transition-all ease-in-out duration-300'
             >
               <BadgeCheckIcon className='size-6 dark:fill-blue-400 fill-blue-200' />
@@ -81,6 +82,7 @@ export function Hero() {
                   href={link.url}
                   target='_blank'
                   rel='noopener noreferrer'
+                  aria-label={link.title}
                   className='flex justify-center items-center md:gap-2'
                 >
                   <link.icon className='size-6' />
