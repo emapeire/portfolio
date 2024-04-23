@@ -4,4 +4,4 @@
 
 ### 👉 See the full web-site [here](https://emapeire.xyz) 
 
-#### 🤝 Special thanks to [@midudev](https://github.com/midudev)
+###### 🤝 Special thanks to [@midudev](https://github.com/midudev)
