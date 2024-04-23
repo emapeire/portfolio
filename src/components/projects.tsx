@@ -73,7 +73,7 @@ export function Projects() {
                   </CardTitle>
 
                   <CardDescription className='font-mono text-sm'>
-                    <h4>{description}</h4>
+                    {description}
                   </CardDescription>
                 </div>
               </CardHeader>
