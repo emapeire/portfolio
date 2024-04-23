@@ -16,9 +16,15 @@ export function Head({ metadata }: { metadata: Metadata }) {
         property='og:description'
         content={metadata.description?.toString()}
       />
-      <meta property='og:type' content='website' />
       <meta property='og:url' content='https://emapeire.xyz' />
-      <meta property='og:image' content='/assets/og-image.png' />
+      <meta
+        property='og:image'
+        content='https://emapeire.xyz/opengraph-image.png'
+      />
+      <meta property='og:image:width' content='1200' />
+      <meta property='og:image:height' content='630' />
+      <meta property='og:image:alt' content='Emanuel Peire' />
+      <meta property='og:image:type' content='image/png' />
 
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:creator' content='@emapeire' />
@@ -27,7 +33,14 @@ export function Head({ metadata }: { metadata: Metadata }) {
         name='twitter:description'
         content={metadata.description?.toString()}
       />
-      <meta name='twitter:image' content='/assets/og-image.png' />
+      <meta
+        name='twitter:image'
+        content='https://emapeire.xyz/opengraph-image.png'
+      />
+      <meta property='twitter:image:width' content='1200' />
+      <meta property='twitter:image:height' content='630' />
+      <meta property='twitter:image:alt' content='Emanuel Peire' />
+      <meta property='twitter:image:type' content='image/png' />
 
       <meta name='msapplication-TileColor' content='#000000' />
       <meta name='theme-color' content='#000000'></meta>
