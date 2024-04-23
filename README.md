@@ -2,6 +2,6 @@
 
 ###### 🤓 A little preview of this web-app:
 
-![Portfolio](https://github.com/emapeire/portfolio/assets/63935846/6f0012f2-d640-4f27-8666-178256698467)
+<img width="1440" alt="emapeire xyz" src="https://github.com/emapeire/portfolio/assets/63935846/463080b5-d89b-40aa-97c5-36ff7c80662e">
 
 ### 👉 View more [here](https://emapeire.xyz) 
