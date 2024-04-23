@@ -1,9 +1,9 @@
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
+import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import { BadgeCheckIcon } from 'lucide-react'
 import { data } from '../constants'
-import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 
 export function Hero() {
   const { avatar, about, links } = data
@@ -18,7 +18,7 @@ export function Hero() {
           className='rounded-full'
         >
           <Avatar className='size-28 shadow border'>
-            <AvatarImage alt={avatar.name} src={'/images/avatar.png'} />
+            <AvatarImage alt={avatar.name} src={'/assets/avatar.webp'} />
             <AvatarFallback className='font-mono font-bold'>
               {avatar.initials}
             </AvatarFallback>
@@ -62,7 +62,7 @@ export function Hero() {
       </div>
 
       <div className='flex flex-col font-mono gap-4 dark:text-neutral-200 text-neutral-800 text-pretty'>
-        <h3>{about.title}</h3>
+        <h2>{about.title}</h2>
         <h3>{about.description}</h3>
       </div>
 

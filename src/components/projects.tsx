@@ -68,12 +68,12 @@ export function Projects() {
                         {title}
                       </a>
                     ) : (
-                      title
+                      <h3>{title}</h3>
                     )}
                   </CardTitle>
 
                   <CardDescription className='font-mono text-sm'>
-                    {description}
+                    <h4>{description}</h4>
                   </CardDescription>
                 </div>
               </CardHeader>
