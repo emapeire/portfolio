@@ -65,7 +65,7 @@ export function Projects() {
                         className='inline-flex items-center hover:underline underline-offset-4'
                         rel='noreferrer'
                       >
-                        {title}
+                        <h3>{title}</h3>
                       </a>
                     ) : (
                       <h3>{title}</h3>
