@@ -26,14 +26,14 @@ export default function RootLayout({
     <html
       lang='en'
       className={cn(
-        'min-h-screen bg-background font-sans antialiased',
+        'min-h-screen bg-background font-sans antialiased overflow-y-scroll',
         GeistSans.variable,
         GeistMono.variable
       )}
       suppressHydrationWarning
     >
       <Head metadata={metadata} />
-      <body>
+      <body className='w-full'>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
