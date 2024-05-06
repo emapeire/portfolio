@@ -1,22 +1,11 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useHash } from '@/hook/use-hash'
 import { ModeToggle } from './mode-toggle'
 import clsx from 'clsx'
 
 export function Header() {
-  const [currentHash, setCurrentHash] = useState('')
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      setCurrentHash(window.location.hash)
-    }
-    window.addEventListener('hashchange', handleHashChange)
-    handleHashChange()
-    return () => {
-      window.removeEventListener('hashchange', handleHashChange)
-    }
-  }, [])
+  const { currentHash } = useHash()
 
   const navItems = [
     { title: 'About', label: 'about', url: '#about' },

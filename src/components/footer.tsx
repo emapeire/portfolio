@@ -1,25 +1,12 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useHash } from '@/hook/use-hash'
 import clsx from 'clsx'
 
 export function Footer() {
   const year = new Date().getFullYear()
-
-  const [contactHash, setContactHash] = useState('')
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      setContactHash(
-        window.location.hash === '#contact' ? 'contact-highlight' : ''
-      )
-    }
-    window.addEventListener('hashchange', handleHashChange)
-    handleHashChange()
-    return () => {
-      window.removeEventListener('hashchange', handleHashChange)
-    }
-  }, [])
+  const { currentHash } = useHash()
+  const contactHash = currentHash === '#contact' ? 'contact-highlight' : ''
 
   return (
     <footer className='flex justify-center items-center w-full mx-auto md:max-w-3xl container'>
