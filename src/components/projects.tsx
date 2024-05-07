@@ -9,7 +9,7 @@ import {
 import { Tooltip, TooltipTrigger, TooltipContent } from './ui/tooltip'
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
-import { CodeIcon, LinkIcon } from 'lucide-react'
+import { ArrowUpRightIcon, CodeIcon, LinkIcon } from 'lucide-react'
 import { GitHubIcon } from './icons/github'
 import { data } from '@/constants/index'
 
@@ -23,10 +23,10 @@ export function Projects() {
         Projects
       </h2>
 
-      <div className='flex flex-col space-y-4'>
+      <div className='flex flex-col gap-4'>
         {projects.map(({ title, description, tags, image, video, link }) => (
           <Card key={title} className='flex flex-col border shadow w-full'>
-            <CardHeader className='flex flex-col space-y-2'>
+            <CardHeader className='flex flex-col space-y-2 p-4'>
               <CardTitle className='text-xl dark:text-neutral-100 text-neutral-900'>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -35,9 +35,10 @@ export function Projects() {
                         href={link.github}
                         target='_blank'
                         rel='noreferrer'
-                        className='inline-flex items-center hover:underline underline-offset-4'
+                        className='inline-flex items-center hover:underline underline-offset-4 gap-2'
                       >
                         <h3>{title}</h3>
+                        <ArrowUpRightIcon className='size-4 text-neutral-500' />
                       </a>
                     ) : (
                       <h3>{title}</h3>
@@ -75,7 +76,7 @@ export function Projects() {
               </CardDescription>
             </CardHeader>
 
-            <CardContent className='flex flex-col space-y-4'>
+            <CardContent className='flex flex-col space-y-6 p-4 pt-0'>
               <div className='flex flex-wrap gap-2'>
                 {tags.map((tag) => (
                   <Badge
