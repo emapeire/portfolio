@@ -10,7 +10,7 @@ import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import { CodeIcon, LinkIcon } from 'lucide-react'
 import { GitHubIcon } from './icons/github'
-import { data } from '@/constants'
+import { data } from '@/constants/index'
 
 export function Projects() {
   const { projects } = data

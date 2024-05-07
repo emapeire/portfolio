@@ -14,3 +14,9 @@ export const data = {
   career: CAREER as CareerProps[],
   projects: PROJECTS as ProjectProps[]
 }
+
+export const links = [
+  { title: 'About', label: 'about', url: '/' },
+  { title: 'Career', label: 'career', url: '/career' },
+  { title: 'Projects', label: 'projects', url: '/projects' }
+]

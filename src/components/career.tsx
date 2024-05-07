@@ -1,6 +1,6 @@
 import { CareerItem } from './career-item'
 import { BriefcaseIcon } from 'lucide-react'
-import { data } from '@/constants'
+import { data } from '@/constants/index'
 
 export function Career() {
   const { career } = data

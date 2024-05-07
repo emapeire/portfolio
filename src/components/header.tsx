@@ -4,21 +4,15 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ModeToggle } from './mode-toggle'
 import clsx from 'clsx'
+import { links } from '@/constants'
 
 export function Header() {
   const pathname = usePathname()
 
-  const navItems = [
-    { title: 'About', label: 'about', url: '/' },
-    { title: 'Career', label: 'career', url: '/career' },
-    { title: 'Projects', label: 'projects', url: '/projects' },
-    { title: 'Contact', label: 'contact', url: '/contact' }
-  ]
-
   return (
     <header className='fixed top-0 z-10 flex items-center justify-center w-full mx-auto bg-white dark:bg-black border-b py-2'>
       <nav className='flex justify-center items-center'>
-        {navItems.map((link) => (
+        {links.map((link) => (
           <Link
             key={link.label}
             aria-label={link.label}

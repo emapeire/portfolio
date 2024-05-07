@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { links } from '@/constants'
 
 export function Footer() {
   const year = new Date().getFullYear()
@@ -20,11 +21,21 @@ export function Footer() {
           <span className='ms-2 me-2'>—</span>
           All rights reserved.
         </p>
+
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>
-          <Link href='/' className='hover:underline hover:underline-offset-4'>
-            About
-          </Link>
-          <span className='ms-4 me-4'>|</span>
+          {links.map((link) => (
+            <div key={link.label}>
+              <Link
+                key={link.label}
+                aria-label={link.label}
+                href={link.url}
+                className='hover:underline hover:underline-offset-4'
+              >
+                {link.title}
+              </Link>
+              <span className='mx-2'>|</span>
+            </div>
+          ))}
           <a
             id='contact'
             href='mailto:me@emapeire.xyz'
