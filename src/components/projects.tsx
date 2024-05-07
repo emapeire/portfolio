@@ -39,6 +39,7 @@ export function Projects() {
                   loading='lazy'
                 />
               )}
+
               {video && (
                 <video
                   className='rounded-md object-fill shadow w-full'
@@ -96,15 +97,15 @@ export function Projects() {
                   {link.github && (
                     <Button
                       variant='default'
-                      size='default'
-                      className='px-2 shadow'
+                      size={null}
+                      className='p-2 shadow'
                       asChild
                     >
                       <a
                         href={link.github}
                         target='_blank'
                         rel='noreferrer'
-                        className='flex items-center gap-1'
+                        className='flex items-center gap-2'
                       >
                         <GitHubIcon className='size-4' />
                         <p>GitHub</p>
@@ -114,15 +115,15 @@ export function Projects() {
                   {link.preview && (
                     <Button
                       variant='default'
-                      size='default'
-                      className='px-2 shadow'
+                      size={null}
+                      className='p-2 shadow'
                       asChild
                     >
                       <a
                         href={link.preview}
                         target='_blank'
                         rel='noreferrer'
-                        className='flex items-center gap-1'
+                        className='flex items-center gap-2'
                       >
                         <LinkIcon className='size-4' />
                         <p>Preview</p>

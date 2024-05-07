@@ -1,6 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
-import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import { BadgeCheckIcon } from 'lucide-react'
 import { data } from '../constants'
@@ -30,19 +29,21 @@ export function Hero() {
         <h1 className='flex dark:text-neutral-100 text-neutral-900 text-4xl font-bold text-balance'>
           Emanuel Peire
         </h1>
-        <a
-          href='https://linkedin.com/in/emanuelpeire'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='hidden md:flex rounded-full'
+        <Button
+          variant='default'
+          size={null}
+          className='font-mono font-bold text-xs px-2 py-1 rounded-full hover:scale-105 transition-all ease-in-out duration-300'
+          asChild
         >
-          <Badge
-            variant='default'
-            className='font-mono font-bold text-xs dark:hover:bg-blue-200 hover:bg-blue-800 hover:scale-105 transition-all ease-in-out duration-300'
+          <a
+            href='https://linkedin.com/in/emanuelpeire'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hidden md:flex'
           >
             Available
-          </Badge>
-        </a>
+          </a>
+        </Button>
         <Tooltip>
           <TooltipTrigger asChild>
             <a
@@ -52,7 +53,7 @@ export function Hero() {
               aria-label='Available'
               className='md:hidden flex rounded-full hover:scale-105 transition-all ease-in-out duration-300'
             >
-              <BadgeCheckIcon className='size-6 dark:fill-blue-400 fill-blue-200' />
+              <BadgeCheckIcon className='size-6 dark:fill-blue-400 fill-blue-300' />
             </a>
           </TooltipTrigger>
           <TooltipContent>
@@ -72,9 +73,9 @@ export function Hero() {
             <TooltipTrigger asChild>
               <Button
                 variant='secondary'
-                size='default'
+                size={null}
                 key={link.title}
-                className='px-2 shadow rounded-lg'
+                className='p-2 shadow rounded-lg'
                 asChild
               >
                 <a
