@@ -12,7 +12,7 @@ export function CareerItem({
 }: CareerProps) {
   return (
     <>
-      <div className='absolute size-3 dark:bg-neutral-600 bg-neutral-400 rounded-full mt-1.5 -start-1.5 border border-white dark:border-black' />
+      <div className='absolute size-3 dark:bg-neutral-600 bg-neutral-400 rounded-full mt-[6.5px] -start-[6.5px] border border-white dark:border-black' />
       <time className='text-sm font-mono leading-none text-neutral-800 dark:text-neutral-200'>
         {start} — {end}
       </time>
@@ -22,15 +22,15 @@ export function CareerItem({
       <h4 className='text-lg mt-2 font-medium dark:text-neutral-100 text-neutral-900'>
         {title}
       </h4>
-      <p className='mt-1 dark:text-neutral-200 text-neutral-800 text-pretty font-mono'>
+      <p className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
         {description}
       </p>
 
       {link && (
         <Button
           variant='default'
-          size='default'
-          className='shadow mt-4 px-2 dark:hover:text-blue-800 hover:text-blue-400'
+          size={null}
+          className='shadow mt-4 p-2'
           asChild
         >
           <a
