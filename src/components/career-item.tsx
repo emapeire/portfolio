@@ -22,7 +22,7 @@ export function CareerItem({
       <h4 className='text-lg mt-2 font-medium dark:text-neutral-100 text-neutral-900'>
         {title}
       </h4>
-      <p className='mt-1 dark:text-neutral-200 text-neutral-800 text-pretty font-mono'>
+      <p className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
         {description}
       </p>
 
