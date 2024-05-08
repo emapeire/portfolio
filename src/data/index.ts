@@ -1,3 +1,6 @@
+import { GitHubIcon } from '@/components/icons/github'
+import { LinkedInIcon } from '@/components/icons/linkedin'
+import { XIcon } from '@/components/icons/x'
 import { CSSIcon } from '@/components/icons/tags/css'
 import { HTMLIcon } from '@/components/icons/tags/html'
 import { JavaScriptIcon } from '@/components/icons/tags/javascript'
@@ -18,9 +21,7 @@ import { SupabaseIcon } from '@/components/icons/tags/supabase'
 import { ReduxIcon } from '@/components/icons/tags/redux'
 import { PNPMIcon } from '@/components/icons/tags/pnpm'
 import { VercelIcon } from '@/components/icons/tags/vercel'
-import { GitHubIcon } from '@/components/icons/github'
-import { LinkedInIcon } from '@/components/icons/linkedin'
-import { XIcon } from '@/components/icons/x'
+import { BasehubIcon } from '@/components/icons/tags/basehub'
 import { FileTextIcon, LinkIcon, MailIcon } from 'lucide-react'
 
 export const AVATAR = {
@@ -213,6 +214,10 @@ const TAGS = {
   VERCEL: {
     name: 'Vercel',
     icon: VercelIcon
+  },
+  BASEHUB: {
+    name: 'BaseHub',
+    icon: BasehubIcon
   }
 }
 
@@ -220,6 +225,7 @@ export const PROJECTS = [
   {
     title: 'BaseHub - Next.js blog',
     tags: [
+      TAGS.BASEHUB,
       TAGS.CSS,
       TAGS.NEXT,
       TAGS.PNPM,
@@ -233,7 +239,25 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/basehub-ai/nextjs-blog',
       preview: 'https://nextjs-blog-basehub.vercel.app'
-    }
+    },
+    image: '/images/basehub-nextjs-blog.png'
+  },
+  {
+    title: 'Basement Challenge',
+    tags: [
+      TAGS.CSS,
+      TAGS.NEXT,
+      TAGS.PNPM,
+      TAGS.REACT,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description: 'Basement studio stream challenge.',
+    link: {
+      github: 'https://github.com/emapeire/basement-challenge',
+      preview: 'https://emapeire-basement-challenge.vercel.app'
+    },
+    image: '/images/basement-challenge.png'
   },
   {
     title: 'Chat With Vader',
