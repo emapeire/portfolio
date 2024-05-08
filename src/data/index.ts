@@ -385,7 +385,7 @@ export const PROJECTS = [
     tags: [TAGS.OPENAI, TAGS.REACT],
     description: 'An AI-driven web engineering expert for React community.',
     link: {
-      github: 'https://chat.openai.com/g/g-HNcbE0A5n-reactgpt'
+      preview: 'https://chat.openai.com/g/g-HNcbE0A5n-reactgpt'
     },
     image: '/images/react-gpt.png'
   },

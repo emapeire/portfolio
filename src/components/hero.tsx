@@ -53,7 +53,7 @@ export function Hero() {
               aria-label='Available'
               className='md:hidden flex rounded-full hover:scale-105 transition-all ease-in-out duration-300'
             >
-              <BadgeCheckIcon className='size-6 dark:fill-blue-400 fill-blue-300' />
+              <BadgeCheckIcon className='size-6 dark:fill-blue-400 fill-blue-300 stroke-[1.5]' />
             </a>
           </TooltipTrigger>
           <TooltipContent>
@@ -86,7 +86,7 @@ export function Hero() {
                   aria-label={link.title}
                   className='flex justify-center items-center md:gap-2'
                 >
-                  <link.icon className='size-6' />
+                  <link.icon className='size-6 stroke-[1.5]' />
                   <p className='hidden md:block'>{link.title}</p>
                 </a>
               </Button>

@@ -1,5 +1,5 @@
 import { CareerItem } from './career-item'
-import { BookTextIcon } from 'lucide-react'
+import { FileTextIcon } from 'lucide-react'
 import { data } from '@/constants/index'
 
 export function Career() {
@@ -8,7 +8,7 @@ export function Career() {
   return (
     <>
       <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
-        <BookTextIcon className='size-6 animate-pulse' />
+        <FileTextIcon className='size-6 animate-pulse stroke-[1.5]' />
         Career
       </h2>
 
