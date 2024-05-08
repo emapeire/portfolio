@@ -22,6 +22,7 @@ import { ReduxIcon } from '@/components/icons/tags/redux'
 import { PNPMIcon } from '@/components/icons/tags/pnpm'
 import { VercelIcon } from '@/components/icons/tags/vercel'
 import { BasehubIcon } from '@/components/icons/tags/basehub'
+import { GraphQLIcon } from '@/components/icons/tags/graphql'
 import { FileTextIcon, LinkIcon, MailIcon } from 'lucide-react'
 
 export const AVATAR = {
@@ -218,6 +219,10 @@ const TAGS = {
   BASEHUB: {
     name: 'BaseHub',
     icon: BasehubIcon
+  },
+  GRAPHQL: {
+    name: 'GraphQL',
+    icon: GraphQLIcon
   }
 }
 
@@ -418,6 +423,24 @@ export const PROJECTS = [
       preview: 'https://emapeire-mouse-follower.netlify.app'
     },
     video: '/videos/mouse-follower.webm'
+  },
+  {
+    title: "Morty's characters",
+    tags: [
+      TAGS.CSS,
+      TAGS.GRAPHQL,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description:
+      "A simple app that lists all Morty's characters. Built with Next.js and GraphQL.",
+    link: {
+      github: 'https://github.com/emapeire/nextjs-graphql',
+      preview: 'https://emapeire-nextjs-graphql.vercel.app'
+    },
+    image: '/images/morty-s-characters.png'
   },
   {
     title: 'Movie Search App',

@@ -20,7 +20,7 @@ export function Projects() {
     <>
       <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
         <TerminalIcon className='size-6 animate-pulse stroke-[1.5]' />
-        Projects
+        Projects & Crafts
       </h2>
 
       <div className='flex flex-col gap-4'>
