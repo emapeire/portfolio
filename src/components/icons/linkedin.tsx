@@ -1,4 +1,6 @@
-export const LinkedInIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const LinkedInIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

@@ -1,4 +1,6 @@
-export const XIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const XIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

@@ -1,4 +1,6 @@
-export const HTMLIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const HTMLIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg {...props} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 520'>
       <path fill='#e34f26' d='M41 460L0 0h451l-41 460-185 52'></path>

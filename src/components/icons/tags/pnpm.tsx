@@ -1,4 +1,6 @@
-export const PNPMIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const PNPMIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

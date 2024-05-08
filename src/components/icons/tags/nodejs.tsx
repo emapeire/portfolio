@@ -1,4 +1,6 @@
-export const NodeJSIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const NodeJSIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

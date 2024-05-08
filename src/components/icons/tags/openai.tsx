@@ -1,4 +1,6 @@
-export const OpenAIIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const OpenAIIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

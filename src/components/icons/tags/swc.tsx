@@ -1,4 +1,6 @@
-export const SWCIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const SWCIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

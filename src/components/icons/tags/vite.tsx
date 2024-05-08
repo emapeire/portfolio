@@ -1,4 +1,6 @@
-export const ViteIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const ViteIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

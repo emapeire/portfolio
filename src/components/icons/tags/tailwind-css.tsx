@@ -1,4 +1,6 @@
-export const TailwindCSSIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const TailwindCSSIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

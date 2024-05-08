@@ -1,4 +1,6 @@
-export const ReduxIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const ReduxIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

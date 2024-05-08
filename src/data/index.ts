@@ -17,6 +17,7 @@ import { BootstrapIcon } from '@/components/icons/tags/bootstrap'
 import { SupabaseIcon } from '@/components/icons/tags/supabase'
 import { ReduxIcon } from '@/components/icons/tags/redux'
 import { PNPMIcon } from '@/components/icons/tags/pnpm'
+import { VercelIcon } from '@/components/icons/tags/vercel'
 import { GitHubIcon } from '@/components/icons/github'
 import { LinkedInIcon } from '@/components/icons/linkedin'
 import { XIcon } from '@/components/icons/x'
@@ -208,10 +209,32 @@ const TAGS = {
   PNPM: {
     name: 'PNPM',
     icon: PNPMIcon
+  },
+  VERCEL: {
+    name: 'Vercel',
+    icon: VercelIcon
   }
 }
 
 export const PROJECTS = [
+  {
+    title: 'BaseHub - Next.js blog',
+    tags: [
+      TAGS.CSS,
+      TAGS.NEXT,
+      TAGS.PNPM,
+      TAGS.REACT,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT,
+      TAGS.VERCEL
+    ],
+    description:
+      'A starter guide template blog made with Next.js and BaseHub CMS. It uses the BaseHub API to fetch and display posts.',
+    link: {
+      github: 'https://github.com/basehub-ai/nextjs-blog',
+      preview: 'https://nextjs-blog-basehub.vercel.app'
+    }
+  },
   {
     title: 'Chat With Vader',
     tags: [
@@ -268,7 +291,8 @@ export const PROJECTS = [
     ],
     description: 'A simple CRUD app made with React and Vite.',
     link: {
-      github: 'https://github.com/emapeire/crud-react-redux'
+      github: 'https://github.com/emapeire/crud-react-redux',
+      preview: 'https://emapeire-crud-react-redux.netlify.app'
     },
     image: '/images/crud-app.png'
   },
@@ -338,7 +362,8 @@ export const PROJECTS = [
     ],
     description: 'A simple quiz app made with React and Zustand.',
     link: {
-      github: 'https://github.com/emapeire/javascript-quiz'
+      github: 'https://github.com/emapeire/javascript-quiz',
+      preview: 'https://emapeire-javascript-quiz.netlify.app'
     },
     image: '/images/javascript-quiz.png'
   },
@@ -347,7 +372,8 @@ export const PROJECTS = [
     tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
     description: 'A simple mouse follower app made with React and Vite.',
     link: {
-      github: 'https://github.com/emapeire/mouse-follower'
+      github: 'https://github.com/emapeire/mouse-follower',
+      preview: 'https://emapeire-mouse-follower.netlify.app'
     },
     video: '/videos/mouse-follower.webm'
   },
@@ -356,7 +382,8 @@ export const PROJECTS = [
     tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
     description: 'A simple movie search app made with React and Vite.',
     link: {
-      github: 'https://github.com/emapeire/react-movie-search'
+      github: 'https://github.com/emapeire/react-movie-search',
+      preview: 'https://emapeire-react-movie-search.netlify.app'
     },
     image: '/images/movie-search.png'
   },
@@ -376,7 +403,8 @@ export const PROJECTS = [
     description:
       "NextJS Releases is an App that tracks new releases on NextJS's GitHub repo.",
     link: {
-      github: 'https://github.com/nextjsargentina/nextjs-releases'
+      github: 'https://github.com/nextjsargentina/nextjs-releases',
+      preview: 'https://nextjs-releases.vercel.app'
     },
     image: '/images/nextjs-releases-app.png'
   },
@@ -403,7 +431,8 @@ export const PROJECTS = [
     tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
     description: 'A simple shopping cart app made with React and Vite.',
     link: {
-      github: 'https://github.com/emapeire/shopping-cart'
+      github: 'https://github.com/emapeire/shopping-cart',
+      preview: 'https://emapeire-shopping-cart.netlify.app'
     },
     image: '/images/shopping-cart.png'
   },
@@ -413,7 +442,8 @@ export const PROJECTS = [
     description:
       'A simple app that lists all SpaceX launches. Built with Astro and TypeScript.',
     link: {
-      github: 'https://github.com/emapeire/spacex-launches'
+      github: 'https://github.com/emapeire/spacex-launches',
+      preview: 'https://emapeire-spacex-launches.vercel.app'
     },
     image: '/images/spacex-launches.png'
   },
@@ -429,7 +459,8 @@ export const PROJECTS = [
     ],
     description: 'An open-source Spotify clone built with Svelte and Astro.',
     link: {
-      github: 'https://github.com/emapeire/spotify-clone'
+      github: 'https://github.com/emapeire/spotify-clone',
+      preview: 'https://emapeire-spotify-clone.vercel.app'
     },
     image: '/images/spotify-clone.png'
   },
@@ -446,7 +477,8 @@ export const PROJECTS = [
     description:
       'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
     link: {
-      github: 'https://npmjs.com/package/swc-router'
+      github: 'https://github.com/emapeire/swc-router',
+      preview: 'https://npmjs.com/package/swc-router'
     },
     image: '/images/swc-router.png'
   },
@@ -456,7 +488,8 @@ export const PROJECTS = [
     description:
       'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
     link: {
-      github: 'https://github.com/emapeire/view-transitions-api'
+      github: 'https://github.com/emapeire/view-transitions-api',
+      preview: 'https://emapeire-view-transitions-api.vercel.app'
     },
     video: '/videos/view-transitions-api.webm'
   },
@@ -466,7 +499,8 @@ export const PROJECTS = [
     description:
       'An open-source Tesla landing page built with Astro and Tailwind CSS.',
     link: {
-      github: 'https://github.com/emapeire/tesla-landing'
+      github: 'https://github.com/emapeire/tesla-landing',
+      preview: 'https://emapeire-tesla-landing.vercel.app'
     },
     video: '/videos/tesla-landing-clone.webm'
   },
@@ -475,7 +509,8 @@ export const PROJECTS = [
     tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
     description: 'A simple tic-tac-toe game made with React and TypeScript.',
     link: {
-      github: 'https://github.com/emapeire/tic-tac-toe'
+      github: 'https://github.com/emapeire/tic-tac-toe',
+      preview: 'https://emapeire-tic-tac-toe.netlify.app'
     },
     image: '/images/tic-tac-toe.png'
   },
@@ -491,7 +526,8 @@ export const PROJECTS = [
     ],
     description: 'A simple todo app made with React and TypeScript.',
     link: {
-      github: 'https://github.com/emapeire/todo-app-ts'
+      github: 'https://github.com/emapeire/todo-app-ts',
+      preview: 'https://emapeire-todo-ts.netlify.app'
     },
     image: '/images/todo-app-ts.png'
   },
@@ -501,7 +537,8 @@ export const PROJECTS = [
     description:
       'An open-source Twitter follow card built with React and Vite.',
     link: {
-      github: 'https://github.com/emapeire/twitter-follow-card'
+      github: 'https://github.com/emapeire/twitter-follow-card',
+      preview: 'https://emapeire-twitter-follow-card.netlify.app'
     },
     image: '/images/twitter-follow-card.png'
   },

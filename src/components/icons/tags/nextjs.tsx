@@ -1,4 +1,6 @@
-export const NextJSIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const NextJSIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}
@@ -13,7 +15,7 @@ export const NextJSIcon = ({ ...props }) => {
       enableBackground='new 0 0 720 720'
       xmlSpace='preserve'
       className={`rounded-full border-0 dark:border border-white ${
-        props.className || ''
+        props.className ?? ''
       }`}
     >
       <path

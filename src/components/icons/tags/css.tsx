@@ -1,4 +1,6 @@
-export const CSSIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const CSSIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg {...props} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 520'>
       <path fill='#0c73b8' d='M41 460L0 0h451l-41 460-185 52' />

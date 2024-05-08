@@ -1,4 +1,6 @@
-export const TypeScriptIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const TypeScriptIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

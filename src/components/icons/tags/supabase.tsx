@@ -1,4 +1,6 @@
-export const SupabaseIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const SupabaseIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

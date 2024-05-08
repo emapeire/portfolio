@@ -1,4 +1,6 @@
-export const SvelteIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const SvelteIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}

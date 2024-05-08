@@ -1,4 +1,6 @@
-export const BootstrapIcon = ({ ...props }) => {
+import type { SVGProps } from 'react'
+
+export const BootstrapIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       {...props}
