@@ -9,7 +9,7 @@ import {
 import { Tooltip, TooltipTrigger, TooltipContent } from './ui/tooltip'
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
-import { ArrowUpRightIcon, CodeIcon, LinkIcon } from 'lucide-react'
+import { ArrowUpRightIcon, TerminalIcon, LinkIcon } from 'lucide-react'
 import { GitHubIcon } from './icons/github'
 import { data } from '@/constants/index'
 
@@ -19,7 +19,7 @@ export function Projects() {
   return (
     <>
       <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
-        <CodeIcon className='size-6' />
+        <TerminalIcon className='size-6 animate-pulse' />
         Projects
       </h2>
 
@@ -35,10 +35,10 @@ export function Projects() {
                         href={link.github}
                         target='_blank'
                         rel='noreferrer'
-                        className='inline-flex items-center hover:underline underline-offset-4 gap-2'
+                        className='inline-flex items-center hover:underline group underline-offset-4 gap-2'
                       >
                         <h3>{title}</h3>
-                        <ArrowUpRightIcon className='size-4 text-neutral-500' />
+                        <ArrowUpRightIcon className='size-4 text-neutral-500 dark:group-hover:text-neutral-100 group-hover:text-neutral-900' />
                       </a>
                     ) : (
                       <h3>{title}</h3>
