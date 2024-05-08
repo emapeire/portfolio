@@ -392,6 +392,24 @@ export const PROJECTS = [
     image: '/images/javascript-quiz.png'
   },
   {
+    title: 'Mercado Libre Challenge',
+    tags: [
+      TAGS.CSS,
+      TAGS.NEXT,
+      TAGS.PNPM,
+      TAGS.REACT,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description:
+      'Challenge to create a product search app using the Mercado Libre API. Built with Next.js and TypeScript.',
+    link: {
+      github: 'https://github.com/emapeire/meli-challenge',
+      preview: 'https://emapeire-meli-challenge.vercel.app'
+    },
+    image: '/images/meli-challenge.png'
+  },
+  {
     title: 'Mouse Follower',
     tags: [TAGS.CSS, TAGS.HTML, TAGS.JAVASCRIPT, TAGS.REACT, TAGS.VITE],
     description: 'A simple mouse follower app made with React and Vite.',
@@ -412,6 +430,26 @@ export const PROJECTS = [
     image: '/images/movie-search.png'
   },
   {
+    title: 'Next.js Chat App',
+    tags: [
+      TAGS.CSS,
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.NEXT,
+      TAGS.PNPM,
+      TAGS.REACT,
+      TAGS.SHADCN,
+      TAGS.TAILWIND,
+      TAGS.TYPESCRIPT
+    ],
+    description:
+      'NextJS-Chat offers beginners a chat-based interface to learn Next.js and best coding practices through an AI expert.',
+    link: {
+      github: 'https://github.com/nextjsargentina/next.js-chat'
+    },
+    video: '/videos/nextjs-chat.webm'
+  },
+  {
     title: 'Next.js Releases App',
     tags: [
       TAGS.CSS,
@@ -427,7 +465,7 @@ export const PROJECTS = [
     description:
       "NextJS Releases is an App that tracks new releases on NextJS's GitHub repo.",
     link: {
-      github: 'https://github.com/nextjsargentina/nextjs-releases',
+      github: 'https://github.com/nextjsargentina/next.js-releases',
       preview: 'https://nextjs-releases.vercel.app'
     },
     image: '/images/nextjs-releases-app.png'
