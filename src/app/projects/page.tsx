@@ -3,6 +3,7 @@
 import { Section } from '@/components/ui/section'
 import { Projects } from '@/components/projects'
 import { ProjectPagination } from '@/components/project-pagination'
+import { Button } from '@/components/ui/button'
 import { usePagination } from '@/hook/use-pagination'
 import { data } from '@/constants'
 
@@ -15,12 +16,20 @@ export default function ProjectsPage() {
   return (
     <div className='flex flex-col flex-1'>
       <Section id='projects' className='pb-24'>
-        <Projects projects={currentProjects} />
-        <ProjectPagination
-          page={page}
-          totalPages={totalPages}
-          updatePage={updatePage}
-        />
+        {currentProjects.length === 0 ? (
+          <Button variant='secondary' size='sm'>
+            No projects found
+          </Button>
+        ) : (
+          <>
+            <Projects projects={currentProjects} />
+            <ProjectPagination
+              page={page}
+              totalPages={totalPages}
+              updatePage={updatePage}
+            />
+          </>
+        )}
       </Section>
     </div>
   )
