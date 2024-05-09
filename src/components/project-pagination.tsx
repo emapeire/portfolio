@@ -1,12 +1,11 @@
 import {
   Pagination,
   PaginationContent,
-  // PaginationEllipsis,
   PaginationItem,
-  PaginationLink,
   PaginationNext,
   PaginationPrevious
 } from '@/components/ui/pagination'
+import clsx from 'clsx'
 
 export function ProjectPagination({
   page,
@@ -19,39 +18,36 @@ export function ProjectPagination({
 }) {
   return (
     <Pagination>
-      <PaginationContent>
-        {page > 1 && (
-          <PaginationItem>
-            <PaginationPrevious
-              onClick={() => {
-                updatePage(page - 1)
-              }}
-              href={`?page=${page - 1}`}
-            />
-          </PaginationItem>
-        )}
-        {Array.from({ length: totalPages }, (_, index) => (
-          <PaginationItem key={index}>
-            <PaginationLink
-              onClick={() => {
-                updatePage(index + 1)
-              }}
-              href={`?page=${index + 1}`}
-            >
-              {index + 1}
-            </PaginationLink>
-          </PaginationItem>
-        ))}
-        {page < totalPages && (
-          <PaginationItem>
-            <PaginationNext
-              onClick={() => {
-                updatePage(page + 1)
-              }}
-              href={`?page=${page + 1}`}
-            />
-          </PaginationItem>
-        )}
+      <PaginationContent className='flex gap-2'>
+        <PaginationItem>
+          <PaginationPrevious
+            className={clsx(
+              page === 1 ? 'pointer-events-none opacity-50' : undefined,
+              page > 1 ? 'shadow' : undefined
+            )}
+            isActive={page > 1}
+            onClick={() => {
+              if (page > 1) updatePage(page - 1)
+            }}
+            href={`?page=${page - 1}`}
+          />
+        </PaginationItem>
+
+        <PaginationItem>
+          <PaginationNext
+            className={clsx(
+              page === totalPages
+                ? 'pointer-events-none opacity-50'
+                : undefined,
+              page < totalPages ? 'shadow' : undefined
+            )}
+            isActive={page < totalPages}
+            onClick={() => {
+              updatePage(page + 1)
+            }}
+            href={`?page=${page + 1}`}
+          />
+        </PaginationItem>
       </PaginationContent>
     </Pagination>
   )
