@@ -16,7 +16,7 @@ export default function ProjectsPage() {
   return (
     <div className='flex flex-col flex-1'>
       <Section id='projects' className='pb-24'>
-        {currentProjects.length === 0 ? (
+        {currentProjects.length === 0 || page < 0 ? (
           <Button variant='secondary' size='sm' asChild>
             <a href='/projects'>No projects found</a>
           </Button>

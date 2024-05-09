@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useSearchParams } from 'next/navigation'
-import { type ProjectProps } from '@/types'
+import type { ProjectProps } from '@/types'
 
 export function usePagination({ projects }: { projects: ProjectProps[] }) {
   const searchParams = useSearchParams()
