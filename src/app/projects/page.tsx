@@ -1,17 +1,27 @@
 'use client'
 
+import { useState } from 'react'
+import { useSearchParams } from 'next/navigation'
+import { Button } from '@/components/ui/button'
 import { Section } from '@/components/ui/section'
 import { Projects } from '@/components/projects'
 import { ProjectPagination } from '@/components/project-pagination'
-import { Button } from '@/components/ui/button'
-import { usePagination } from '@/hook/use-pagination'
 import { data } from '@/constants'
 
 export default function ProjectsPage() {
   const { projects } = data
-  const { currentProjects, page, totalPages, updatePage } = usePagination({
-    projects
-  })
+  const searchParams = useSearchParams()
+  const [page, setPage] = useState<number>(
+    Number(searchParams.get('page') ?? 1)
+  )
+  const limit = 10
+  const offset = (page - 1) * limit
+  const currentProjects = projects.slice(offset, offset + limit)
+  const totalPages = Math.ceil(projects.length / limit)
+
+  const updatePage = (newPage: number) => {
+    setPage(newPage)
+  }
 
   return (
     <div className='flex flex-col flex-1'>

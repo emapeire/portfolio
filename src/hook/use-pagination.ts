@@ -9,7 +9,7 @@ export function usePagination({ projects }: { projects: ProjectProps[] }) {
   const [page, setPage] = useState<number>(
     Number(searchParams.get('page') ?? 1)
   )
-  const limit = 6
+  const limit = 10
   const offset = (page - 1) * limit
   const currentProjects = projects.slice(offset, offset + limit)
   const totalPages = Math.ceil(projects.length / limit)

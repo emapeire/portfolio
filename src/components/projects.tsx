@@ -15,7 +15,7 @@ import type { ProjectProps } from '@/types'
 
 export function Projects({ projects }: { projects: ProjectProps[] }) {
   return (
-    <div className='flex flex-col md:min-w-[48rem] gap-y-4'>
+    <>
       <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
         <TerminalIcon className='size-6 animate-pulse stroke-[1.5]' />
         Projects & Crafts
@@ -141,6 +141,6 @@ export function Projects({ projects }: { projects: ProjectProps[] }) {
           </Card>
         ))}
       </div>
-    </div>
+    </>
   )
 }
