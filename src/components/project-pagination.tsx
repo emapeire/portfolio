@@ -25,8 +25,7 @@ export function ProjectPagination({
               page === 1 ? 'pointer-events-none opacity-50' : 'shadow'
             )}
             isActive={page > 1}
-            onClick={(e) => {
-              e.preventDefault()
+            onClick={() => {
               if (page > 1) updatePage(page - 1)
             }}
             href={page > 1 ? `?page=${page - 1}` : '#'}
@@ -41,8 +40,7 @@ export function ProjectPagination({
               page === totalPages ? 'pointer-events-none opacity-50' : 'shadow'
             )}
             isActive={page < totalPages}
-            onClick={(e) => {
-              e.preventDefault()
+            onClick={() => {
               if (page < totalPages) updatePage(page + 1)
             }}
             href={page < totalPages ? `?page=${page + 1}` : '#'}
