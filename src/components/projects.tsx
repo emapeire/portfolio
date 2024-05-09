@@ -11,11 +11,9 @@ import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import { ArrowUpRightIcon, TerminalIcon, LinkIcon } from 'lucide-react'
 import { GitHubIcon } from './icons/github'
-import { data } from '@/constants/index'
+import type { ProjectProps } from '@/types'
 
-export function Projects() {
-  const { projects } = data
-
+export function Projects({ projects }: { projects: ProjectProps[] }) {
   return (
     <>
       <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
