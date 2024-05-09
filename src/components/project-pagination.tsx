@@ -22,30 +22,32 @@ export function ProjectPagination({
         <PaginationItem>
           <PaginationPrevious
             className={clsx(
-              page === 1 ? 'pointer-events-none opacity-50' : undefined,
-              page > 1 ? 'shadow' : undefined
+              page === 1 ? 'pointer-events-none opacity-50' : 'shadow'
             )}
             isActive={page > 1}
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault()
               if (page > 1) updatePage(page - 1)
             }}
-            href={`?page=${page - 1}`}
+            href={page > 1 ? `?page=${page - 1}` : '#'}
+            tabIndex={page > 1 ? 0 : -1}
+            aria-disabled={page <= 1}
           />
         </PaginationItem>
 
         <PaginationItem>
           <PaginationNext
             className={clsx(
-              page === totalPages
-                ? 'pointer-events-none opacity-50'
-                : undefined,
-              page < totalPages ? 'shadow' : undefined
+              page === totalPages ? 'pointer-events-none opacity-50' : 'shadow'
             )}
             isActive={page < totalPages}
-            onClick={() => {
-              updatePage(page + 1)
+            onClick={(e) => {
+              e.preventDefault()
+              if (page < totalPages) updatePage(page + 1)
             }}
-            href={`?page=${page + 1}`}
+            href={page < totalPages ? `?page=${page + 1}` : '#'}
+            tabIndex={page < totalPages ? 0 : -1}
+            aria-disabled={page >= totalPages}
           />
         </PaginationItem>
       </PaginationContent>
