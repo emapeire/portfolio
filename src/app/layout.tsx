@@ -1,5 +1,6 @@
 import type React from 'react'
 import { type Metadata } from 'next'
+import { ViewTransitions } from 'next-view-transitions'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Head } from '@/components/head'
@@ -34,22 +35,24 @@ export default function RootLayout({
     >
       <Head metadata={metadata} />
       <body className='w-full'>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
-          <TooltipProvider>
-            <main className='flex flex-col items-center justify-center min-h-screen pt-24 pb-8 px-4'>
-              <Header />
-              {children}
-              <Footer />
-            </main>
-          </TooltipProvider>
-        </ThemeProvider>
-        <Analytics />
-        <SpeedInsights />
+        <ViewTransitions>
+          <ThemeProvider
+            attribute='class'
+            defaultTheme='system'
+            enableSystem
+            disableTransitionOnChange
+          >
+            <TooltipProvider>
+              <main className='flex flex-col items-center justify-center min-h-screen pt-24 pb-8 px-4'>
+                <Header />
+                {children}
+                <Footer />
+              </main>
+            </TooltipProvider>
+          </ThemeProvider>
+          <Analytics />
+          <SpeedInsights />
+        </ViewTransitions>
       </body>
     </html>
   )
