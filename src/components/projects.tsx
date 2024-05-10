@@ -2,9 +2,10 @@
 
 import { usePagination } from '@/hook/use-pagination'
 import { Button } from './ui/button'
+import { Loader } from './ui/loader'
 import { ProjectCard } from './project-card'
 import { ProjectPagination } from './project-pagination'
-import { LoaderIcon, TerminalIcon } from 'lucide-react'
+import { TerminalIcon } from 'lucide-react'
 import { data } from '@/constants'
 
 export function Projects() {
@@ -17,9 +18,7 @@ export function Projects() {
   return (
     <>
       {isLoading ? (
-        <div className='flex justify-center items-center'>
-          <LoaderIcon className='size-4 animate-spin' />
-        </div>
+        <Loader />
       ) : currentProjects.length === 0 || page < 1 || page > totalPages ? (
         <Button variant='secondary' size='sm' asChild>
           <a href='/projects'>No projects found</a>
