@@ -16,13 +16,8 @@ export function Projects() {
 
   return (
     <>
-      <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
-        <TerminalIcon className='size-6 animate-pulse stroke-[1.5]' />
-        Projects & Crafts
-      </h2>
-
       {isLoading ? (
-        <div className='flex justify-center'>
+        <div className='flex justify-center items-center'>
           <LoaderIcon className='size-4 animate-spin' />
         </div>
       ) : currentProjects.length === 0 || page < 1 || page > totalPages ? (
@@ -31,6 +26,11 @@ export function Projects() {
         </Button>
       ) : (
         <>
+          <h2 className='dark:text-neutral-100 text-neutral-800 flex gap-x-4 items-center text-3xl font-bold text-balance'>
+            <TerminalIcon className='size-6 animate-pulse stroke-[1.5]' />
+            Projects & Crafts
+          </h2>
+
           <ProjectCard projects={currentProjects} />
           <ProjectPagination
             page={page}
