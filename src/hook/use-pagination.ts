@@ -15,7 +15,6 @@ export function usePagination({ projects }: { projects: ProjectProps[] }) {
 
   useEffect(() => {
     if (isLoading) {
-      window.scrollTo(0, 0)
       const timer = setTimeout(() => {
         setIsLoading(false)
       }, 150)
