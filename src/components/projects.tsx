@@ -1,11 +1,9 @@
 'use client'
 
-import { Suspense } from 'react'
+import { usePagination } from '@/hook/use-pagination'
 import { Button } from './ui/button'
 import { ProjectCard } from './project-card'
 import { ProjectPagination } from './project-pagination'
-import { SkeletonCard } from './skeleton-card'
-import { usePagination } from '@/hook/use-pagination'
 import { TerminalIcon } from 'lucide-react'
 import { data } from '@/constants'
 
@@ -28,14 +26,12 @@ export function Projects() {
             Projects & Crafts
           </h2>
 
-          <Suspense fallback={<SkeletonCard />}>
-            <ProjectCard projects={currentProjects} />
-            <ProjectPagination
-              page={page}
-              totalPages={totalPages}
-              updatePage={updatePage}
-            />
-          </Suspense>
+          <ProjectCard projects={currentProjects} />
+          <ProjectPagination
+            page={page}
+            totalPages={totalPages}
+            updatePage={updatePage}
+          />
         </>
       )}
     </>
