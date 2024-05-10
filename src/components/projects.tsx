@@ -22,10 +22,8 @@ export function Projects() {
       </h2>
 
       {isLoading ? (
-        <div className='flex justify-center'>
-          <LoaderIcon className='size-4 animate-spin' />
-        </div>
-      ) : currentProjects.length === 0 || page < 0 ? (
+        <LoaderIcon className='size-4 animate-spin' />
+      ) : currentProjects.length === 0 || page < 1 || page > totalPages ? (
         <Button variant='secondary' size='sm' asChild>
           <a href='/projects'>No projects found</a>
         </Button>
