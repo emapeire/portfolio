@@ -10,13 +10,11 @@ import clsx from 'clsx'
 export function ProjectPagination({
   page,
   totalPages,
-  updatePage,
-  isLoading
+  updatePage
 }: {
   page: number
   totalPages: number
   updatePage: (page: number) => void
-  isLoading: boolean
 }) {
   return (
     <Pagination>
@@ -24,15 +22,13 @@ export function ProjectPagination({
         <PaginationItem>
           <PaginationPrevious
             className={clsx(
-              page === 1 || isLoading
-                ? 'pointer-events-none opacity-50'
-                : 'shadow'
+              page === 1 ? 'pointer-events-none opacity-50' : 'shadow'
             )}
             isActive={page > 1}
             onClick={() => {
-              if (page > 1 && !isLoading) updatePage(page - 1)
+              if (page > 1) updatePage(page - 1)
             }}
-            href={page > 1 && !isLoading ? `?page=${page - 1}` : '#'}
+            href={page > 1 ? `?page=${page - 1}` : '#'}
             tabIndex={page > 1 ? 0 : -1}
             aria-disabled={page <= 1}
           />
@@ -41,15 +37,13 @@ export function ProjectPagination({
         <PaginationItem>
           <PaginationNext
             className={clsx(
-              page === totalPages || isLoading
-                ? 'pointer-events-none opacity-50'
-                : 'shadow'
+              page === totalPages ? 'pointer-events-none opacity-50' : 'shadow'
             )}
             isActive={page < totalPages}
             onClick={() => {
-              if (page < totalPages && !isLoading) updatePage(page + 1)
+              if (page < totalPages) updatePage(page + 1)
             }}
-            href={page < totalPages && !isLoading ? `?page=${page + 1}` : '#'}
+            href={page < totalPages ? `?page=${page + 1}` : '#'}
             tabIndex={page < totalPages ? 0 : -1}
             aria-disabled={page >= totalPages}
           />

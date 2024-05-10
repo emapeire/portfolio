@@ -2,7 +2,6 @@
 
 import { usePagination } from '@/hook/use-pagination'
 import { Button } from './ui/button'
-import { Loader } from './ui/loader'
 import { ProjectCard } from './project-card'
 import { ProjectPagination } from './project-pagination'
 import { TerminalIcon } from 'lucide-react'
@@ -10,16 +9,13 @@ import { data } from '@/constants'
 
 export function Projects() {
   const { projects } = data
-  const { currentProjects, page, totalPages, updatePage, isLoading } =
-    usePagination({
-      projects
-    })
+  const { currentProjects, page, totalPages, updatePage } = usePagination({
+    projects
+  })
 
   return (
     <>
-      {isLoading ? (
-        <Loader />
-      ) : currentProjects.length === 0 || page < 1 || page > totalPages ? (
+      {currentProjects.length === 0 || page < 1 || page > totalPages ? (
         <Button variant='secondary' size='sm' asChild>
           <a href='/projects'>No projects found</a>
         </Button>
@@ -35,7 +31,6 @@ export function Projects() {
             page={page}
             totalPages={totalPages}
             updatePage={updatePage}
-            isLoading={isLoading}
           />
         </>
       )}
