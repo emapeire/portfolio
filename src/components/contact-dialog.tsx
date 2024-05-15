@@ -35,17 +35,13 @@ export function ContactDialog() {
         </DialogHeader>
 
         {data.contact.map((contact) => (
-          <div
-            key={contact.label}
-            className='flex items-end space-x-3 space-y-6'
-          >
+          <div key={contact.label} className='flex items-end gap-4 pt-2'>
             <div className='grid flex-1 gap-2'>
               <Label htmlFor='link' className='font-semibold'>
                 {contact.label}
               </Label>
               <Input id='link' defaultValue={contact.value} readOnly />
             </div>
-
             <CopyToClipboard url={contact.value} />
           </div>
         ))}
