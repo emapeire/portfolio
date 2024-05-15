@@ -2,9 +2,11 @@
 
 import { usePathname } from 'next/navigation'
 import { Link } from 'next-view-transitions'
+import { ContactDialog } from './contact-dialog'
 import { ModeToggle } from './mode-toggle'
 import clsx from 'clsx'
 import { links } from '@/constants'
+import { Button } from './ui/button'
 
 export function Header() {
   const pathname = usePathname()
@@ -14,22 +16,25 @@ export function Header() {
       <div className='flex items-center justify-between w-full md:max-w-3xl mx-4'>
         <nav className='flex justify-center items-center'>
           {links.map((link) => (
-            <Link
-              key={link.label}
-              aria-label={link.label}
-              href={link.url}
-              className={clsx(
-                'relative block me-2 transition-colors ease-in-out py-2 md:px-4 px-2 rounded-md text-sm font-semibold text-neutral-800 dark:text-neutral-100',
-                {
-                  'bg-neutral-100 dark:bg-neutral-800': pathname === link.url,
-                  'hover:bg-neutral-100 dark:hover:bg-neutral-800':
-                    pathname !== link.url
-                }
-              )}
-            >
-              {link.title}
-            </Link>
+            <Button asChild variant='ghost' size={null} key={link.label}>
+              <Link
+                key={link.label}
+                aria-label={link.label}
+                href={link.url}
+                className={clsx(
+                  'relative block me-2 py-2 md:px-4 px-2 font-semibold',
+                  {
+                    'bg-neutral-100 dark:bg-neutral-800': pathname === link.url,
+                    'hover:bg-neutral-100 dark:hover:bg-neutral-800':
+                      pathname !== link.url
+                  }
+                )}
+              >
+                {link.title}
+              </Link>
+            </Button>
           ))}
+          <ContactDialog />
         </nav>
         <div className='flex items-center'>
           <ModeToggle />
