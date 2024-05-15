@@ -32,10 +32,10 @@ export function CopyToClipboard({ url }: { url: ContactProps['value'] }) {
         <Button
           type='submit'
           size='icon'
+          aria-label='Copy'
           onClick={copyToClipboard}
           disabled={copied}
         >
-          <span className='sr-only'>Copy</span>
           <CopyIcon
             className={clsx('size-4', {
               block: !copied,
@@ -50,9 +50,7 @@ export function CopyToClipboard({ url }: { url: ContactProps['value'] }) {
           />
         </Button>
       </TooltipTrigger>
-      <TooltipContent>
-        <p>Copy</p>
-      </TooltipContent>
+      <TooltipContent>Copy</TooltipContent>
     </Tooltip>
   )
 }

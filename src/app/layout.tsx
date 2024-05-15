@@ -8,7 +8,7 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { TooltipProvider } from '@/components/ui/tooltip'
-import { Toaster } from 'sonner'
+import { Toaster } from '@/components/ui/sonner'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { cn } from '@/lib/utils'
@@ -44,13 +44,13 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <TooltipProvider>
-              <Toaster />
               <main className='flex flex-col items-center justify-center min-h-screen pt-24 pb-8 px-4'>
                 <Header />
                 {children}
                 <Footer />
               </main>
             </TooltipProvider>
+            <Toaster />
           </ThemeProvider>
           <Analytics />
           <SpeedInsights />
