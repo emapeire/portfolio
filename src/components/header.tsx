@@ -2,11 +2,11 @@
 
 import { usePathname } from 'next/navigation'
 import { Link } from 'next-view-transitions'
+import { Button } from './ui/button'
 import { ContactDialog } from './contact-dialog'
 import { ModeToggle } from './mode-toggle'
 import clsx from 'clsx'
-import { links } from '@/constants'
-import { Button } from './ui/button'
+import { navLinks } from '@/constants'
 
 export function Header() {
   const pathname = usePathname()
@@ -15,7 +15,7 @@ export function Header() {
     <header className='fixed top-0 z-10 flex items-center justify-center w-full mx-auto bg-white dark:bg-black border-b py-2'>
       <div className='flex items-center justify-between w-full md:max-w-3xl mx-4'>
         <nav className='flex justify-center items-center'>
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <Button asChild variant='ghost' size={null} key={link.label}>
               <Link
                 key={link.label}

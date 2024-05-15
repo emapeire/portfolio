@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { data } from '@/constants'
 
 export function ContactDialog() {
   return (
@@ -28,30 +29,33 @@ export function ContactDialog() {
       </DialogTrigger>
       <DialogContent className='sm:max-w-md'>
         <DialogHeader>
-          <DialogTitle>Share link</DialogTitle>
+          <DialogTitle>Contact me</DialogTitle>
           <DialogDescription>
-            Anyone who has this link will be able to view this.
+            Feel free to reach out to me through the following channels.
           </DialogDescription>
         </DialogHeader>
-        <div className='flex items-center space-x-2'>
-          <div className='grid flex-1 gap-2'>
-            <Label htmlFor='link' className='sr-only'>
-              Link
-            </Label>
-            <Input
-              id='link'
-              defaultValue='https://ui.shadcn.com/docs/installation'
-              readOnly
-            />
+
+        {data.contact.map((contact) => (
+          <div
+            key={contact.label}
+            className='flex items-end space-x-3 space-y-6'
+          >
+            <div className='grid flex-1 gap-2'>
+              <Label htmlFor='link' className='font-semibold'>
+                {contact.label}
+              </Label>
+              <Input id='link' defaultValue={contact.value} readOnly />
+            </div>
+            <Button type='submit' size='icon'>
+              <span className='sr-only'>Copy</span>
+              <Copy className='size-4' />
+            </Button>
           </div>
-          <Button type='submit' size='sm' className='px-3'>
-            <span className='sr-only'>Copy</span>
-            <Copy className='h-4 w-4' />
-          </Button>
-        </div>
-        <DialogFooter className='sm:justify-start'>
+        ))}
+
+        <DialogFooter className='sm:justify-start mt-2'>
           <DialogClose asChild>
-            <Button type='button' variant='secondary'>
+            <Button type='button' variant='secondary' size='sm'>
               Close
             </Button>
           </DialogClose>

@@ -1,5 +1,5 @@
 import { Link } from 'next-view-transitions'
-import { links, data } from '@/constants'
+import { navLinks, data } from '@/constants'
 
 export function Footer() {
   const year = new Date().getFullYear()
@@ -23,7 +23,7 @@ export function Footer() {
         </p>
 
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <div key={link.label}>
               <Link
                 key={link.label}

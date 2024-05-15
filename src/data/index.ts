@@ -72,6 +72,17 @@ export const LINKS = [
   }
 ]
 
+export const CONTACT = [
+  {
+    label: 'Email',
+    value: 'hi@emapeire.xyz'
+  },
+  {
+    label: 'WhatsApp',
+    value: '+543417190449'
+  }
+]
+
 export const CAREER = [
   {
     company: 'Frontend Lab',
