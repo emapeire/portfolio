@@ -1,5 +1,3 @@
-import { Copy } from 'lucide-react'
-
 import { Button } from '@/components/ui/button'
 import {
   Dialog,
@@ -13,6 +11,7 @@ import {
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { CopyToClipboard } from './copy-to-clipboard'
 import { data } from '@/constants'
 
 export function ContactDialog() {
@@ -46,10 +45,8 @@ export function ContactDialog() {
               </Label>
               <Input id='link' defaultValue={contact.value} readOnly />
             </div>
-            <Button type='submit' size='icon'>
-              <span className='sr-only'>Copy</span>
-              <Copy className='size-4' />
-            </Button>
+
+            <CopyToClipboard url={contact.value} />
           </div>
         ))}
 
