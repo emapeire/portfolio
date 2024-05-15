@@ -62,7 +62,7 @@ export const LINKS = [
   },
   {
     title: 'Email',
-    url: 'mailto:me@emapeire.xyz',
+    url: 'mailto:hi@emapeire.xyz',
     icon: MailIcon
   },
   {

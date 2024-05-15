@@ -1,6 +1,6 @@
 import { CareerItem } from './career-item'
 import { FileTextIcon } from 'lucide-react'
-import { data } from '@/constants/index'
+import { data } from '@/constants'
 
 export function Career() {
   const { career } = data

@@ -1,5 +1,5 @@
 import { Link } from 'next-view-transitions'
-import { links } from '@/constants'
+import { links, data } from '@/constants'
 
 export function Footer() {
   const year = new Date().getFullYear()
@@ -38,7 +38,7 @@ export function Footer() {
           ))}
           <a
             id='contact'
-            href='mailto:me@emapeire.xyz'
+            href={data.links.find((link) => link.title === 'Email')?.url}
             target='_blank'
             rel='noopener noreferrer'
             className='hover:underline hover:underline-offset-4'
