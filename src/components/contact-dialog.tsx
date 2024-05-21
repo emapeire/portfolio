@@ -40,7 +40,7 @@ export function ContactDialog() {
             <div className='grid flex-1 gap-2'>
               <Label
                 htmlFor={contact.label}
-                className='font-semibold text-base font-mono pb-2'
+                className='font-semibold text-base font-mono pb-1'
               >
                 <a
                   href={`${contact.prefix}${contact.value}`}
