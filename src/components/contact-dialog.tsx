@@ -63,9 +63,14 @@ export function ContactDialog() {
           </div>
         ))}
 
-        <DialogFooter className='sm:justify-start mt-2'>
+        <DialogFooter className='sm:justify-start mt-4'>
           <DialogClose asChild>
-            <Button type='button' variant='secondary' size='sm'>
+            <Button
+              type='button'
+              variant='secondary'
+              size={null}
+              className='py-2 px-4'
+            >
               Close
             </Button>
           </DialogClose>
