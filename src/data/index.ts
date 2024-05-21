@@ -75,10 +75,12 @@ export const LINKS = [
 export const CONTACT = [
   {
     label: 'Email',
+    prefix: 'mailto:',
     value: 'hi@emapeire.xyz'
   },
   {
     label: 'WhatsApp',
+    prefix: 'https://wa.me/',
     value: '+543417190449'
   }
 ]

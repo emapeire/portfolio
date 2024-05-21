@@ -12,6 +12,7 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { CopyToClipboard } from './copy-to-clipboard'
+import { ArrowUpRightIcon } from 'lucide-react'
 import { data } from '@/constants'
 
 export function ContactDialog() {
@@ -26,9 +27,9 @@ export function ContactDialog() {
           Contact
         </Button>
       </DialogTrigger>
-      <DialogContent className='sm:max-w-md'>
+      <DialogContent className='sm:max-w-3xl'>
         <DialogHeader>
-          <DialogTitle>Contact me</DialogTitle>
+          <DialogTitle className='text-xl'>Contact me</DialogTitle>
           <DialogDescription>
             Feel free to reach out to me through the following channels.
           </DialogDescription>
@@ -37,10 +38,26 @@ export function ContactDialog() {
         {data.contact.map((contact) => (
           <div key={contact.label} className='flex items-end gap-4 pt-2'>
             <div className='grid flex-1 gap-2'>
-              <Label htmlFor={contact.label} className='font-semibold'>
-                {contact.label}
+              <Label
+                htmlFor={contact.label}
+                className='font-semibold text-base font-mono pb-2'
+              >
+                <a
+                  href={`${contact.prefix}${contact.value}`}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='hover:underline hover:underline-offset-4 group inline-flex gap-1 items-center'
+                >
+                  {contact.label}
+                  <ArrowUpRightIcon className='size-4 text-neutral-500 dark:group-hover:text-neutral-100 group-hover:text-neutral-900' />
+                </a>
               </Label>
-              <Input id={contact.label} defaultValue={contact.value} readOnly />
+              <Input
+                id={contact.label}
+                defaultValue={contact.value}
+                readOnly
+                className='font-mono'
+              />
             </div>
             <CopyToClipboard url={contact.value} />
           </div>

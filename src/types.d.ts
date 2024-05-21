@@ -16,6 +16,7 @@ export interface LinksProps {
 
 export interface ContactProps {
   label: string
+  prefix: string
   value: string
 }
 
