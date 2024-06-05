@@ -3,7 +3,6 @@
 import { usePathname } from 'next/navigation'
 import { Link } from 'next-view-transitions'
 import { Button } from './ui/button'
-import { ContactDialog } from './contact-dialog'
 import { ModeToggle } from './mode-toggle'
 import clsx from 'clsx'
 import { navLinks } from '@/constants'
@@ -34,7 +33,7 @@ export function Header() {
               </Link>
             </Button>
           ))}
-          <ContactDialog />
+          {/* <ContactDialog /> */}
         </nav>
         <div className='flex items-center'>
           <ModeToggle />
