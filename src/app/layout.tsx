@@ -9,7 +9,7 @@ import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { Toaster } from '@/components/ui/sonner'
-import { Toaster as ToasterProvider } from '@/components/ui/toaster';
+import { Toaster as ToasterProvider } from '@/components/ui/toaster'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { cn } from '@/lib/utils'

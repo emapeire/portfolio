@@ -33,7 +33,6 @@ export function Header() {
               </Link>
             </Button>
           ))}
-          {/* <ContactDialog /> */}
         </nav>
         <div className='flex items-center'>
           <ModeToggle />
