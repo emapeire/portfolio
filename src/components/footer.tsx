@@ -23,7 +23,7 @@ export function Footer() {
         </p>
 
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>
-          {navLinks.map((link) => (
+          {navLinks.map((link, index) => (
             <div key={link.label}>
               <Link
                 key={link.label}
@@ -33,7 +33,7 @@ export function Footer() {
               >
                 {link.title}
               </Link>
-              <span className='mx-2'>|</span>
+              {index < navLinks.length - 1 && <span className='mx-2'>|</span>}
             </div>
           ))}
         </div>

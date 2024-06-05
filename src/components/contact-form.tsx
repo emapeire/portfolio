@@ -1,16 +1,15 @@
 'use client'
 
-import { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-
-import { Button } from '@/components/ui/button';
+import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { Button } from '@/components/ui/button'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader
-} from '@/components/ui/card';
+} from '@/components/ui/card'
 import {
   Form,
   FormControl,
@@ -18,17 +17,16 @@ import {
   FormItem,
   FormLabel,
   FormMessage
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/components/ui/use-toast';
+} from '@/components/ui/form'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { useToast } from '@/components/ui/use-toast'
 import { Loader2 } from 'lucide-react'
-
-import { getFormSchema, FormValues } from '@/lib/validation';
+import { getFormSchema, type FormValues } from '@/lib/validation'
 
 export function ContactForm() {
-  const { toast } = useToast();
-  const formSchema = getFormSchema();
+  const { toast } = useToast()
+  const formSchema = getFormSchema()
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -38,19 +36,13 @@ export function ContactForm() {
       lastName: '',
       email: '',
       message: '',
-      honeypot: '',
+      honeypot: ''
     }
-  });
+  })
 
-  const {
-    handleSubmit,
-    formState,
-    control,
-    watch,
-    setError,
-    clearErrors
-  } = form;
-  const { isSubmitting } = formState;
+  const { handleSubmit, formState, control, watch, setError, clearErrors } =
+    form
+  const { isSubmitting } = formState
 
   /* Watches for changes in the form fields and checks if the message field contains any URLs.
   If a URL is found, it sets an error message for the message field. */
@@ -59,31 +51,34 @@ export function ContactForm() {
       if (name === 'message' && /http|www|href/.test(value.message ?? '')) {
         setError('message', {
           type: 'manual',
-          message: 'Message must not contain URLs',
-        });
+          message: 'Message must not contain URLs'
+        })
       } else {
-        clearErrors('message');
+        clearErrors('message')
       }
-    });
-    return () => subscription.unsubscribe();
-  }, [watch, setError, clearErrors]);
+    })
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [watch, setError, clearErrors])
 
   async function onSubmit(data: FormValues) {
     if (data.honeypot) {
       toast({
         title: 'Spam detected',
-        description: 'Please, fill out the form correctly and without spam. Thanks!',
-        variant: 'destructive',
-      });
-      return;
+        description:
+          'Please, fill out the form correctly and without spam. Thanks!',
+        variant: 'destructive'
+      })
+      return
     }
 
-    const formData = new FormData();
+    const formData = new FormData()
     Object.entries(data).forEach(([key, value]) => {
       if (value) {
-        formData.append(key, value);
+        formData.append(key, value)
       }
-    });
+    })
 
     try {
       const response = await fetch('/api/send', {
@@ -92,36 +87,39 @@ export function ContactForm() {
           firstName: data.firstName,
           lastName: data.lastName,
           email: data.email,
-          message: data.message,
-        }),
-      });
+          message: data.message
+        })
+      })
 
-      const result = await response.json();
+      await response.json()
       toast({
         title: 'Email sent',
         description: 'I will get back to you as soon as possible!',
-        variant: 'default',
-      });
-      form.reset();
+        variant: 'default'
+      })
+      form.reset()
     } catch (error) {
       toast({
         title: 'Error',
-        description: 'There was an error while submitting the email. Please try again later.',
-        variant: 'destructive',
-      });
+        description:
+          'There was an error while submitting the email. Please try again later.',
+        variant: 'destructive'
+      })
     }
   }
 
   return (
     <div className='flex justify-center items-center'>
-      <Card className='w-full max-w-md'>
+      <Card className='w-full max-w-3xl'>
         <CardHeader>
           <CardDescription className='font-mono text-center'>
-            Please, fill out the form below and I'll get back to you as soon as possible.
+            Please, fill out the form below and I&apos;ll get back to you as
+            soon as possible.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
+            {/* eslint-disable-next-line @typescript-eslint/no-misused-promises */}
             <form noValidate onSubmit={handleSubmit(onSubmit)}>
               <div className='space-y-4'>
                 <div className='grid grid-cols-2 gap-4'>
@@ -131,9 +129,7 @@ export function ContactForm() {
                       name='firstName'
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>
-                            First Name
-                          </FormLabel>
+                          <FormLabel>First Name</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
@@ -152,9 +148,7 @@ export function ContactForm() {
                       name='lastName'
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>
-                            Last Name
-                          </FormLabel>
+                          <FormLabel>Last Name</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
@@ -174,9 +168,7 @@ export function ContactForm() {
                     name='email'
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>
-                          Email
-                        </FormLabel>
+                        <FormLabel>Email</FormLabel>
                         <FormControl>
                           <Input
                             {...field}
@@ -195,9 +187,7 @@ export function ContactForm() {
                     name='message'
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>
-                          Message
-                        </FormLabel>
+                        <FormLabel>Message</FormLabel>
                         <FormControl>
                           <Textarea
                             {...field}

@@ -72,7 +72,7 @@ export function Hero() {
           <Tooltip key={link.title}>
             <TooltipTrigger asChild>
               <Button
-                variant='secondary'
+                variant='outline'
                 size={null}
                 key={link.title}
                 className='p-2 shadow rounded-lg'

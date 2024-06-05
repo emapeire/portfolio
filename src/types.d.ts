@@ -14,10 +14,11 @@ export interface LinksProps {
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
 }
 
-export interface ContactProps {
-  label: string
-  prefix: string
-  value: string
+export interface ContactEmailTemplateProps {
+  firstName: string
+  lastName: string
+  email: string
+  message: string
 }
 
 export interface CareerProps {
