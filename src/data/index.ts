@@ -77,7 +77,7 @@ export const CAREER = [
     company: 'Frontend Lab',
     link: 'https://github.com/thefrontendlab',
     badges: ['Hybrid'],
-    title: 'Software Developer and Technical Researcher',
+    title: 'Frontend Developer and Technical Researcher',
     start: 'Jul, 2021',
     end: 'Present',
     description:
@@ -93,12 +93,23 @@ export const CAREER = [
     description: 'Building a non-profit open community of Next.js Argentina.'
   },
   {
+    company: 'Invisible Technologies',
+    link: 'https://invisible.co',
+    badges: ['Remote'],
+    title: 'Operator & Advanced AI Trainer',
+    start: 'May, 2024',
+    end: 'Jun, 2024',
+    description: `Managed AI system operations and trained advanced AI models,
+      enhancing system performance and accuracy.
+      Collaborated with cross-functional teams to develop AI solutions.`
+  },
+  {
     company: 'BaseHub',
     link: 'https://basehub.com',
     badges: ['Remote'],
     title: 'Developer Relations',
     start: 'Mar, 2024',
-    end: 'Apr, 2024',
+    end: 'May, 2024',
     description:
       'Working on the product developer team to help developers build better apps with BaseHub CMS and its native AI.'
   },
@@ -128,7 +139,7 @@ export const CAREER = [
     badges: ['On-site'],
     title: 'Web Designer and Community Manager',
     start: 'Jan, 2016',
-    end: 'Jan, 2019',
+    end: 'Dec, 2021',
     description: `Responsive website development and design in WordPress.
     Online tourist services of the city of Rosario.
     Endorsed by the Rosario Hotel Association and Tourist Entity (ETUR).`

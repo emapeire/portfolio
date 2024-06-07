@@ -1,4 +1,5 @@
 import { Button } from './ui/button'
+import { Badge } from './ui/badge'
 import { ArrowRightIcon } from 'lucide-react'
 import { type CareerProps } from '@/types'
 
@@ -8,7 +9,8 @@ export function CareerItem({
   title,
   start,
   end,
-  description
+  description,
+  badges
 }: CareerProps) {
   return (
     <>
@@ -19,7 +21,10 @@ export function CareerItem({
       <h3 className='text-xl mt-1 font-bold text-neutral-900 dark:text-neutral-100'>
         {company}
       </h3>
-      <h4 className='text-lg mt-2 font-medium dark:text-neutral-100 text-neutral-900'>
+      <Badge variant='outline' className='shadow my-2'>
+        {badges}
+      </Badge>
+      <h4 className='text-lg font-medium dark:text-neutral-100 text-neutral-900'>
         {title}
       </h4>
       <p className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
