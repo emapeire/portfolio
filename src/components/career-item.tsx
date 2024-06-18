@@ -18,12 +18,14 @@ export function CareerItem({
       <time className='text-sm font-mono leading-none text-neutral-800 dark:text-neutral-200'>
         {start} — {end}
       </time>
-      <h3 className='text-xl mt-1 font-bold text-neutral-900 dark:text-neutral-100'>
-        {company}
-      </h3>
-      <Badge variant='outline' className='shadow rounded-md my-2'>
-        {badges}
-      </Badge>
+      <div className='flex gap-2'>
+        <h3 className='text-xl mt-1 font-bold text-neutral-900 dark:text-neutral-100'>
+          {company}
+        </h3>
+        <Badge variant='secondary' className='shadow rounded-md my-2'>
+          {badges}
+        </Badge>
+      </div>
       <h4 className='text-lg font-medium dark:text-neutral-100 text-neutral-900'>
         {title}
       </h4>
