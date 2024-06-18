@@ -80,8 +80,13 @@ export const CAREER = [
     title: 'Frontend Developer and Technical Researcher',
     start: 'Jul, 2021',
     end: 'Present',
-    description:
-      'Developing and researching new technologies and tools for the frontend community.'
+    description: [
+      'Researched and implemented new frontend technologies and tools.',
+      'Developed innovative solutions to improve the frontend community.',
+      'Conducted technical research to stay ahead of industry trends.',
+      'Created and maintained open-source projects.',
+      'Collaborated with team members to enhance project outcomes.'
+    ]
   },
   {
     company: 'Next.js Argentina',
@@ -90,7 +95,13 @@ export const CAREER = [
     title: 'Developer Experience Architect',
     start: 'Aug, 2023',
     end: 'Present',
-    description: 'Building a non-profit open community of Next.js Argentina.'
+    description: [
+      'Built and nurtured a non-profit open community for Next.js enthusiasts.',
+      'Developed resources to enhance the developer experience with Next.js.',
+      'Organized community events and workshops.',
+      'Provided mentorship and support to community members.',
+      'Collaborated with other community leaders to expand the community reach.'
+    ]
   },
   {
     company: 'Invisible Technologies',
@@ -99,9 +110,13 @@ export const CAREER = [
     title: 'Operator & Advanced AI Trainer',
     start: 'May, 2024',
     end: 'Jun, 2024',
-    description: `Managed AI system operations and trained advanced AI models,
-      enhancing system performance and accuracy.
-      Collaborated with cross-functional teams to develop AI solutions.`
+    description: [
+      'Managed AI system operations to ensure optimal performance.',
+      'Trained advanced AI models to improve system accuracy.',
+      'Collaborated with cross-functional teams to develop AI solutions.',
+      'Analyzed data to enhance AI training methodologies.',
+      'Implemented feedback to refine AI models continuously.'
+    ]
   },
   {
     company: 'BaseHub',
@@ -110,8 +125,13 @@ export const CAREER = [
     title: 'Developer Relations',
     start: 'Mar, 2024',
     end: 'May, 2024',
-    description:
-      'Working on the product developer team to help developers build better apps with BaseHub CMS and its native AI.'
+    description: [
+      'Assisted developers in building applications using BaseHub CMS and native AI.',
+      'Provided technical support and guidance to developers.',
+      'Created documentation and tutorials for better product understanding.',
+      'Organized and conducted webinars and workshops.',
+      'Engaged with the developer community to gather feedback and improve the product.'
+    ]
   },
   {
     company: 'Smat.io',
@@ -120,9 +140,13 @@ export const CAREER = [
     title: 'QA Tester and Frontend Developer',
     start: 'Aug, 2022',
     end: 'Aug, 2023',
-    description: `Led QA testing, using Jest and Playwright, ensuring web applications perform flawlessly.
-    Collaborated on TDD implementation, optimizing code quality and minimizing bugs.
-    Also, contributed to developing user-friendly interfaces with React.js, significantly enhancing user experiences.`
+    description: [
+      "Led QA testing using Jest and Playwright to ensure web applications' quality.",
+      'Implemented Test-Driven Development (TDD) practices.',
+      'Developed user-friendly interfaces with React.js.',
+      'Collaborated with developers to optimize code quality.',
+      'Conducted bug tracking and troubleshooting.'
+    ]
   },
   {
     company: 'Maker DAO',
@@ -131,8 +155,13 @@ export const CAREER = [
     title: 'Technical Writer and Translator',
     start: 'Feb, 2022',
     end: 'Aug, 2022',
-    description: `Authored and translated technical documentation, including whitepapers,
-    guides, and tutorials, to facilitate user understanding of blockchain and DeFi concepts.`
+    description: [
+      'Authored technical documentation, including whitepapers, guides, and tutorials.',
+      'Translated complex technical content for diverse audiences.',
+      'Facilitated user understanding of blockchain and DeFi concepts.',
+      'Collaborated with subject matter experts to ensure accuracy.',
+      'Maintained and updated documentation as needed.'
+    ]
   },
   {
     company: 'El Chaperón',
@@ -140,9 +169,13 @@ export const CAREER = [
     title: 'Web Designer and Community Manager',
     start: 'Jan, 2016',
     end: 'Dec, 2021',
-    description: `Responsive website development and design in WordPress.
-    Online tourist services of the city of Rosario.
-    Endorsed by the Rosario Hotel Association and Tourist Entity (ETUR).`
+    description: [
+      'Developed and designed responsive websites using WordPress.',
+      'Managed online tourist services for the city of Rosario.',
+      'Coordinated with the Rosario Hotel Association and Tourist Entity (ETUR).',
+      'Created engaging content for community outreach.',
+      'Implemented SEO strategies to improve website visibility.'
+    ]
   }
 ]
 

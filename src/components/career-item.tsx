@@ -27,9 +27,13 @@ export function CareerItem({
       <h4 className='text-lg font-medium dark:text-neutral-100 text-neutral-900'>
         {title}
       </h4>
-      <p className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
-        {description}
-      </p>
+      <ul className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
+        {description.map((item, index) => (
+          <li key={index} className='mb-1'>
+            - {item}
+          </li>
+        ))}
+      </ul>
 
       {link && (
         <Button
