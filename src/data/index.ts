@@ -220,11 +220,11 @@ export const CAREER = [
         start: 'Jan, 2016',
         end: 'Dec, 2018',
         description: [
-          'Administered and maintained the customer database to ensure accurate and up-to-date records.',
-          'Developed and executed marketing strategies to promote services and attract new customers.',
-          'Managed service offerings and ensured high levels of customer satisfaction.',
-          'Collaborated with the marketing team to design and implement promotional campaigns.',
-          'Analyzed customer feedback and market trends to improve service delivery and marketing efforts.'
+          'Maintained customer database for accuracy.',
+          'Executed marketing strategies to attract customers.',
+          'Managed services and ensured customer satisfaction.',
+          'Designed and implemented promotional campaigns with the marketing team.',
+          'Analyzed feedback and trends to improve services and marketing.'
         ]
       }
     ]
