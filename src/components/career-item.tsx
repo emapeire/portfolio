@@ -6,7 +6,7 @@ import { type CareerProps } from '@/types'
 export function CareerItem({ link, company, jobs, badges }: CareerProps) {
   return (
     <>
-      <div className='absolute size-3 dark:bg-neutral-600 bg-neutral-400 rounded-full mt-[6.5px] -start-[6.5px] border border-white dark:border-black' />
+      <div className='absolute size-3 dark:bg-neutral-600 bg-neutral-400 rounded-full mt-[8px] -start-[6.5px] border border-white dark:border-black' />
       <div className='flex gap-x-2 mb-4 items-center'>
         <h3 className='text-xl font-bold text-neutral-900 dark:text-neutral-100'>
           {company}
