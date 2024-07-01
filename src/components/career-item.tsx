@@ -3,39 +3,34 @@ import { Badge } from './ui/badge'
 import { ArrowRightIcon } from 'lucide-react'
 import { type CareerProps } from '@/types'
 
-export function CareerItem({
-  link,
-  company,
-  title,
-  start,
-  end,
-  description,
-  badges
-}: CareerProps) {
+export function CareerItem({ link, company, jobs, badges }: CareerProps) {
   return (
     <>
       <div className='absolute size-3 dark:bg-neutral-600 bg-neutral-400 rounded-full mt-[6.5px] -start-[6.5px] border border-white dark:border-black' />
-      <time className='text-sm font-mono leading-none text-neutral-800 dark:text-neutral-200'>
-        {start} — {end}
-      </time>
-      <div className='flex gap-2'>
-        <h3 className='text-xl mt-1 font-bold text-neutral-900 dark:text-neutral-100'>
+      <div className='flex gap-x-2 mb-4 items-center'>
+        <h3 className='text-xl font-bold text-neutral-900 dark:text-neutral-100'>
           {company}
         </h3>
-        <Badge variant='secondary' className='shadow rounded-md my-2'>
+        <Badge variant='secondary' className='shadow rounded-md'>
           {badges}
         </Badge>
       </div>
-      <h4 className='text-lg font-medium dark:text-neutral-100 text-neutral-900'>
-        {title}
-      </h4>
-      <ul className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
-        {description.map((item, index) => (
-          <li key={index} className='mb-1'>
-            • {item}
-          </li>
-        ))}
-      </ul>
+
+      {jobs.map((job, index) => (
+        <div key={index} className='mb-4'>
+          <time className='text-sm font-mono leading-none text-neutral-800 dark:text-neutral-200'>
+            {job.start} — {job.end}
+          </time>
+          <h4 className='text-lg font-medium dark:text-neutral-100 text-neutral-900'>
+            {job.title}
+          </h4>
+          <ul className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
+            {job.description.map((item, index) => (
+              <li key={index}>• {item}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
 
       {link && (
         <Button

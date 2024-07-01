@@ -77,104 +77,156 @@ export const CAREER = [
     company: 'Frontend Lab',
     link: 'https://github.com/thefrontendlab',
     badges: ['Hybrid'],
-    title: 'Frontend Developer and Technical Researcher',
-    start: 'Jul, 2021',
-    end: 'Present',
-    description: [
-      'Researched and implemented new frontend technologies and tools.',
-      'Developed innovative solutions to improve the frontend community.',
-      'Conducted technical research to stay ahead of industry trends.',
-      'Created and maintained open-source projects.',
-      'Collaborated with team members to enhance project outcomes.'
+    jobs: [
+      {
+        title: 'Frontend Developer & Technical Researcher',
+        start: 'Aug, 2023',
+        end: 'Present',
+        description: [
+          'Researched and implemented new frontend technologies and tools.',
+          'Developed innovative solutions to improve the frontend community.',
+          'Conducted technical research to stay ahead of industry trends.',
+          'Created and maintained open-source projects.',
+          'Collaborated with team members to enhance project outcomes.'
+        ]
+      },
+      {
+        title: 'Technical Researcher & Content Developer',
+        start: 'Jul, 2021',
+        end: 'Aug, 2023',
+        description: [
+          'Created technical content to educate and engage the frontend community.',
+          'Developed tutorials and guides on the latest frontend technologies.',
+          'Managed the content strategy to align with community needs and trends.',
+          'Collaborated with experts to produce high-quality, informative content.',
+          'Utilized various platforms to distribute content and maximize reach.'
+        ]
+      }
     ]
   },
   {
     company: 'Next.js Argentina',
     link: 'https://github.com/nextjsargentina',
     badges: ['Hybrid'],
-    title: 'Developer Experience Architect',
-    start: 'Aug, 2023',
-    end: 'Present',
-    description: [
-      'Built and nurtured a non-profit open community for Next.js enthusiasts.',
-      'Developed resources to enhance the developer experience with Next.js.',
-      'Organized community events and workshops.',
-      'Provided mentorship and support to community members.',
-      'Collaborated with other community leaders to expand the community reach.'
+    jobs: [
+      {
+        title: 'Developer Experience Architect',
+        start: 'Aug, 2023',
+        end: 'Present',
+        description: [
+          'Built and nurtured a non-profit open community for Next.js enthusiasts.',
+          'Developed resources to enhance the developer experience with Next.js.',
+          'Organized community events and workshops.',
+          'Provided mentorship and support to community members.',
+          'Collaborated with other community leaders to expand the community reach.'
+        ]
+      }
     ]
   },
   {
     company: 'Invisible Technologies',
     link: 'https://invisible.co',
     badges: ['Remote'],
-    title: 'Operator & Advanced AI Trainer',
-    start: 'May, 2024',
-    end: 'Jun, 2024',
-    description: [
-      'Managed AI system operations to ensure optimal performance.',
-      'Trained advanced AI models to improve system accuracy.',
-      'Collaborated with cross-functional teams to develop AI solutions.',
-      'Analyzed data to enhance AI training methodologies.',
-      'Implemented feedback to refine AI models continuously.'
+    jobs: [
+      {
+        title: 'Operator & Advanced AI Trainer',
+        start: 'May, 2024',
+        end: 'Jun, 2024',
+        description: [
+          'Managed AI system operations to ensure optimal performance.',
+          'Trained advanced AI models to improve system accuracy.',
+          'Collaborated with cross-functional teams to develop AI solutions.',
+          'Analyzed data to enhance AI training methodologies.',
+          'Implemented feedback to refine AI models continuously.'
+        ]
+      }
     ]
   },
   {
     company: 'BaseHub',
     link: 'https://basehub.com',
     badges: ['Remote'],
-    title: 'Developer Relations',
-    start: 'Mar, 2024',
-    end: 'May, 2024',
-    description: [
-      'Assisted developers in building applications using BaseHub CMS and native AI.',
-      'Provided technical support and guidance to developers.',
-      'Created documentation and tutorials for better product understanding.',
-      'Organized and conducted webinars and workshops.',
-      'Engaged with the developer community to gather feedback and improve the product.'
+    jobs: [
+      {
+        title: 'Developer Relations',
+        start: 'Mar, 2024',
+        end: 'May, 2024',
+        description: [
+          'Assisted developers in building applications using BaseHub CMS and native AI.',
+          'Provided technical support and guidance to developers.',
+          'Created documentation and tutorials for better product understanding.',
+          'Organized and conducted webinars and workshops.',
+          'Engaged with the developer community to gather feedback and improve the product.'
+        ]
+      }
     ]
   },
   {
     company: 'Smat.io',
     link: 'https://smat.io',
     badges: ['Remote'],
-    title: 'QA Tester and Frontend Developer',
-    start: 'Aug, 2022',
-    end: 'Aug, 2023',
-    description: [
-      "Led QA testing using Jest and Playwright to ensure web applications' quality.",
-      'Implemented Test-Driven Development (TDD) practices.',
-      'Developed user-friendly interfaces with React.js.',
-      'Collaborated with developers to optimize code quality.',
-      'Conducted bug tracking and troubleshooting.'
+    jobs: [
+      {
+        title: 'QA Tester & Frontend Developer',
+        start: 'Aug, 2022',
+        end: 'Aug, 2023',
+        description: [
+          "Led QA testing using Jest and Playwright to ensure web applications' quality.",
+          'Implemented Test-Driven Development (TDD) practices.',
+          'Developed user-friendly interfaces with React.js.',
+          'Collaborated with developers to optimize code quality.',
+          'Conducted bug tracking and troubleshooting.'
+        ]
+      }
     ]
   },
   {
     company: 'Maker DAO',
     link: 'https://makerdao.com',
     badges: ['Remote'],
-    title: 'Technical Writer and Translator',
-    start: 'Feb, 2022',
-    end: 'Aug, 2022',
-    description: [
-      'Authored technical documentation, including whitepapers, guides, and tutorials.',
-      'Translated complex technical content for diverse audiences.',
-      'Facilitated user understanding of blockchain and DeFi concepts.',
-      'Collaborated with subject matter experts to ensure accuracy.',
-      'Maintained and updated documentation as needed.'
+    jobs: [
+      {
+        title: 'Technical Writer and Translator',
+        start: 'Feb, 2022',
+        end: 'Aug, 2022',
+        description: [
+          'Authored technical documentation, including whitepapers, guides, and tutorials.',
+          'Translated complex technical content for diverse audiences.',
+          'Facilitated user understanding of blockchain and DeFi concepts.',
+          'Collaborated with subject matter experts to ensure accuracy.',
+          'Maintained and updated documentation as needed.'
+        ]
+      }
     ]
   },
   {
     company: 'El Chaperón',
     badges: ['On-site'],
-    title: 'Web Designer and Community Manager',
-    start: 'Jan, 2016',
-    end: 'Dec, 2021',
-    description: [
-      'Developed and designed responsive websites using WordPress.',
-      'Managed online tourist services for the city of Rosario.',
-      'Coordinated with the Rosario Hotel Association and Tourist Entity (ETUR).',
-      'Created engaging content for community outreach.',
-      'Implemented SEO strategies to improve website visibility.'
+    jobs: [
+      {
+        title: 'Web Designer & Community Manager',
+        start: 'Jan, 2019',
+        end: 'Dec, 2021',
+        description: [
+          'Developed and designed responsive websites using WordPress.',
+          'Managed online tourist services for the city of Rosario.',
+          'Coordinated with the Rosario Hotel Association and Tourist Entity (ETUR).',
+          'Created engaging content for community outreach.',
+          'Implemented SEO strategies to improve website visibility.'
+        ]
+      },
+      {
+        title: 'Commercial Advisor',
+        start: 'Jan, 2016',
+        end: 'Dec, 2018',
+        description: [
+          'Administered and maintained the customer database to ensure accurate and up-to-date records.',
+          'Developed and executed marketing strategies to promote services and attract new customers.',
+          'Managed service offerings and ensured high levels of customer satisfaction.',
+          'Collaborated with the marketing team to design and implement promotional campaigns.',
+          'Analyzed customer feedback and market trends to improve service delivery and marketing efforts.'
+        ]
+      }
     ]
   }
 ]

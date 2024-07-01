@@ -21,14 +21,18 @@ export interface ContactEmailTemplateProps {
   message: string
 }
 
-export interface CareerProps {
-  company: string
-  link?: string
-  badges: string[]
+export interface JobsProps {
   title: string
   start: string
   end: string
   description: string[]
+}
+
+export interface CareerProps {
+  company: string
+  link?: string
+  badges: string[]
+  jobs: JobsProps[]
 }
 
 export interface TagsProps {
