@@ -18,12 +18,12 @@ export function CareerItem({ link, company, jobs, badges }: CareerProps) {
 
       {jobs.map((job, index) => (
         <div key={index} className='mb-4'>
-          <time className='text-sm font-mono leading-none text-neutral-800 dark:text-neutral-200'>
-            {job.start} — {job.end}
-          </time>
           <h4 className='text-lg font-medium dark:text-neutral-100 text-neutral-900'>
             {job.title}
           </h4>
+          <time className='text-sm font-mono leading-none text-neutral-800 dark:text-neutral-200'>
+            {job.start} — {job.end}
+          </time>
           <ul className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
             {job.description.map((item, index) => (
               <li key={index}>• {item}</li>
