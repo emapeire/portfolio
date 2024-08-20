@@ -20,7 +20,7 @@ export default function NotFoundPage() {
         <h1 className='flex items-center gap-x-4 text-balance text-5xl font-bold dark:text-white text-black'>
           {t('not-found.title')}
         </h1>
-        <p className='mx-auto max-w-3xl pt-4 font-mono dark:text-neutral-200 text-neutral-800 md:mb-4'>
+        <p className='mx-auto max-w-3xl pt-4 font-mono text-center dark:text-neutral-200 text-neutral-800 md:mb-4'>
           {t('not-found.description')}
         </p>
 
