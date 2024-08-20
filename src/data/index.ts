@@ -341,7 +341,7 @@ export const PROJECTS = [
       github: 'https://github.com/basehub-ai/nextjs-blog',
       preview: 'https://nextjs-blog-basehub.vercel.app'
     },
-    image: '/images/basehub-nextjs-blog.png'
+    image: '/projects/images/basehub-nextjs-blog.png'
   },
   {
     title: 'Basement Challenge',
@@ -358,7 +358,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/basement-challenge',
       preview: 'https://emapeire-basement-challenge.vercel.app'
     },
-    image: '/images/basement-challenge.png'
+    image: '/projects/images/basement-challenge.png'
   },
   {
     title: 'Chat With Vader',
@@ -375,7 +375,7 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/emapeire/chat-with-vader'
     },
-    image: '/images/chat-with-vader.png'
+    image: '/projects/images/chat-with-vader.png'
   },
   {
     title: 'Cohere Chat',
@@ -385,7 +385,7 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/emapeire/cohere-chat'
     },
-    image: '/images/cohere-chat.png'
+    image: '/projects/images/cohere-chat.png'
   },
   {
     title: 'Comments App',
@@ -401,7 +401,7 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/emapeire/comments-react-query'
     },
-    image: '/images/comments-app.png'
+    image: '/projects/images/comments-app.png'
   },
   {
     title: 'Crud App',
@@ -419,7 +419,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/crud-react-redux',
       preview: 'https://emapeire-crud-react-redux.netlify.app'
     },
-    image: '/images/crud-app.png'
+    image: '/projects/images/crud-app.png'
   },
   {
     title: 'Eloquent JavaScript Chat',
@@ -436,7 +436,7 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/emapeire/eloquent-js-chat'
     },
-    image: '/images/eloquent-js-chat.png'
+    image: '/projects/images/eloquent-js-chat.png'
   },
   {
     title: 'Google Translate UI',
@@ -456,7 +456,7 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/emapeire/google-translate-clone'
     },
-    image: '/images/google-translate-clone.png'
+    image: '/projects/images/google-translate-clone.png'
   },
   {
     title: 'Image 2 Code',
@@ -473,7 +473,7 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/emapeire/image-to-code'
     },
-    video: '/videos/image-2-code.webm'
+    video: '/projects/videos/image-2-code.webm'
   },
   {
     title: 'JavaScript Quiz',
@@ -490,7 +490,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/javascript-quiz',
       preview: 'https://emapeire-javascript-quiz.netlify.app'
     },
-    image: '/images/javascript-quiz.png'
+    image: '/projects/images/javascript-quiz.png'
   },
   {
     title: 'Mercado Libre Challenge',
@@ -508,7 +508,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/meli-challenge',
       preview: 'https://emapeire-meli-challenge.vercel.app'
     },
-    image: '/images/meli-challenge.png'
+    image: '/projects/images/meli-challenge.png'
   },
   {
     title: 'Mouse Follower',
@@ -518,7 +518,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/mouse-follower',
       preview: 'https://emapeire-mouse-follower.netlify.app'
     },
-    video: '/videos/mouse-follower.webm'
+    video: '/projects/videos/mouse-follower.webm'
   },
   {
     title: "Morty's characters",
@@ -536,7 +536,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/nextjs-graphql',
       preview: 'https://emapeire-nextjs-graphql.vercel.app'
     },
-    image: '/images/morty-s-characters.png'
+    image: '/projects/images/morty-s-characters.png'
   },
   {
     title: 'Movie Search App',
@@ -546,7 +546,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/react-movie-search',
       preview: 'https://emapeire-react-movie-search.netlify.app'
     },
-    image: '/images/movie-search.png'
+    image: '/projects/images/movie-search.png'
   },
   {
     title: 'Next.js Chat App',
@@ -566,7 +566,7 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/nextjsargentina/next.js-chat'
     },
-    video: '/videos/nextjs-chat.webm'
+    video: '/projects/videos/nextjs-chat.webm'
   },
   {
     title: 'Next.js Releases App',
@@ -587,7 +587,7 @@ export const PROJECTS = [
       github: 'https://github.com/nextjsargentina/next.js-releases',
       preview: 'https://nextjs-releases.vercel.app'
     },
-    image: '/images/nextjs-releases-app.png'
+    image: '/projects/images/nextjs-releases-app.png'
   },
   {
     title: 'React GPT',
@@ -596,7 +596,7 @@ export const PROJECTS = [
     link: {
       preview: 'https://chat.openai.com/g/g-HNcbE0A5n-reactgpt'
     },
-    image: '/images/react-gpt.png'
+    image: '/projects/images/react-gpt.png'
   },
   {
     title: 'Screen Recorder',
@@ -605,7 +605,7 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/emapeire/screen-recorder'
     },
-    video: '/videos/screen-recorder.webm'
+    video: '/projects/videos/screen-recorder.webm'
   },
   {
     title: 'Shopping Cart',
@@ -615,7 +615,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/shopping-cart',
       preview: 'https://emapeire-shopping-cart.netlify.app'
     },
-    image: '/images/shopping-cart.png'
+    image: '/projects/images/shopping-cart.png'
   },
   {
     title: 'Space X Launches',
@@ -626,7 +626,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/spacex-launches',
       preview: 'https://emapeire-spacex-launches.vercel.app'
     },
-    image: '/images/spacex-launches.png'
+    image: '/projects/images/spacex-launches.png'
   },
   {
     title: 'Spotify UI',
@@ -643,7 +643,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/spotify-clone',
       preview: 'https://emapeire-spotify-clone.vercel.app'
     },
-    image: '/images/spotify-clone.png'
+    image: '/projects/images/spotify-clone.png'
   },
   {
     title: 'SWC Router',
@@ -661,7 +661,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/swc-router',
       preview: 'https://npmjs.com/package/swc-router'
     },
-    image: '/images/swc-router.png'
+    image: '/projects/images/swc-router.png'
   },
   {
     title: 'View Transitions API',
@@ -672,7 +672,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/view-transitions-api',
       preview: 'https://emapeire-view-transitions-api.vercel.app'
     },
-    video: '/videos/view-transitions-api.webm'
+    video: '/projects/videos/view-transitions-api.webm'
   },
   {
     title: 'Tesla Landing UI',
@@ -683,7 +683,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/tesla-landing',
       preview: 'https://emapeire-tesla-landing.vercel.app'
     },
-    video: '/videos/tesla-landing-clone.webm'
+    video: '/projects/videos/tesla-landing-clone.webm'
   },
   {
     title: 'Tic Tac Toe',
@@ -693,7 +693,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/tic-tac-toe',
       preview: 'https://emapeire-tic-tac-toe.netlify.app'
     },
-    image: '/images/tic-tac-toe.png'
+    image: '/projects/images/tic-tac-toe.png'
   },
   {
     title: 'Todo App',
@@ -710,7 +710,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/todo-app-ts',
       preview: 'https://emapeire-todo-ts.netlify.app'
     },
-    image: '/images/todo-app-ts.png'
+    image: '/projects/images/todo-app-ts.png'
   },
   {
     title: 'Twitter Follow Card UI',
@@ -721,7 +721,7 @@ export const PROJECTS = [
       github: 'https://github.com/emapeire/twitter-follow-card',
       preview: 'https://emapeire-twitter-follow-card.netlify.app'
     },
-    image: '/images/twitter-follow-card.png'
+    image: '/projects/images/twitter-follow-card.png'
   },
   {
     title: 'Twitter UI',
@@ -738,6 +738,6 @@ export const PROJECTS = [
     link: {
       github: 'https://github.com/emapeire/twitter-clone'
     },
-    image: '/images/twitter-clone.png'
+    image: '/projects/images/twitter-clone.png'
   }
 ]

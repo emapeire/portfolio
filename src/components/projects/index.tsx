@@ -1,9 +1,9 @@
 'use client'
 
 import { usePagination } from '@/hook/use-pagination'
-import { Button } from './ui/button'
-import { ProjectCard } from './project-card'
-import { ProjectPagination } from './project-pagination'
+import { Button } from '../ui/button'
+import { ProjectCard } from './card'
+import { ProjectPagination } from './pagination'
 import { TerminalIcon } from 'lucide-react'
 import { data } from '@/constants'
 

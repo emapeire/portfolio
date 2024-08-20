@@ -13,7 +13,7 @@ import { Toaster as ToasterProvider } from '@/components/ui/toaster'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { cn } from '@/lib/utils'
-import './globals.css'
+import '../styles/globals.css'
 
 const metadata: Metadata = {
   title: 'Portfolio | Emanuel Peire',

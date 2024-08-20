@@ -1,5 +1,5 @@
-import { Button } from './ui/button'
-import { Badge } from './ui/badge'
+import { Button } from '../ui/button'
+import { Badge } from '../ui/badge'
 import { ArrowRightIcon } from 'lucide-react'
 import { type CareerProps } from '@/types'
 

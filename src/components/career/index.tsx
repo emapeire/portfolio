@@ -1,4 +1,4 @@
-import { CareerItem } from './career-item'
+import { CareerItem } from './item'
 import { FileTextIcon } from 'lucide-react'
 import { data } from '@/constants'
 

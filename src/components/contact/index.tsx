@@ -1,4 +1,4 @@
-import { ContactForm } from '@/components/contact-form'
+import { ContactForm } from '@/components/contact/form'
 import { MailIcon } from 'lucide-react'
 
 export function Contact() {
