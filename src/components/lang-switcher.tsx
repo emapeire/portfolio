@@ -43,7 +43,7 @@ export function LangSwitcher() {
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align='end' side='bottom'>
+      <DropdownMenuContent align='end' side='bottom' className='mt-4'>
         <DropdownMenuLabel>{t('lang-switcher.label')}</DropdownMenuLabel>
         <DropdownMenuSeparator />
 
