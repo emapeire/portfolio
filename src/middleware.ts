@@ -1,6 +1,5 @@
 import createMiddleware from 'next-intl/middleware'
 import { type NextRequest, type NextResponse } from 'next/server'
-
 import { locales, defaultLocale } from '@/i18n'
 
 const nextIntlMiddleware = createMiddleware({
@@ -9,9 +8,11 @@ const nextIntlMiddleware = createMiddleware({
   localePrefix: 'never'
 })
 
-export default function (req: NextRequest): NextResponse {
+function middleware(req: NextRequest): NextResponse {
   return nextIntlMiddleware(req)
 }
+
+export default middleware
 
 export const config = {
   // match only internationalized pathnames

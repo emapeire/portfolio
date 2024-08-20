@@ -11,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuCheckboxItem
 } from '@/components/ui/dropdown-menu'
-import { EnFlagIcon } from '@/components/icons/lang/en-flag'
+import { UsFlagIcon } from '@/components/icons/lang/us-flag'
 import { ArFlagIcon } from '@/components/icons/lang/ar-flag'
 import { type Locale } from '@/i18n'
 
@@ -26,46 +26,44 @@ export function LangSwitcher() {
   }
 
   return (
-    <div className='ml-2'>
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button
-            aria-label='Language switcher'
-            className='rounded-full'
-            size='icon'
-            variant='ghost'
-          >
-            {locale === 'en' ? (
-              <EnFlagIcon className='h-[1.5rem] w-[1.5rem]' />
-            ) : (
-              <ArFlagIcon className='h-[1.5rem] w-[1.5rem]' />
-            )}
-            <span className='sr-only'>Language switcher</span>
-          </Button>
-        </DropdownMenuTrigger>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button
+          aria-label='Language switcher'
+          className='size-9'
+          size='icon'
+          variant='ghost'
+        >
+          {locale === 'en' ? (
+            <UsFlagIcon className='h-[1.5rem] w-[1.5rem]' />
+          ) : (
+            <ArFlagIcon className='h-[1.5rem] w-[1.5rem]' />
+          )}
+          <span className='sr-only'>Language switcher</span>
+        </Button>
+      </DropdownMenuTrigger>
 
-        <DropdownMenuContent align='end' className='mt-2'>
-          <DropdownMenuLabel>{t('lang-switcher.label')}</DropdownMenuLabel>
-          <DropdownMenuSeparator />
+      <DropdownMenuContent align='end' side='bottom'>
+        <DropdownMenuLabel>{t('lang-switcher.label')}</DropdownMenuLabel>
+        <DropdownMenuSeparator />
 
-          <DropdownMenuCheckboxItem
-            checked={locale === 'en'}
-            onClick={() => {
-              handleLocaleChange('en')
-            }}
-          >
-            {t('lang-switcher.options.en')}
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem
-            checked={locale === 'es'}
-            onClick={() => {
-              handleLocaleChange('es')
-            }}
-          >
-            {t('lang-switcher.options.es')}
-          </DropdownMenuCheckboxItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </div>
+        <DropdownMenuCheckboxItem
+          checked={locale === 'en'}
+          onClick={() => {
+            handleLocaleChange('en')
+          }}
+        >
+          {t('lang-switcher.options.en')}
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={locale === 'es'}
+          onClick={() => {
+            handleLocaleChange('es')
+          }}
+        >
+          {t('lang-switcher.options.es')}
+        </DropdownMenuCheckboxItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   )
 }

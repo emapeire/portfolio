@@ -1,0 +1,36 @@
+{
+  "header": {
+    "about": {
+      "title": "Sobre mí",
+      "label": "sobre-mi",
+      "link": "/"
+    },
+    "career": {
+      "title": "Carrera",
+      "label": "carrera",
+      "link": "/carrera"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "label": "proyectos",
+      "link": "/proyectos"
+    },
+    "contact": {
+      "title": "Contacto",
+      "label": "contacto",
+      "link": "/contacto"
+    }
+  },
+  "lang-switcher": {
+    "label": "Idioma",
+    "options": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "not-found": {
+    "title": "404",
+    "description": "Felicitaciones! Encontraste una página que no existe. 🎉",
+    "button": "Volver al inicio"
+  }
+}
