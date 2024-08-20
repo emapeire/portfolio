@@ -1,33 +1,23 @@
 import { notFound } from 'next/navigation'
 import { getRequestConfig } from 'next-intl/server'
-import type { AbstractIntlMessages } from 'next-intl'
 
 export type Locale = (typeof locales)[number]
 
-export const locales = ['en', 'es'] as const
+export const locales = ['en', 'es']
 
-export const defaultLocale: Locale = 'en'
+export const defaultLocale = 'en' satisfies Locale
 
-async function loadMessages(locale: Locale): Promise<AbstractIntlMessages> {
-  if (locale === 'en') {
-    return (await import('./messages/en.json')).default
-  } else if (locale === 'es') {
-    return (await import('./messages/es.json')).default
-  } else {
-    notFound()
-  }
-}
+export default getRequestConfig(async ({ locale }) => {
+  const baseLocale = new Intl.Locale(locale).baseName
 
-export default getRequestConfig(async ({ locale }: { locale: string }) => {
-  const baseLocale = locales.includes(locale as Locale)
-    ? (locale as Locale)
-    : defaultLocale
-
+  // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(baseLocale)) notFound()
 
-  const messages = await loadMessages(baseLocale)
-
   return {
-    messages
+    messages: (
+      await (locale === 'en'
+        ? import('./messages/en.json')
+        : import(`./messages/${locale}.json`))
+    ).default
   }
 })
