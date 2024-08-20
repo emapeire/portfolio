@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 
 export default function NotFoundPage() {
   const t = useTranslations()
