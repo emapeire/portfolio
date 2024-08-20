@@ -59,7 +59,7 @@ export function Header() {
             </Button>
           ))}
         </nav>
-        <div className='flex items-center gap-x-1'>
+        <div className='flex items-center md:gap-x-2 gap-x-1'>
           <LangSwitcher />
           <ModeToggle />
         </div>
