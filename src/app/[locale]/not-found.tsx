@@ -14,19 +14,19 @@ export default function NotFoundPage() {
       >
         <source src='/assets/page-not-found.webm' type='video/webm' />
       </video>
-      <div className='absolute left-0 top-0 h-full w-full bg-black opacity-75' />
+      <div className='absolute left-0 top-0 h-full w-full dark:bg-black bg-white opacity-75' />
 
       <div className='z-10 flex flex-col items-center'>
-        <h1 className='flex items-center gap-x-4 text-balance text-5xl font-bold text-white'>
+        <h1 className='flex items-center gap-x-4 text-balance text-5xl font-bold dark:text-white text-black'>
           {t('not-found.title')}
         </h1>
-        <p className='mx-auto max-w-3xl pt-4 font-mono text-white/70 md:mb-4'>
+        <p className='mx-auto max-w-3xl pt-4 font-mono dark:text-neutral-200 text-neutral-800  md:mb-4'>
           {t('not-found.description')}
         </p>
 
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>
           <Link
-            className='text-white hover:underline hover:underline-offset-4'
+            className='dark:text-white text-black hover:underline hover:underline-offset-4'
             href='/'
           >
             {t('not-found.button')}
