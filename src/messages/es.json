@@ -2,23 +2,19 @@
   "header": {
     "about": {
       "title": "Sobre mí",
-      "label": "sobre-mi",
-      "link": "/"
+      "label": "sobre-mi"
     },
     "career": {
       "title": "Carrera",
-      "label": "carrera",
-      "link": "/carrera"
+      "label": "carrera"
     },
     "projects": {
       "title": "Proyectos",
-      "label": "proyectos",
-      "link": "/proyectos"
+      "label": "proyectos"
     },
     "contact": {
       "title": "Contacto",
-      "label": "contacto",
-      "link": "/contacto"
+      "label": "contacto"
     }
   },
   "lang-switcher": {

@@ -53,3 +53,5 @@ export interface ProjectProps {
   image?: string
   video?: string
 }
+
+export type TranslateProps = (key: string) => string

@@ -1,8 +1,11 @@
 import { Link } from 'next-view-transitions'
-import { navLinks } from '@/constants'
+import { useTranslations } from 'next-intl'
+import { getNavItems } from '@/constants'
 
 export function Footer() {
   const year = new Date().getFullYear()
+  const t = useTranslations()
+  const navItems = getNavItems(t)
 
   return (
     <footer className='footer flex justify-center items-center w-full mx-auto md:max-w-3xl'>
@@ -23,7 +26,7 @@ export function Footer() {
         </p>
 
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>
-          {navLinks.map((link, index) => (
+          {navItems.map((link, index) => (
             <div key={link.label}>
               <Link
                 key={link.label}
@@ -33,7 +36,7 @@ export function Footer() {
               >
                 {link.title}
               </Link>
-              {index < navLinks.length - 1 && <span className='mx-2'>|</span>}
+              {index < navItems.length - 1 && <span className='mx-2'>|</span>}
             </div>
           ))}
         </div>
