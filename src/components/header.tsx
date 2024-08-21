@@ -52,9 +52,9 @@ export function Header() {
               aria-label={t('header.settings')}
               variant='ghost'
               size='icon'
-              className='size-9'
+              className='relative size-9 transition-transform duration-300 group'
             >
-              <Cog className='h-[1.5rem] w-[1.5rem] stroke-[1.5]' />
+              <Cog className='h-[1.5rem] w-[1.5rem] stroke-[1.5] transform group-hover:rotate-45 transition-transform duration-300' />
               <span className='sr-only'>{t('header.settings')}</span>
             </Button>
           </DropdownMenuTrigger>
