@@ -29,9 +29,9 @@ export function LangSwitcher() {
       <DropdownMenuTrigger asChild>
         <Button
           aria-label={t('lang-switcher.label')}
-          size='sm'
+          size={null}
           variant='ghost'
-          className='gap-2'
+          className='w-full mx-auto flex justify-between px-2 py-1 rounded'
         >
           <DropdownMenuLabel className='p-0'>
             {t('lang-switcher.label')}

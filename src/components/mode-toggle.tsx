@@ -22,8 +22,8 @@ export function ModeToggle() {
         <Button
           variant='ghost'
           aria-label={t('mode-toggle.label')}
-          size='sm'
-          className='w-full mx-auto flex justify-between'
+          size={null}
+          className='w-full mx-auto flex justify-between px-2 py-1 rounded'
         >
           <DropdownMenuLabel className='p-0'>
             {t('mode-toggle.label')}
