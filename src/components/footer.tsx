@@ -1,8 +1,9 @@
 import { Link } from 'next-view-transitions'
 import { useTranslations } from 'next-intl'
-import { getNavItems } from '@/constants'
+import { data, getNavItems } from '@/constants'
 
 export function Footer() {
+  const { avatar } = data
   const year = new Date().getFullYear()
   const t = useTranslations()
   const navItems = getNavItems(t)
@@ -19,10 +20,10 @@ export function Footer() {
             rel='noopener noreferrer'
             className='hover:underline hover:underline-offset-4'
           >
-            Emanuel Peire
+            {avatar.name}
           </a>
           <span className='ms-2 me-2'>—</span>
-          All rights reserved.
+          {t('footer.copyrights')}
         </p>
 
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>

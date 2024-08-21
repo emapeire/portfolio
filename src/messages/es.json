@@ -17,6 +17,16 @@
       "label": "contacto"
     }
   },
+  "hero": {
+    "available": "Disponible",
+    "about": {
+      "title": "Ingeniero de frontend, relaciones con desarrolladores y entusiasta de la investigación en IA. Siempre influenciado por el diseño. Con base en Rosario, Argentina 🇦🇷",
+      "description": "Apasionado por crear soluciones tecnológicas innovadoras que generen un impacto social. Centrado en el uso de tecnologías avanzadas de interfaz para mejorar la accesibilidad y el rendimiento en aplicaciones web. Mi objetivo principal es mejorar la experiencia del usuario, haciendo de la web un lugar mejor para todos."
+    }
+  },
+  "footer": {
+    "copyrights": "Todos los derechos reservados."
+  },
   "lang-switcher": {
     "label": "Idioma",
     "options": {

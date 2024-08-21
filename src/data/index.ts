@@ -30,15 +30,6 @@ export const AVATAR = {
   initials: 'EP'
 }
 
-export const ABOUT = {
-  title: `Frontend Engineer, Developer Relations and AI research enthusiast.
-  Always influenced by design. Based in Rosario, Argentina 🇦🇷`,
-  description: `Passionate about creating innovative tech solutions for social impact.
-  Focused on using advanced frontend technologies to improve
-  accessibility and performance in web applications. My main goal is to
-  enhance user experience, making the web a better place for everyone.`
-}
-
 export const LINKS = [
   {
     title: 'GitHub',
@@ -56,17 +47,17 @@ export const LINKS = [
     icon: XIcon
   },
   {
-    title: 'Resume',
-    url: 'https://cv.emapeire.xyz',
-    icon: FileTextIcon
-  },
-  {
     title: 'Email',
     url: 'mailto:hi@emapeire.xyz',
     icon: MailIcon
   },
   {
-    title: 'Other Links',
+    title: 'CV App',
+    url: 'https://cv.emapeire.xyz',
+    icon: FileTextIcon
+  },
+  {
+    title: 'Link App',
     url: 'https://link.emapeire.xyz',
     icon: LinkIcon
   }
