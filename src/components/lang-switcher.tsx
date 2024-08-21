@@ -8,7 +8,6 @@ import {
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuCheckboxItem
 } from '@/components/ui/dropdown-menu'
 import { UsFlagIcon } from '@/components/icons/lang/us-flag'
@@ -29,24 +28,25 @@ export function LangSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          aria-label='Language switcher'
-          className='size-9'
-          size='icon'
+          aria-label={t('lang-switcher.label')}
+          size='sm'
           variant='ghost'
+          className='gap-2'
         >
+          <DropdownMenuLabel className='p-0'>
+            {t('lang-switcher.label')}
+          </DropdownMenuLabel>
+
           {locale === 'en' ? (
             <UsFlagIcon className='h-[1.5rem] w-[1.5rem]' />
           ) : (
             <ArFlagIcon className='h-[1.5rem] w-[1.5rem]' />
           )}
-          <span className='sr-only'>Language switcher</span>
+          <span className='sr-only'>{t('lang-switcher.label')}</span>
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align='end' side='bottom' className='mt-4'>
-        <DropdownMenuLabel>{t('lang-switcher.label')}</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-
+      <DropdownMenuContent align='center' side='bottom'>
         <DropdownMenuCheckboxItem
           checked={locale === 'en'}
           onClick={() => {

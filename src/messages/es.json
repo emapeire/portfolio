@@ -15,7 +15,8 @@
     "contact": {
       "title": "Contacto",
       "label": "contacto"
-    }
+    },
+    "settings": "Configuración"
   },
   "hero": {
     "available": "Disponible",
@@ -37,7 +38,8 @@
   "mode-toggle": {
     "light": "Claro",
     "dark": "Oscuro",
-    "system": "Sistema"
+    "system": "Sistema",
+    "label": "Tema"
   },
   "not-found": {
     "title": "404",

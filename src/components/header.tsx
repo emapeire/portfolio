@@ -3,10 +3,17 @@
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { Link } from 'next-view-transitions'
-import { Button } from './ui/button'
 import { ModeToggle } from './mode-toggle'
 import { LangSwitcher } from './lang-switcher'
+import { Button } from './ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger
+} from './ui/dropdown-menu'
 import { getNavItems } from '@/constants'
+import { Cog } from 'lucide-react'
 import clsx from 'clsx'
 
 export function Header() {
@@ -38,10 +45,25 @@ export function Header() {
             </Button>
           ))}
         </nav>
-        <div className='flex items-center md:gap-x-2 gap-x-1'>
-          <LangSwitcher />
-          <ModeToggle />
-        </div>
+
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button
+              aria-label={t('header.settings')}
+              variant='ghost'
+              size='icon'
+              className='size-9'
+            >
+              <Cog className='h-[1.5rem] w-[1.5rem] stroke-[1.5]' />
+              <span className='sr-only'>{t('header.settings')}</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align='end' side='bottom' className='mt-4'>
+            <LangSwitcher />
+            <DropdownMenuSeparator />
+            <ModeToggle />
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   )
