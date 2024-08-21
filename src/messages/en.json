@@ -24,6 +24,11 @@
       "es": "Spanish"
     }
   },
+  "mode-toggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
   "not-found": {
     "title": "404",
     "description": "Congratulations! You found a page that doesn't exist. 🎉",

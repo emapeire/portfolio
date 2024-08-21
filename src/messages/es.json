@@ -24,6 +24,11 @@
       "es": "Español"
     }
   },
+  "mode-toggle": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
   "not-found": {
     "title": "404",
     "description": "Felicitaciones! Encontraste una página que no existe. 🎉",
