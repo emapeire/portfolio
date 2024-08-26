@@ -27,8 +27,8 @@ import { getFormSchema, type FormValues } from '@/lib/validation'
 
 export function ContactForm() {
   const { toast } = useToast()
-  const formSchema = getFormSchema()
   const t = useTranslations()
+  const formSchema = getFormSchema(t)
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),

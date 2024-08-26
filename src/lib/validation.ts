@@ -1,30 +1,31 @@
 import { z } from 'zod'
+import { TranslateProps } from '@/types'
 
 const nameRegex = /^[A-Za-zÀ-ÿ' -]{2,}$/
 
-export const getFormSchema = () =>
+export const getFormSchema = (t: TranslateProps) =>
   z.object({
     firstName: z
       .string()
-      .min(2, 'First name must be at least 2 characters.')
-      .max(50, 'First name must be less than 50 characters.')
-      .regex(nameRegex, 'First name must contain only letters.'),
+      .min(2, t('contact.form.validation.first-name.min'))
+      .max(50, t('contact.form.validation.first-name.max'))
+      .regex(nameRegex, t('contact.form.validation.first-name.regex')),
     lastName: z
       .string()
-      .min(2, 'Last name must be at least 2 characters.')
-      .max(50, 'Last name must be less than 50 characters.')
-      .regex(nameRegex, 'Last name must contain only letters.'),
+      .min(2, t('contact.form.validation.last-name.min'))
+      .max(50, t('contact.form.validation.last-name.max'))
+      .regex(nameRegex, t('contact.form.validation.last-name.regex')),
     email: z
       .string()
-      .email('Email must be a valid email address.')
-      .min(5, 'Email must be at least 5 characters.')
-      .max(100, 'Email must be less than 100 characters.'),
+      .email(t('contact.form.validation.email.email'))
+      .min(5, t('contact.form.validation.email.min'))
+      .max(100, t('contact.form.validation.email.max')),
     message: z
       .string()
-      .min(10, 'Message must be at least 10 characters.')
-      .max(500, 'Message must be less than 500 characters.')
+      .min(10, t('contact.form.validation.message.min'))
+      .max(500, t('contact.form.validation.message.max'))
       .refine((value) => !/http|www|href/.test(value), {
-        message: 'Message must not contain URLs.'
+        message: t('contact.form.validation.message.refine')
       }),
     honeypot: z.string().optional()
   })

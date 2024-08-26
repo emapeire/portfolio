@@ -50,7 +50,29 @@
       "email-placeholder": "Tu dirección de correo electrónico",
       "message": "Mensaje",
       "message-placeholder": "Escribe tu mensaje aquí...",
-      "submit": "Enviar"
+      "submit": "Enviar",
+      "validation": {
+        "first-name": {
+          "min": "El nombre debe tener al menos 2 caracteres.",
+          "max": "El nombre debe tener menos de 50 caracteres.",
+          "regex": "El nombre debe contener solo letras."
+        },
+        "last-name": {
+          "min": "El apellido debe tener al menos 2 caracteres.",
+          "max": "El apellido debe tener menos de 50 caracteres.",
+          "regex": "El apellido debe contener solo letras."
+        },
+        "email": {
+          "email": "El correo electrónico debe ser una dirección válida.",
+          "min": "El correo electrónico debe tener al menos 5 caracteres.",
+          "max": "El correo electrónico debe tener menos de 100 caracteres."
+        },
+        "message": {
+          "min": "El mensaje debe tener al menos 10 caracteres.",
+          "max": "El mensaje debe tener menos de 500 caracteres.",
+          "refine": "El mensaje no debe contener URLs."
+        }
+      }
     }
   },
   "footer": {
