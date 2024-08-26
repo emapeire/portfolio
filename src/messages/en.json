@@ -25,6 +25,34 @@
       "description": "Passionate about creating innovative tech solutions for social impact. Focused on using advanced frontend technologies to improve accessibility and performance in web applications. My main goal is to enhance user experience, making the web a better place for everyone."
     }
   },
+  "contact": {
+    "title": "Contact me",
+    "description": "Feel free to reach out to me for questions, inquiries, or collaborations. Open to new opportunities and challenges.",
+    "form": {
+      "message-watch": "Message must not contain URLs",
+      "on-submit": {
+        "title": "Spam detected",
+        "description": "Please, fill out the form correctly and without spam. Thanks!"
+      },
+      "ok": {
+        "title": "Email sent",
+        "description": "I will get back to you as soon as possible!"
+      },
+      "error": {
+        "title": "Error",
+        "description": "There was an error while submitting the email. Please try again later."
+      },
+      "card-description": "Please, fill out the form below and I'll get back to you as soon as possible.",
+      "first-name": "First name",
+      "first-name-placeholder": "Your first name",
+      "last-name": "Last name",
+      "last-name-placeholder": "Your last name",
+      "email-placeholder": "Your email address",
+      "message": "Message",
+      "message-placeholder": "Enter your message here...",
+      "submit": "Submit"
+    }
+  },
   "footer": {
     "copyrights": "All rights reserved."
   },

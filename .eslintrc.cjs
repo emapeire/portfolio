@@ -31,6 +31,7 @@ module.exports = {
     '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
     'react-refresh/only-export-components': 'off',
     'react/prop-types': 'off',
     'react/jsx-no-target-blank': [2, { allowReferrer: false }]

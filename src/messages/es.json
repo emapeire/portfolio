@@ -25,6 +25,34 @@
       "description": "Apasionado por crear soluciones tecnológicas innovadoras que generen un impacto social. Centrado en el uso de tecnologías avanzadas de interfaz para mejorar la accesibilidad y el rendimiento en aplicaciones web. Mi objetivo principal es mejorar la experiencia del usuario, haciendo de la web un lugar mejor para todos."
     }
   },
+  "contact": {
+    "title": "Contáctame",
+    "description": "No dudes en ponerte en contacto conmigo para preguntas, consultas o colaboraciones. Estoy abierto a nuevas oportunidades y desafíos.",
+    "form": {
+      "message-watch": "El mensaje no debe contener URLs",
+      "on-submit": {
+        "title": "Spam detectado",
+        "description": "Por favor, completa el formulario correctamente y sin spam. ¡Gracias!"
+      },
+      "ok": {
+        "title": "Correo enviado",
+        "description": "¡Me pondré en contacto contigo lo antes posible!"
+      },
+      "error": {
+        "title": "Error",
+        "description": "Hubo un error al enviar el correo. Por favor, inténtalo de nuevo más tarde."
+      },
+      "card-description": "Por favor, completa el formulario a continuación y me pondré en contacto contigo lo antes posible.",
+      "first-name": "Nombre",
+      "first-name-placeholder": "Tu nombre",
+      "last-name": "Apellido",
+      "last-name-placeholder": "Tu apellido",
+      "email-placeholder": "Tu dirección de correo electrónico",
+      "message": "Mensaje",
+      "message-placeholder": "Escribe tu mensaje aquí...",
+      "submit": "Enviar"
+    }
+  },
   "footer": {
     "copyrights": "Todos los derechos reservados."
   },
