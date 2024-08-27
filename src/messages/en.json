@@ -211,14 +211,14 @@
     "basehub-nextjs-blog": {
       "title": "BaseHub - Next.js blog",
       "tags": [
-        "BaseHub",
-        "CSS",
-        "Next.js",
-        "pnpm",
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "Vercel"
+        { "name": "BaseHub" },
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" },
+        { "name": "Vercel" }
       ],
       "description": "A starter guide template blog made with Next.js and BaseHub CMS. It uses the BaseHub API to fetch and display posts.",
       "link": {
@@ -229,7 +229,14 @@
     },
     "basement-challenge": {
       "title": "Basement Challenge",
-      "tags": ["CSS", "Next.js", "pnpm", "React", "Tailwind CSS", "TypeScript"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
       "description": "Basement studio stream challenge.",
       "link": {
         "github": "https://github.com/emapeire/basement-challenge",
@@ -240,12 +247,12 @@
     "chat-with-vader": {
       "title": "Chat With Vader",
       "tags": [
-        "JavaScript",
-        "Next.js",
-        "OpenAI",
-        "React",
-        "Tailwind CSS",
-        "TypeScript"
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
       ],
       "description": "A simple chat app that uses the OpenAI API and Vercel AI SDK to chat with Darth Vader.",
       "link": {
@@ -255,7 +262,7 @@
     },
     "cohere-chat": {
       "title": "Cohere Chat",
-      "tags": ["JavaScript", "Node.js"],
+      "tags": [{ "name": "JavaScript" }, { "name": "Node.js" }],
       "description": "A chatbot that uses the Cohere API to generate responses to user input.",
       "link": {
         "github": "https://github.com/emapeire/cohere-chat"
@@ -264,7 +271,14 @@
     },
     "comments-app": {
       "title": "Comments App",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "TypeScript", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
       "description": "A simple comments app made with React and Vite.",
       "link": {
         "github": "https://github.com/emapeire/comments-react-query"
@@ -274,13 +288,13 @@
     "crud-app": {
       "title": "Crud App",
       "tags": [
-        "CSS",
-        "HTML",
-        "JavaScript",
-        "React",
-        "Redux",
-        "TypeScript",
-        "Vite"
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Redux" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
       ],
       "description": "A simple CRUD app made with React and Vite.",
       "link": {
@@ -292,12 +306,12 @@
     "eloquent-js-chat": {
       "title": "Eloquent JavaScript Chat",
       "tags": [
-        "Next.js",
-        "OpenAI",
-        "React",
-        "ShadCN",
-        "Tailwind CSS",
-        "TypeScript"
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
       ],
       "description": "In this app you will be able to interact with a intelligent llama that will answer your questions about JavaScript.",
       "link": {
@@ -308,15 +322,15 @@
     "google-translate-ui": {
       "title": "Google Translate UI",
       "tags": [
-        "Bootstrap",
-        "CSS",
-        "OpenAI",
-        "HTML",
-        "JavaScript",
-        "React",
-        "TypeScript",
-        "Vite",
-        "Vitest"
+        { "name": "Bootstrap" },
+        { "name": "CSS" },
+        { "name": "OpenAI" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" },
+        { "name": "Vitest" }
       ],
       "description": "This is a simple API that uses the OpenAI GPT-4-vision-preview model to generate code from images.",
       "link": {
@@ -327,12 +341,12 @@
     "image-to-code": {
       "title": "Image 2 Code",
       "tags": [
-        "Next.js",
-        "OpenAI",
-        "React",
-        "ShadCN",
-        "Tailwind CSS",
-        "TypeScript"
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
       ],
       "description": "This is a tool that converts images to code. It uses AI to generate code from images. It is based on the GPT-4-vision-preview model.",
       "link": {
@@ -342,7 +356,14 @@
     },
     "javascript-quiz": {
       "title": "JavaScript Quiz",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "TypeScript", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
       "description": "A simple quiz app made with React and Zustand.",
       "link": {
         "github": "https://github.com/emapeire/javascript-quiz",
@@ -352,7 +373,14 @@
     },
     "meli-challenge": {
       "title": "Mercado Libre Challenge",
-      "tags": ["CSS", "Next.js", "pnpm", "React", "Tailwind CSS", "TypeScript"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
       "description": "Challenge to create a product search app using the Mercado Libre API. Built with Next.js and TypeScript.",
       "link": {
         "github": "https://github.com/emapeire/meli-challenge",
@@ -362,7 +390,13 @@
     },
     "mouse-follower": {
       "title": "Mouse Follower",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
       "description": "A simple mouse follower app made with React and Vite.",
       "link": {
         "github": "https://github.com/emapeire/mouse-follower",
@@ -373,12 +407,12 @@
     "morty-s-characters": {
       "title": "Morty's characters",
       "tags": [
-        "CSS",
-        "GraphQL",
-        "JavaScript",
-        "React",
-        "Tailwind CSS",
-        "TypeScript"
+        { "name": "CSS" },
+        { "name": "GraphQL" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
       ],
       "description": "A simple app that lists all Morty's characters. Built with Next.js and GraphQL.",
       "link": {
@@ -389,7 +423,13 @@
     },
     "movie-search-app": {
       "title": "Movie Search App",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
       "description": "A simple movie search app made with React and Vite.",
       "link": {
         "github": "https://github.com/emapeire/react-movie-search",
@@ -400,15 +440,15 @@
     "nextjs-chat-app": {
       "title": "Next.js Chat App",
       "tags": [
-        "CSS",
-        "HTML",
-        "JavaScript",
-        "Next.js",
-        "pnpm",
-        "React",
-        "ShadCN",
-        "Tailwind CSS",
-        "TypeScript"
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
       ],
       "description": "NextJS-Chat offers beginners a chat-based interface to learn Next.js and best coding practices through an AI expert.",
       "link": {
@@ -419,15 +459,15 @@
     "nextjs-releases-app": {
       "title": "Next.js Releases App",
       "tags": [
-        "CSS",
-        "HTML",
-        "JavaScript",
-        "Next.js",
-        "pnpm",
-        "React",
-        "ShadCN",
-        "Tailwind CSS",
-        "TypeScript"
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
       ],
       "description": "NextJS Releases is an App that tracks new releases on NextJS's GitHub repo.",
       "link": {
@@ -438,7 +478,7 @@
     },
     "react-gpt": {
       "title": "React GPT",
-      "tags": ["OpenAI", "React"],
+      "tags": [{ "name": "OpenAI" }, { "name": "React" }],
       "description": "An AI-driven web engineering expert for React community.",
       "link": {
         "preview": "https://chat.openai.com/g/g-HNcbE0A5n-reactgpt"
@@ -447,7 +487,7 @@
     },
     "screen-recorder": {
       "title": "Screen Recorder",
-      "tags": ["CSS", "HTML", "JavaScript"],
+      "tags": [{ "name": "CSS" }, { "name": "HTML" }, { "name": "JavaScript" }],
       "description": "Native screen recorder made with MediaRecorder web-api",
       "link": {
         "github": "https://github.com/emapeire/screen-recorder"
@@ -456,7 +496,13 @@
     },
     "shopping-cart": {
       "title": "Shopping Cart",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
       "description": "A simple shopping cart app made with React and Vite.",
       "link": {
         "github": "https://github.com/emapeire/shopping-cart",
@@ -466,7 +512,11 @@
     },
     "spacex-launches": {
       "title": "Space X Launches",
-      "tags": ["Astro", "JavaScript", "TypeScript"],
+      "tags": [
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "TypeScript" }
+      ],
       "description": "A simple app that lists all SpaceX launches. Built with Astro and TypeScript.",
       "link": {
         "github": "https://github.com/emapeire/spacex-launches",
@@ -477,12 +527,12 @@
     "spotify-ui": {
       "title": "Spotify UI",
       "tags": [
-        "Astro",
-        "JavaScript",
-        "React",
-        "Svelte",
-        "Tailwind CSS",
-        "TypeScript"
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Svelte" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
       ],
       "description": "An open-source Spotify clone built with Svelte and Astro.",
       "link": {
@@ -493,7 +543,14 @@
     },
     "swc-router": {
       "title": "SWC Router",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "SWC", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "SWC" },
+        { "name": "Vite" }
+      ],
       "description": "Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.",
       "link": {
         "github": "https://github.com/emapeire/swc-router",
@@ -503,7 +560,7 @@
     },
     "view-transitions-api": {
       "title": "View Transitions API",
-      "tags": ["Astro", "JavaScript"],
+      "tags": [{ "name": "Astro" }, { "name": "JavaScript" }],
       "description": "This is a sample project that demonstrates how to use the View Transitions API with Astro.",
       "link": {
         "github": "https://github.com/emapeire/view-transitions-api",
@@ -513,7 +570,11 @@
     },
     "tesla-landing-ui": {
       "title": "Tesla Landing UI",
-      "tags": ["Astro", "JavaScript", "Tailwind CSS"],
+      "tags": [
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "Tailwind CSS" }
+      ],
       "description": "An open-source Tesla landing page built with Astro and Tailwind CSS.",
       "link": {
         "github": "https://github.com/emapeire/tesla-landing",
@@ -523,7 +584,13 @@
     },
     "tic-tac-toe": {
       "title": "Tic Tac Toe",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
       "description": "A simple tic-tac-toe game made with React and TypeScript.",
       "link": {
         "github": "https://github.com/emapeire/tic-tac-toe",
@@ -533,7 +600,14 @@
     },
     "todo-app": {
       "title": "Todo App",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "TypeScript", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
       "description": "A simple todo app made with React and TypeScript.",
       "link": {
         "github": "https://github.com/emapeire/todo-app-ts",
@@ -543,7 +617,13 @@
     },
     "twitter-follow-card-ui": {
       "title": "Twitter Follow Card UI",
-      "tags": ["CSS", "HTML", "JavaScript", "React", "Vite"],
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
       "description": "An open-source Twitter follow card built with React and Vite.",
       "link": {
         "github": "https://github.com/emapeire/twitter-follow-card",
@@ -554,12 +634,12 @@
     "twitter-ui": {
       "title": "Twitter UI",
       "tags": [
-        "JavaScript",
-        "Next.js",
-        "React",
-        "Supabase",
-        "Tailwind CSS",
-        "TypeScript"
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "React" },
+        { "name": "Supabase" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
       ],
       "description": "An open-source Twitter clone built with Next.js and Supabase.",
       "link": {
