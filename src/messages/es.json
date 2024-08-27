@@ -236,6 +236,10 @@
       }
     }
   },
+  "pagination": {
+    "next": "Siguiente",
+    "previous": "Anterior"
+  },
   "footer": {
     "copyrights": "Todos los derechos reservados."
   },

@@ -6,6 +6,7 @@ import {
   PaginationPrevious
 } from '@/components/ui/pagination'
 import clsx from 'clsx'
+import { useTranslations } from 'next-intl'
 
 export function ProjectPagination({
   page,
@@ -16,11 +17,14 @@ export function ProjectPagination({
   totalPages: number
   updatePage: (page: number) => void
 }) {
+  const t = useTranslations()
+
   return (
     <Pagination>
       <PaginationContent className='flex gap-2'>
         <PaginationItem>
           <PaginationPrevious
+            t={t('pagination.previous')}
             className={clsx(
               page === 1 ? 'pointer-events-none opacity-50' : 'shadow'
             )}
@@ -36,6 +40,7 @@ export function ProjectPagination({
 
         <PaginationItem>
           <PaginationNext
+            t={t('pagination.next')}
             className={clsx(
               page === totalPages ? 'pointer-events-none opacity-50' : 'shadow'
             )}
