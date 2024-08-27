@@ -1,8 +1,7 @@
-import { AVATAR, LINKS, CAREER, PROJECTS } from '@/data'
+import { AVATAR, LINKS, PROJECTS } from '@/data'
 import type {
   AvatarProps,
   LinksProps,
-  CareerProps,
   ProjectProps,
   TranslateProps
 } from '@/types'
@@ -10,7 +9,6 @@ import type {
 export const data = {
   avatar: AVATAR as AvatarProps,
   links: LINKS as LinksProps[],
-  career: CAREER as CareerProps[],
   projects: PROJECTS as ProjectProps[]
 }
 

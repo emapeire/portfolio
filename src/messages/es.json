@@ -25,6 +25,167 @@
       "description": "Apasionado por crear soluciones tecnológicas innovadoras que generen un impacto social. Centrado en el uso de tecnologías avanzadas de interfaz para mejorar la accesibilidad y el rendimiento en aplicaciones web. Mi objetivo principal es mejorar la experiencia del usuario, haciendo de la web un lugar mejor para todos."
     }
   },
+  "career": {
+    "title": "Carrera & Trabajos",
+    "companies": [
+      {
+        "company": "Frontend Lab",
+        "link": "https://github.com/thefrontendlab",
+        "badges": ["Híbrido"],
+        "jobs": [
+          {
+            "title": "Desarrollador Frontend & Investigador Técnico",
+            "start": "Ago, 2023",
+            "end": "Presente",
+            "description": [
+              "Investigué e implementé nuevas tecnologías y herramientas frontend.",
+              "Desarrollé soluciones innovadoras para mejorar la comunidad frontend.",
+              "Realizé investigaciones técnicas para estar a la vanguardia de las tendencias de la industria.",
+              "Creé y mantuve proyectos de código abierto.",
+              "Colaboré con miembros del equipo para mejorar los resultados de los proyectos."
+            ]
+          },
+          {
+            "title": "Investigador Técnico & Desarrollador de Contenidos",
+            "start": "Jul, 2021",
+            "end": "Ago, 2023",
+            "description": [
+              "Creé contenido técnico para educar y atraer a la comunidad frontend.",
+              "Desarrollé tutoriales y guías sobre las últimas tecnologías frontend.",
+              "Gestioné la estrategia de contenido para alinearla con las necesidades y tendencias de la comunidad.",
+              "Colaboré con expertos para producir contenido informativo de alta calidad.",
+              "Utilizé varias plataformas para distribuir contenido y maximizar el alcance."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Next.js Argentina",
+        "link": "https://github.com/nextjsargentina",
+        "badges": ["Híbrido"],
+        "jobs": [
+          {
+            "title": "Arquitecto de Experiencia del Desarrollador",
+            "start": "Ago, 2023",
+            "end": "Presente",
+            "description": [
+              "Construí y fomenté una comunidad abierta sin fines de lucro para entusiastas de Next.js.",
+              "Desarrollé recursos para mejorar la experiencia del desarrollador con Next.js.",
+              "Organizé eventos y talleres comunitarios.",
+              "Proporcioné mentoría y apoyo a los miembros de la comunidad.",
+              "Colaboré con otros líderes comunitarios para expandir el alcance de la comunidad."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Invisible Technologies",
+        "link": "https://invisible.co",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Operador & Entrenador de IA Avanzada",
+            "start": "May, 2024",
+            "end": "Jun, 2024",
+            "description": [
+              "Gestioné las operaciones del sistema de IA para asegurar un rendimiento óptimo.",
+              "Entrené modelos de IA avanzados para mejorar la precisión del sistema.",
+              "Colaboré con equipos multifuncionales para desarrollar soluciones de IA.",
+              "Analizé datos para mejorar las metodologías de entrenamiento de IA.",
+              "Implementé retroalimentación para refinar continuamente los modelos de IA."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "BaseHub",
+        "link": "https://basehub.com",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Relaciones con Desarrolladores",
+            "start": "Mar, 2024",
+            "end": "May, 2024",
+            "description": [
+              "Asistí a los desarrolladores en la creación de aplicaciones utilizando BaseHub CMS e IA nativa.",
+              "Proporcioné soporte técnico y orientación a los desarrolladores.",
+              "Creé documentación y tutoriales para una mejor comprensión del producto.",
+              "Organizé y conduje seminarios web y talleres.",
+              "Interactué con la comunidad de desarrolladores para recopilar retroalimentación y mejorar el producto."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Smat.io",
+        "link": "https://smat.io",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Tester de QA & Desarrollador Frontend",
+            "start": "Ago, 2022",
+            "end": "Ago, 2023",
+            "description": [
+              "Lideré pruebas de QA utilizando Jest y Playwright para garantizar la calidad de las aplicaciones web.",
+              "Implementé prácticas de Desarrollo Orientado por Pruebas (TDD).",
+              "Desarrollé interfaces de usuario amigables con React.js.",
+              "Colaboré con desarrolladores para optimizar la calidad del código.",
+              "Realizé seguimiento de errores y resolución de problemas."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Maker DAO",
+        "link": "https://makerdao.com",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Redactor Técnico y Traductor",
+            "start": "Feb, 2022",
+            "end": "Ago, 2022",
+            "description": [
+              "Redacté documentación técnica, incluyendo libros blancos, guías y tutoriales.",
+              "Traduje contenido técnico complejo para audiencias diversas.",
+              "Facilité la comprensión del usuario sobre conceptos de blockchain y DeFi.",
+              "Colaboré con expertos en la materia para asegurar la precisión.",
+              "Mantuve y actualizé la documentación según fuera necesario."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "El Chaperón",
+        "badges": ["Presencial"],
+        "jobs": [
+          {
+            "title": "Diseñador Web & Community Manager",
+            "start": "Ene, 2019",
+            "end": "Dic, 2021",
+            "description": [
+              "Desarrollé y diseñé sitios web responsivos utilizando WordPress.",
+              "Gestioné servicios turísticos en línea para la ciudad de Rosario.",
+              "Coordiné con la Asociación Hotelera de Rosario y la Entidad de Turismo (ETUR).",
+              "Creé contenido atractivo para el alcance comunitario.",
+              "Implementé estrategias de SEO para mejorar la visibilidad del sitio web."
+            ]
+          },
+          {
+            "title": "Asesor Comercial",
+            "start": "Ene, 2016",
+            "end": "Dic, 2018",
+            "description": [
+              "Mantuve la base de datos de clientes para asegurar la precisión.",
+              "Ejecuté estrategias de marketing para atraer clientes.",
+              "Gestioné servicios y aseguré la satisfacción del cliente.",
+              "Diseñé e implementé campañas promocionales con el equipo de marketing.",
+              "Analizé retroalimentación y tendencias para mejorar servicios y marketing."
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "contact": {
     "title": "Contáctame",
     "description": "No dudes en ponerte en contacto conmigo para preguntas, consultas o colaboraciones. Estoy abierto a nuevas oportunidades y desafíos.",
