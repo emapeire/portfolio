@@ -79,6 +79,25 @@
         ]
       },
       {
+        "company": "Estudio Cabeza",
+        "link": "https://estudiocabeza.com",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Especialista en DevOps e Infraestructura",
+            "start": "Jul, 2024",
+            "end": "Ago, 2024",
+            "description": [
+              "Migré de WordPress a Webflow, mejorando el rendimiento.",
+              "Configuré Cloudflare para SSL y DNS.",
+              "Optimicé despliegues para reducir inactividad.",
+              "Automatizé flujos de trabajo para mayor eficiencia.",
+              "Alineé infraestructura con necesidades del negocio."
+            ]
+          }
+        ]
+      },
+      {
         "company": "Invisible Technologies",
         "link": "https://invisible.co",
         "badges": ["Remoto"],

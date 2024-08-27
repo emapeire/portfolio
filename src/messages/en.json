@@ -79,6 +79,25 @@
         ]
       },
       {
+        "company": "Estudio Cabeza",
+        "link": "https://estudiocabeza.com",
+        "badges": ["Remote"],
+        "jobs": [
+          {
+            "title": "DevOps & Infrastructure Specialist",
+            "start": "Jul, 2024",
+            "end": "Aug, 2024",
+            "description": [
+              "Migrated from WordPress to Webflow, boosting performance.",
+              "Configured Cloudflare for SSL and DNS.",
+              "Streamlined deployments to minimize downtime.",
+              "Automated workflows for efficiency.",
+              "Aligned infrastructure with business needs."
+            ]
+          }
+        ]
+      },
+      {
         "company": "Invisible Technologies",
         "link": "https://invisible.co",
         "badges": ["Remote"],
