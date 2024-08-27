@@ -6,14 +6,14 @@ import { ProjectCard } from './card'
 import { ProjectPagination } from './pagination'
 import { useTranslations } from 'next-intl'
 import { TerminalIcon } from 'lucide-react'
-import { data } from '@/constants'
+import { type ProjectProps } from '@/types'
 
 export function Projects() {
-  const { projects } = data
-  const { currentProjects, page, totalPages, updatePage } = usePagination({
-    projects
-  })
   const t = useTranslations()
+  const projectsList = t('projects.list') as ProjectProps
+  const { currentProjects, page, totalPages, updatePage } = usePagination({
+    projects: projectsList
+  })
 
   return (
     <>

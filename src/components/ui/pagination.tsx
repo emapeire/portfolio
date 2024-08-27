@@ -40,7 +40,7 @@ type PaginationLinkProps = {
 } & Pick<ButtonProps, 'size'> &
   React.ComponentProps<typeof Link>
 
-type PaginationTProps = {
+type PaginationTranslationProps = {
   t: string
 }
 
@@ -68,7 +68,8 @@ const PaginationPrevious = ({
   t,
   className,
   ...props
-}: React.ComponentProps<typeof PaginationLink> & PaginationTProps) => (
+}: React.ComponentProps<typeof PaginationLink> &
+  PaginationTranslationProps) => (
   <PaginationLink
     aria-label='Go to previous page'
     size='default'
@@ -85,7 +86,8 @@ const PaginationNext = ({
   t,
   className,
   ...props
-}: React.ComponentProps<typeof PaginationLink> & PaginationTProps) => (
+}: React.ComponentProps<typeof PaginationLink> &
+  PaginationTranslationProps) => (
   <PaginationLink
     aria-label='Go to next page'
     size='default'
