@@ -186,6 +186,10 @@
       }
     ]
   },
+  "projects": {
+    "title": "Projects & Crafts",
+    "not-found": "No projects found."
+  },
   "contact": {
     "title": "Contact me",
     "description": "Feel free to reach out to me for questions, inquiries, or collaborations. Open to new opportunities and challenges.",

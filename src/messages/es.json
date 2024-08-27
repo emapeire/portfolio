@@ -186,6 +186,10 @@
       }
     ]
   },
+  "projects": {
+    "title": "Proyectos & Construcciones",
+    "not-found": "No se encuentran proyectos."
+  },
   "contact": {
     "title": "Contáctame",
     "description": "No dudes en ponerte en contacto conmigo para preguntas, consultas o colaboraciones. Estoy abierto a nuevas oportunidades y desafíos.",
