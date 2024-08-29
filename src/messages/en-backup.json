@@ -1,0 +1,726 @@
+{
+  "header": {
+    "about": {
+      "title": "About",
+      "label": "about"
+    },
+    "career": {
+      "title": "Career",
+      "label": "career"
+    },
+    "projects": {
+      "title": "Projects",
+      "label": "projects"
+    },
+    "contact": {
+      "title": "Contact",
+      "label": "contact"
+    },
+    "settings": "Settings"
+  },
+  "hero": {
+    "available": "Available",
+    "about": {
+      "title": "Frontend Engineer, Developer Relations and AI research enthusiast. Always influenced by design. Based in Rosario, Argentina 🇦🇷",
+      "description": "Passionate about creating innovative tech solutions for social impact. Focused on using advanced frontend technologies to improve accessibility and performance in web applications. My main goal is to enhance user experience, making the web a better place for everyone."
+    }
+  },
+  "career": {
+    "title": "Career & Works",
+    "companies": [
+      {
+        "company": "Frontend Lab",
+        "link": "https://github.com/thefrontendlab",
+        "badges": ["Hybrid"],
+        "jobs": [
+          {
+            "title": "Frontend Developer & Technical Researcher",
+            "start": "Aug, 2023",
+            "end": "Present",
+            "description": [
+              "Researched and implemented new frontend technologies and tools.",
+              "Developed innovative solutions to improve the frontend community.",
+              "Conducted technical research to stay ahead of industry trends.",
+              "Created and maintained open-source projects.",
+              "Collaborated with team members to enhance project outcomes."
+            ]
+          },
+          {
+            "title": "Technical Researcher & Content Developer",
+            "start": "Jul, 2021",
+            "end": "Aug, 2023",
+            "description": [
+              "Created technical content to educate and engage the frontend community.",
+              "Developed tutorials and guides on the latest frontend technologies.",
+              "Managed the content strategy to align with community needs and trends.",
+              "Collaborated with experts to produce high-quality, informative content.",
+              "Utilized various platforms to distribute content and maximize reach."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Next.js Argentina",
+        "link": "https://github.com/nextjsargentina",
+        "badges": ["Hybrid"],
+        "jobs": [
+          {
+            "title": "Developer Experience Architect",
+            "start": "Aug, 2023",
+            "end": "Present",
+            "description": [
+              "Built and nurtured a non-profit open community for Next.js enthusiasts.",
+              "Developed resources to enhance the developer experience with Next.js.",
+              "Organized community events and workshops.",
+              "Provided mentorship and support to community members.",
+              "Collaborated with other community leaders to expand the community reach."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Estudio Cabeza",
+        "link": "https://estudiocabeza.com",
+        "badges": ["Remote"],
+        "jobs": [
+          {
+            "title": "DevOps & Infrastructure Specialist",
+            "start": "Jul, 2024",
+            "end": "Aug, 2024",
+            "description": [
+              "Migrated from WordPress to Webflow, boosting performance.",
+              "Configured Cloudflare for SSL and DNS.",
+              "Streamlined deployments to minimize downtime.",
+              "Automated workflows for efficiency.",
+              "Aligned infrastructure with business needs."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Invisible Technologies",
+        "link": "https://invisible.co",
+        "badges": ["Remote"],
+        "jobs": [
+          {
+            "title": "Operator & Advanced AI Trainer",
+            "start": "May, 2024",
+            "end": "Aug, 2024",
+            "description": [
+              "Managed AI system operations to ensure optimal performance.",
+              "Trained advanced AI models to improve system accuracy.",
+              "Collaborated with cross-functional teams to develop AI solutions.",
+              "Analyzed data to enhance AI training methodologies.",
+              "Implemented feedback to refine AI models continuously."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "BaseHub",
+        "link": "https://basehub.com",
+        "badges": ["Remote"],
+        "jobs": [
+          {
+            "title": "Developer Relations",
+            "start": "Mar, 2024",
+            "end": "Aug, 2024",
+            "description": [
+              "Assisted developers in building applications using BaseHub CMS and native AI.",
+              "Provided technical support and guidance to developers.",
+              "Created documentation and tutorials for better product understanding.",
+              "Organized and conducted webinars and workshops.",
+              "Engaged with the developer community to gather feedback and improve the product."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Smat.io",
+        "link": "https://smat.io",
+        "badges": ["Remote"],
+        "jobs": [
+          {
+            "title": "QA Tester & Frontend Developer",
+            "start": "Aug, 2022",
+            "end": "Aug, 2023",
+            "description": [
+              "Led QA testing using Jest and Playwright to ensure web applications' quality.",
+              "Implemented Test-Driven Development (TDD) practices.",
+              "Developed user-friendly interfaces with React.js.",
+              "Collaborated with developers to optimize code quality.",
+              "Conducted bug tracking and troubleshooting."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Maker DAO",
+        "link": "https://makerdao.com",
+        "badges": ["Remote"],
+        "jobs": [
+          {
+            "title": "Technical Writer and Translator",
+            "start": "Feb, 2022",
+            "end": "Aug, 2022",
+            "description": [
+              "Authored technical documentation, including whitepapers, guides, and tutorials.",
+              "Translated complex technical content for diverse audiences.",
+              "Facilitated user understanding of blockchain and DeFi concepts.",
+              "Collaborated with subject matter experts to ensure accuracy.",
+              "Maintained and updated documentation as needed."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "El Chaperón",
+        "badges": ["On-site"],
+        "jobs": [
+          {
+            "title": "Web Designer & Community Manager",
+            "start": "Jan, 2019",
+            "end": "Dec, 2021",
+            "description": [
+              "Developed and designed responsive websites using WordPress.",
+              "Managed online tourist services for the city of Rosario.",
+              "Coordinated with the Rosario Hotel Association and Tourist Entity (ETUR).",
+              "Created engaging content for community outreach.",
+              "Implemented SEO strategies to improve website visibility."
+            ]
+          },
+          {
+            "title": "Commercial Advisor",
+            "start": "Jan, 2016",
+            "end": "Dec, 2018",
+            "description": [
+              "Maintained customer database for accuracy.",
+              "Executed marketing strategies to attract customers.",
+              "Managed services and ensured customer satisfaction.",
+              "Designed and implemented promotional campaigns with the marketing team.",
+              "Analyzed feedback and trends to improve services and marketing."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects & Crafts",
+    "not-found": "No projects found",
+    "basehub-nextjs-blog": {
+      "title": "BaseHub - Next.js blog",
+      "tags": [
+        { "name": "BaseHub" },
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" },
+        { "name": "Vercel" }
+      ],
+      "description": "A starter guide template blog made with Next.js and BaseHub CMS. It uses the BaseHub API to fetch and display posts.",
+      "link": {
+        "github": "https://github.com/basehub-ai/nextjs-blog",
+        "preview": "https://nextjs-blog-basehub.vercel.app"
+      },
+      "image": "/projects/images/basehub-nextjs-blog.png"
+    },
+    "basement-challenge": {
+      "title": "Basement Challenge",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Basement studio stream challenge.",
+      "link": {
+        "github": "https://github.com/emapeire/basement-challenge",
+        "preview": "https://emapeire-basement-challenge.vercel.app"
+      },
+      "image": "/projects/images/basement-challenge.png"
+    },
+    "chat-with-vader": {
+      "title": "Chat With Vader",
+      "tags": [
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "A simple chat app that uses the OpenAI API and Vercel AI SDK to chat with Darth Vader.",
+      "link": {
+        "github": "https://github.com/emapeire/chat-with-vader"
+      },
+      "image": "/projects/images/chat-with-vader.png"
+    },
+    "cohere-chat": {
+      "title": "Cohere Chat",
+      "tags": [{ "name": "JavaScript" }, { "name": "Node.js" }],
+      "description": "A chatbot that uses the Cohere API to generate responses to user input.",
+      "link": {
+        "github": "https://github.com/emapeire/cohere-chat"
+      },
+      "image": "/projects/images/cohere-chat.png"
+    },
+    "comments-app": {
+      "title": "Comments App",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
+      "description": "A simple comments app made with React and Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/comments-react-query"
+      },
+      "image": "/projects/images/comments-app.png"
+    },
+    "crud-app": {
+      "title": "Crud App",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Redux" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
+      "description": "A simple CRUD app made with React and Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/crud-react-redux",
+        "preview": "https://emapeire-crud-react-redux.netlify.app"
+      },
+      "image": "/projects/images/crud-app.png"
+    },
+    "eloquent-js-chat": {
+      "title": "Eloquent JavaScript Chat",
+      "tags": [
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "In this app you will be able to interact with a intelligent llama that will answer your questions about JavaScript.",
+      "link": {
+        "github": "https://github.com/emapeire/eloquent-js-chat"
+      },
+      "image": "/projects/images/eloquent-js-chat.png"
+    },
+    "google-translate-ui": {
+      "title": "Google Translate UI",
+      "tags": [
+        { "name": "Bootstrap" },
+        { "name": "CSS" },
+        { "name": "OpenAI" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" },
+        { "name": "Vitest" }
+      ],
+      "description": "This is a simple API that uses the OpenAI GPT-4-vision-preview model to generate code from images.",
+      "link": {
+        "github": "https://github.com/emapeire/google-translate-clone"
+      },
+      "image": "/projects/images/google-translate-clone.png"
+    },
+    "image-to-code": {
+      "title": "Image 2 Code",
+      "tags": [
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "This is a tool that converts images to code. It uses AI to generate code from images. It is based on the GPT-4-vision-preview model.",
+      "link": {
+        "github": "https://github.com/emapeire/image-to-code"
+      },
+      "video": "/projects/videos/image-2-code.webm"
+    },
+    "javascript-quiz": {
+      "title": "JavaScript Quiz",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
+      "description": "A simple quiz app made with React and Zustand.",
+      "link": {
+        "github": "https://github.com/emapeire/javascript-quiz",
+        "preview": "https://emapeire-javascript-quiz.netlify.app"
+      },
+      "image": "/projects/images/javascript-quiz.png"
+    },
+    "meli-challenge": {
+      "title": "Mercado Libre Challenge",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Challenge to create a product search app using the Mercado Libre API. Built with Next.js and TypeScript.",
+      "link": {
+        "github": "https://github.com/emapeire/meli-challenge",
+        "preview": "https://emapeire-meli-challenge.vercel.app"
+      },
+      "image": "/projects/images/meli-challenge.png"
+    },
+    "mouse-follower": {
+      "title": "Mouse Follower",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "A simple mouse follower app made with React and Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/mouse-follower",
+        "preview": "https://emapeire-mouse-follower.netlify.app"
+      },
+      "video": "/projects/videos/mouse-follower.webm"
+    },
+    "morty-s-characters": {
+      "title": "Morty's characters",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "GraphQL" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "A simple app that lists all Morty's characters. Built with Next.js and GraphQL.",
+      "link": {
+        "github": "https://github.com/emapeire/nextjs-graphql",
+        "preview": "https://emapeire-nextjs-graphql.vercel.app"
+      },
+      "image": "/projects/images/morty-s-characters.png"
+    },
+    "movie-search-app": {
+      "title": "Movie Search App",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "A simple movie search app made with React and Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/react-movie-search",
+        "preview": "https://emapeire-react-movie-search.netlify.app"
+      },
+      "image": "/projects/images/movie-search.png"
+    },
+    "nextjs-chat-app": {
+      "title": "Next.js Chat App",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "NextJS-Chat offers beginners a chat-based interface to learn Next.js and best coding practices through an AI expert.",
+      "link": {
+        "github": "https://github.com/nextjsargentina/next.js-chat"
+      },
+      "video": "/projects/videos/nextjs-chat.webm"
+    },
+    "nextjs-releases-app": {
+      "title": "Next.js Releases App",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "NextJS Releases is an App that tracks new releases on NextJS's GitHub repo.",
+      "link": {
+        "github": "https://github.com/nextjsargentina/next.js-releases",
+        "preview": "https://nextjs-releases.vercel.app"
+      },
+      "image": "/projects/images/nextjs-releases-app.png"
+    },
+    "react-gpt": {
+      "title": "React GPT",
+      "tags": [{ "name": "OpenAI" }, { "name": "React" }],
+      "description": "An AI-driven web engineering expert for React community.",
+      "link": {
+        "preview": "https://chat.openai.com/g/g-HNcbE0A5n-reactgpt"
+      },
+      "image": "/projects/images/react-gpt.png"
+    },
+    "screen-recorder": {
+      "title": "Screen Recorder",
+      "tags": [{ "name": "CSS" }, { "name": "HTML" }, { "name": "JavaScript" }],
+      "description": "Native screen recorder made with MediaRecorder web-api",
+      "link": {
+        "github": "https://github.com/emapeire/screen-recorder"
+      },
+      "video": "/projects/videos/screen-recorder.webm"
+    },
+    "shopping-cart": {
+      "title": "Shopping Cart",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "A simple shopping cart app made with React and Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/shopping-cart",
+        "preview": "https://emapeire-shopping-cart.netlify.app"
+      },
+      "image": "/projects/images/shopping-cart.png"
+    },
+    "spacex-launches": {
+      "title": "Space X Launches",
+      "tags": [
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "TypeScript" }
+      ],
+      "description": "A simple app that lists all SpaceX launches. Built with Astro and TypeScript.",
+      "link": {
+        "github": "https://github.com/emapeire/spacex-launches",
+        "preview": "https://emapeire-spacex-launches.vercel.app"
+      },
+      "image": "/projects/images/spacex-launches.png"
+    },
+    "spotify-ui": {
+      "title": "Spotify UI",
+      "tags": [
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Svelte" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "An open-source Spotify clone built with Svelte and Astro.",
+      "link": {
+        "github": "https://github.com/emapeire/spotify-clone",
+        "preview": "https://emapeire-spotify-clone.vercel.app"
+      },
+      "image": "/projects/images/spotify-clone.png"
+    },
+    "swc-router": {
+      "title": "SWC Router",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "SWC" },
+        { "name": "Vite" }
+      ],
+      "description": "Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.",
+      "link": {
+        "github": "https://github.com/emapeire/swc-router",
+        "preview": "https://npmjs.com/package/swc-router"
+      },
+      "image": "/projects/images/swc-router.png"
+    },
+    "view-transitions-api": {
+      "title": "View Transitions API",
+      "tags": [{ "name": "Astro" }, { "name": "JavaScript" }],
+      "description": "This is a sample project that demonstrates how to use the View Transitions API with Astro.",
+      "link": {
+        "github": "https://github.com/emapeire/view-transitions-api",
+        "preview": "https://emapeire-view-transitions-api.vercel.app"
+      },
+      "video": "/projects/videos/view-transitions-api.webm"
+    },
+    "tesla-landing-ui": {
+      "title": "Tesla Landing UI",
+      "tags": [
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "Tailwind CSS" }
+      ],
+      "description": "An open-source Tesla landing page built with Astro and Tailwind CSS.",
+      "link": {
+        "github": "https://github.com/emapeire/tesla-landing",
+        "preview": "https://emapeire-tesla-landing.vercel.app"
+      },
+      "video": "/projects/videos/tesla-landing-clone.webm"
+    },
+    "tic-tac-toe": {
+      "title": "Tic Tac Toe",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "A simple tic-tac-toe game made with React and TypeScript.",
+      "link": {
+        "github": "https://github.com/emapeire/tic-tac-toe",
+        "preview": "https://emapeire-tic-tac-toe.netlify.app"
+      },
+      "image": "/projects/images/tic-tac-toe.png"
+    },
+    "todo-app": {
+      "title": "Todo App",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
+      "description": "A simple todo app made with React and TypeScript.",
+      "link": {
+        "github": "https://github.com/emapeire/todo-app-ts",
+        "preview": "https://emapeire-todo-ts.netlify.app"
+      },
+      "image": "/projects/images/todo-app-ts.png"
+    },
+    "twitter-follow-card-ui": {
+      "title": "Twitter Follow Card UI",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "An open-source Twitter follow card built with React and Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/twitter-follow-card",
+        "preview": "https://emapeire-twitter-follow-card.netlify.app"
+      },
+      "image": "/projects/images/twitter-follow-card.png"
+    },
+    "twitter-ui": {
+      "title": "Twitter UI",
+      "tags": [
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "React" },
+        { "name": "Supabase" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "An open-source Twitter clone built with Next.js and Supabase.",
+      "link": {
+        "github": "https://github.com/emapeire/twitter-clone"
+      },
+      "image": "/projects/images/twitter-clone.png"
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "Feel free to reach out to me for questions, inquiries, or collaborations. Open to new opportunities and challenges.",
+    "form": {
+      "message-watch": "Message must not contain URLs",
+      "on-submit": {
+        "title": "Spam detected",
+        "description": "Please, fill out the form correctly and without spam. Thanks!"
+      },
+      "ok": {
+        "title": "Email sent",
+        "description": "I will get back to you as soon as possible!"
+      },
+      "error": {
+        "title": "Error",
+        "description": "There was an error while submitting the email. Please try again later."
+      },
+      "card-description": "Please, fill out the form below and I'll get back to you as soon as possible.",
+      "first-name": "First name",
+      "first-name-placeholder": "Your first name",
+      "last-name": "Last name",
+      "last-name-placeholder": "Your last name",
+      "email-placeholder": "Your email address",
+      "message": "Message",
+      "message-placeholder": "Enter your message here...",
+      "submit": "Submit",
+      "validation": {
+        "first-name": {
+          "min": "First name must be at least 2 characters.",
+          "max": "First name must be less than 50 characters.",
+          "regex": "First name must contain only letters."
+        },
+        "last-name": {
+          "min": "Last name must be at least 2 characters.",
+          "max": "Last name must be less than 50 characters.",
+          "regex": "Last name must contain only letters."
+        },
+        "email": {
+          "email": "Email must be a valid email address.",
+          "min": "Email must be at least 5 characters.",
+          "max": "Email must be less than 100 characters."
+        },
+        "message": {
+          "min": "Message must be at least 10 characters.",
+          "max": "Message must be less than 500 characters.",
+          "refine": "Message must not contain URLs."
+        }
+      }
+    }
+  },
+  "pagination": {
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "footer": {
+    "copyrights": "All rights reserved."
+  },
+  "lang-switcher": {
+    "label": "Language",
+    "options": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "mode-toggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "label": "Theme"
+  },
+  "not-found": {
+    "title": "404",
+    "description": "Congratulations! You found a page that doesn't exist. 🎉",
+    "button": "Go back home"
+  }
+}

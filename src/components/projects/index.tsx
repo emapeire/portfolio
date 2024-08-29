@@ -10,9 +10,9 @@ import { type ProjectProps } from '@/types'
 
 export function Projects() {
   const t = useTranslations()
-  const projectsList = t('projects.list') as ProjectProps
+  const projectsItems = t('projects.items') as ProjectProps
   const { currentProjects, page, totalPages, updatePage } = usePagination({
-    projects: projectsList
+    projects: projectsItems
   })
 
   return (

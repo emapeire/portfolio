@@ -1,0 +1,726 @@
+{
+  "header": {
+    "about": {
+      "title": "Sobre mí",
+      "label": "sobre-mi"
+    },
+    "career": {
+      "title": "Carrera",
+      "label": "carrera"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "label": "proyectos"
+    },
+    "contact": {
+      "title": "Contacto",
+      "label": "contacto"
+    },
+    "settings": "Configuración"
+  },
+  "hero": {
+    "available": "Disponible",
+    "about": {
+      "title": "Ingeniero de frontend, relaciones con desarrolladores y entusiasta de la investigación en IA. Siempre influenciado por el diseño. Con base en Rosario, Argentina 🇦🇷",
+      "description": "Apasionado por crear soluciones tecnológicas innovadoras que generen un impacto social. Centrado en el uso de tecnologías avanzadas de interfaz para mejorar la accesibilidad y el rendimiento en aplicaciones web. Mi objetivo principal es mejorar la experiencia del usuario, haciendo de la web un lugar mejor para todos."
+    }
+  },
+  "career": {
+    "title": "Carrera & Trabajos",
+    "companies": [
+      {
+        "company": "Frontend Lab",
+        "link": "https://github.com/thefrontendlab",
+        "badges": ["Híbrido"],
+        "jobs": [
+          {
+            "title": "Desarrollador Frontend & Investigador Técnico",
+            "start": "Ago, 2023",
+            "end": "Presente",
+            "description": [
+              "Investigué e implementé nuevas tecnologías y herramientas frontend.",
+              "Desarrollé soluciones innovadoras para mejorar la comunidad frontend.",
+              "Realizé investigaciones técnicas para estar a la vanguardia de las tendencias de la industria.",
+              "Creé y mantuve proyectos de código abierto.",
+              "Colaboré con miembros del equipo para mejorar los resultados de los proyectos."
+            ]
+          },
+          {
+            "title": "Investigador Técnico & Desarrollador de Contenidos",
+            "start": "Jul, 2021",
+            "end": "Ago, 2023",
+            "description": [
+              "Creé contenido técnico para educar y atraer a la comunidad frontend.",
+              "Desarrollé tutoriales y guías sobre las últimas tecnologías frontend.",
+              "Gestioné la estrategia de contenido para alinearla con las necesidades y tendencias de la comunidad.",
+              "Colaboré con expertos para producir contenido informativo de alta calidad.",
+              "Utilizé varias plataformas para distribuir contenido y maximizar el alcance."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Next.js Argentina",
+        "link": "https://github.com/nextjsargentina",
+        "badges": ["Híbrido"],
+        "jobs": [
+          {
+            "title": "Arquitecto de Experiencia del Desarrollador",
+            "start": "Ago, 2023",
+            "end": "Presente",
+            "description": [
+              "Construí y fomenté una comunidad abierta sin fines de lucro para entusiastas de Next.js.",
+              "Desarrollé recursos para mejorar la experiencia del desarrollador con Next.js.",
+              "Organizé eventos y talleres comunitarios.",
+              "Proporcioné mentoría y apoyo a los miembros de la comunidad.",
+              "Colaboré con otros líderes comunitarios para expandir el alcance de la comunidad."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Estudio Cabeza",
+        "link": "https://estudiocabeza.com",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Especialista en DevOps e Infraestructura",
+            "start": "Jul, 2024",
+            "end": "Ago, 2024",
+            "description": [
+              "Migré de WordPress a Webflow, mejorando el rendimiento.",
+              "Configuré Cloudflare para SSL y DNS.",
+              "Optimicé despliegues para reducir inactividad.",
+              "Automatizé flujos de trabajo para mayor eficiencia.",
+              "Alineé infraestructura con necesidades del negocio."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Invisible Technologies",
+        "link": "https://invisible.co",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Operador & Entrenador de IA Avanzada",
+            "start": "May, 2024",
+            "end": "Ago, 2024",
+            "description": [
+              "Gestioné las operaciones del sistema de IA para asegurar un rendimiento óptimo.",
+              "Entrené modelos de IA avanzados para mejorar la precisión del sistema.",
+              "Colaboré con equipos multifuncionales para desarrollar soluciones de IA.",
+              "Analizé datos para mejorar las metodologías de entrenamiento de IA.",
+              "Implementé retroalimentación para refinar continuamente los modelos de IA."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "BaseHub",
+        "link": "https://basehub.com",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Relaciones con Desarrolladores",
+            "start": "Mar, 2024",
+            "end": "Ago, 2024",
+            "description": [
+              "Asistí a los desarrolladores en la creación de aplicaciones utilizando BaseHub CMS e IA nativa.",
+              "Proporcioné soporte técnico y orientación a los desarrolladores.",
+              "Creé documentación y tutoriales para una mejor comprensión del producto.",
+              "Organizé y conduje seminarios web y talleres.",
+              "Interactué con la comunidad de desarrolladores para recopilar retroalimentación y mejorar el producto."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Smat.io",
+        "link": "https://smat.io",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Tester de QA & Desarrollador Frontend",
+            "start": "Ago, 2022",
+            "end": "Ago, 2023",
+            "description": [
+              "Lideré pruebas de QA utilizando Jest y Playwright para garantizar la calidad de las aplicaciones web.",
+              "Implementé prácticas de Desarrollo Orientado por Pruebas (TDD).",
+              "Desarrollé interfaces de usuario amigables con React.js.",
+              "Colaboré con desarrolladores para optimizar la calidad del código.",
+              "Realizé seguimiento de errores y resolución de problemas."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Maker DAO",
+        "link": "https://makerdao.com",
+        "badges": ["Remoto"],
+        "jobs": [
+          {
+            "title": "Redactor Técnico y Traductor",
+            "start": "Feb, 2022",
+            "end": "Ago, 2022",
+            "description": [
+              "Redacté documentación técnica, incluyendo libros blancos, guías y tutoriales.",
+              "Traduje contenido técnico complejo para audiencias diversas.",
+              "Facilité la comprensión del usuario sobre conceptos de blockchain y DeFi.",
+              "Colaboré con expertos en la materia para asegurar la precisión.",
+              "Mantuve y actualizé la documentación según fuera necesario."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "El Chaperón",
+        "badges": ["Presencial"],
+        "jobs": [
+          {
+            "title": "Diseñador Web & Community Manager",
+            "start": "Ene, 2019",
+            "end": "Dic, 2021",
+            "description": [
+              "Desarrollé y diseñé sitios web responsivos utilizando WordPress.",
+              "Gestioné servicios turísticos en línea para la ciudad de Rosario.",
+              "Coordiné con la Asociación Hotelera de Rosario y la Entidad de Turismo (ETUR).",
+              "Creé contenido atractivo para el alcance comunitario.",
+              "Implementé estrategias de SEO para mejorar la visibilidad del sitio web."
+            ]
+          },
+          {
+            "title": "Asesor Comercial",
+            "start": "Ene, 2016",
+            "end": "Dic, 2018",
+            "description": [
+              "Mantuve la base de datos de clientes para asegurar la precisión.",
+              "Ejecuté estrategias de marketing para atraer clientes.",
+              "Gestioné servicios y aseguré la satisfacción del cliente.",
+              "Diseñé e implementé campañas promocionales con el equipo de marketing.",
+              "Analizé retroalimentación y tendencias para mejorar servicios y marketing."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos & Creaciones",
+    "not-found": "No se encontraron proyectos",
+    "basehub-nextjs-blog": {
+      "title": "BaseHub - Blog en Next.js",
+      "tags": [
+        { "name": "BaseHub" },
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" },
+        { "name": "Vercel" }
+      ],
+      "description": "Una plantilla de blog hecha con Next.js y BaseHub CMS. Utiliza la API de BaseHub para obtener y mostrar publicaciones.",
+      "link": {
+        "github": "https://github.com/basehub-ai/nextjs-blog",
+        "preview": "https://nextjs-blog-basehub.vercel.app"
+      },
+      "image": "/projects/images/basehub-nextjs-blog.png"
+    },
+    "basement-challenge": {
+      "title": "Desafío de Basement",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Desafío de streaming de Basement Studio.",
+      "link": {
+        "github": "https://github.com/emapeire/basement-challenge",
+        "preview": "https://emapeire-basement-challenge.vercel.app"
+      },
+      "image": "/projects/images/basement-challenge.png"
+    },
+    "chat-with-vader": {
+      "title": "Chat con Vader",
+      "tags": [
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Una aplicación de chat simple que usa la API de OpenAI y el SDK de Vercel AI para chatear con Darth Vader.",
+      "link": {
+        "github": "https://github.com/emapeire/chat-with-vader"
+      },
+      "image": "/projects/images/chat-with-vader.png"
+    },
+    "cohere-chat": {
+      "title": "Cohere Chat",
+      "tags": [{ "name": "JavaScript" }, { "name": "Node.js" }],
+      "description": "Un chatbot que usa la API de Cohere para generar respuestas a las entradas del usuario.",
+      "link": {
+        "github": "https://github.com/emapeire/cohere-chat"
+      },
+      "image": "/projects/images/cohere-chat.png"
+    },
+    "comments-app": {
+      "title": "Aplicación de Comentarios",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
+      "description": "Una aplicación de comentarios simple hecha con React y Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/comments-react-query"
+      },
+      "image": "/projects/images/comments-app.png"
+    },
+    "crud-app": {
+      "title": "Aplicación CRUD",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Redux" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
+      "description": "Una aplicación CRUD simple hecha con React y Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/crud-react-redux",
+        "preview": "https://emapeire-crud-react-redux.netlify.app"
+      },
+      "image": "/projects/images/crud-app.png"
+    },
+    "eloquent-js-chat": {
+      "title": "Chat de JavaScript Eloquent",
+      "tags": [
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "En esta aplicación podrás interactuar con una llama inteligente que responderá tus preguntas sobre JavaScript.",
+      "link": {
+        "github": "https://github.com/emapeire/eloquent-js-chat"
+      },
+      "image": "/projects/images/eloquent-js-chat.png"
+    },
+    "google-translate-ui": {
+      "title": "Interfaz de Google Translate",
+      "tags": [
+        { "name": "Bootstrap" },
+        { "name": "CSS" },
+        { "name": "OpenAI" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" },
+        { "name": "Vitest" }
+      ],
+      "description": "Esta es una API simple que usa el modelo GPT-4-vision-preview de OpenAI para generar código a partir de imágenes.",
+      "link": {
+        "github": "https://github.com/emapeire/google-translate-clone"
+      },
+      "image": "/projects/images/google-translate-clone.png"
+    },
+    "image-to-code": {
+      "title": "Imagen a Código",
+      "tags": [
+        { "name": "Next.js" },
+        { "name": "OpenAI" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Esta es una herramienta que convierte imágenes en código. Usa inteligencia artificial para generar código a partir de imágenes. Está basada en el modelo GPT-4-vision-preview.",
+      "link": {
+        "github": "https://github.com/emapeire/image-to-code"
+      },
+      "video": "/projects/videos/image-2-code.webm"
+    },
+    "javascript-quiz": {
+      "title": "Quiz de JavaScript",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
+      "description": "Una aplicación de quiz simple hecha con React y Zustand.",
+      "link": {
+        "github": "https://github.com/emapeire/javascript-quiz",
+        "preview": "https://emapeire-javascript-quiz.netlify.app"
+      },
+      "image": "/projects/images/javascript-quiz.png"
+    },
+    "meli-challenge": {
+      "title": "Desafío de Mercado Libre",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Desafío para crear una aplicación de búsqueda de productos utilizando la API de Mercado Libre. Construido con Next.js y TypeScript.",
+      "link": {
+        "github": "https://github.com/emapeire/meli-challenge",
+        "preview": "https://emapeire-meli-challenge.vercel.app"
+      },
+      "image": "/projects/images/meli-challenge.png"
+    },
+    "mouse-follower": {
+      "title": "Seguidor de Mouse",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "Una aplicación simple de seguidor de mouse hecha con React y Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/mouse-follower",
+        "preview": "https://emapeire-mouse-follower.netlify.app"
+      },
+      "video": "/projects/videos/mouse-follower.webm"
+    },
+    "morty-s-characters": {
+      "title": "Personajes de Morty",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "GraphQL" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Una aplicación simple que lista todos los personajes de Morty. Construida con Next.js y GraphQL.",
+      "link": {
+        "github": "https://github.com/emapeire/nextjs-graphql",
+        "preview": "https://emapeire-nextjs-graphql.vercel.app"
+      },
+      "image": "/projects/images/morty-s-characters.png"
+    },
+    "movie-search-app": {
+      "title": "Aplicación de Búsqueda de Películas",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "Una aplicación simple de búsqueda de películas hecha con React y Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/react-movie-search",
+        "preview": "https://emapeire-react-movie-search.netlify.app"
+      },
+      "image": "/projects/images/movie-search.png"
+    },
+    "nextjs-chat-app": {
+      "title": "Aplicación de Chat Next.js",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "NextJS-Chat ofrece a los principiantes una interfaz de chat para aprender Next.js y las mejores prácticas de codificación a través de un experto en IA.",
+      "link": {
+        "github": "https://github.com/nextjsargentina/next.js-chat"
+      },
+      "video": "/projects/videos/nextjs-chat.webm"
+    },
+    "nextjs-releases-app": {
+      "title": "Aplicación de Lanzamientos Next.js",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "pnpm" },
+        { "name": "React" },
+        { "name": "ShadCN" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "NextJS Releases es una aplicación que rastrea nuevos lanzamientos en el repositorio de GitHub de NextJS.",
+      "link": {
+        "github": "https://github.com/nextjsargentina/next.js-releases",
+        "preview": "https://nextjs-releases.vercel.app"
+      },
+      "image": "/projects/images/nextjs-releases-app.png"
+    },
+    "react-gpt": {
+      "title": "React GPT",
+      "tags": [{ "name": "OpenAI" }, { "name": "React" }],
+      "description": "Un experto en ingeniería web impulsado por IA para la comunidad de React.",
+      "link": {
+        "preview": "https://chat.openai.com/g/g-HNcbE0A5n-reactgpt"
+      },
+      "image": "/projects/images/react-gpt.png"
+    },
+    "screen-recorder": {
+      "title": "Grabador de Pantalla",
+      "tags": [{ "name": "CSS" }, { "name": "HTML" }, { "name": "JavaScript" }],
+      "description": "Grabador de pantalla nativo hecho con la API web MediaRecorder.",
+      "link": {
+        "github": "https://github.com/emapeire/screen-recorder"
+      },
+      "video": "/projects/videos/screen-recorder.webm"
+    },
+    "shopping-cart": {
+      "title": "Carrito de Compras",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "Una aplicación simple de carrito de compras hecha con React y Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/shopping-cart",
+        "preview": "https://emapeire-shopping-cart.netlify.app"
+      },
+      "image": "/projects/images/shopping-cart.png"
+    },
+    "spacex-launches": {
+      "title": "Lanzamientos de SpaceX",
+      "tags": [
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Una aplicación simple que lista todos los lanzamientos de SpaceX. Construida con Astro y TypeScript.",
+      "link": {
+        "github": "https://github.com/emapeire/spacex-launches",
+        "preview": "https://emapeire-spacex-launches.vercel.app"
+      },
+      "image": "/projects/images/spacex-launches.png"
+    },
+    "spotify-ui": {
+      "title": "Interfaz de Usuario de Spotify",
+      "tags": [
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Svelte" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Un clon de Spotify de código abierto construido con Svelte y Astro.",
+      "link": {
+        "github": "https://github.com/emapeire/spotify-clone",
+        "preview": "https://emapeire-spotify-clone.vercel.app"
+      },
+      "image": "/projects/images/spotify-clone.png"
+    },
+    "swc-router": {
+      "title": "Enrutador SWC",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "SWC" },
+        { "name": "Vite" }
+      ],
+      "description": "Aplicaciones de una sola página (SPA) simples utilizando swc-router. Esta solución de enrutamiento liviana para aplicaciones React aprovecha la velocidad de SWC.",
+      "link": {
+        "github": "https://github.com/emapeire/swc-router",
+        "preview": "https://npmjs.com/package/swc-router"
+      },
+      "image": "/projects/images/swc-router.png"
+    },
+    "view-transitions-api": {
+      "title": "API de Transiciones de Vista",
+      "tags": [{ "name": "Astro" }, { "name": "JavaScript" }],
+      "description": "Este es un proyecto de ejemplo que demuestra cómo usar la API de Transiciones de Vista con Astro.",
+      "link": {
+        "github": "https://github.com/emapeire/view-transitions-api",
+        "preview": "https://emapeire-view-transitions-api.vercel.app"
+      },
+      "video": "/projects/videos/view-transitions-api.webm"
+    },
+    "tesla-landing-ui": {
+      "title": "Interfaz de Usuario de la Página de Aterrizaje de Tesla",
+      "tags": [
+        { "name": "Astro" },
+        { "name": "JavaScript" },
+        { "name": "Tailwind CSS" }
+      ],
+      "description": "Una página de aterrizaje de Tesla de código abierto construida con Astro y Tailwind CSS.",
+      "link": {
+        "github": "https://github.com/emapeire/tesla-landing",
+        "preview": "https://emapeire-tesla-landing.vercel.app"
+      },
+      "video": "/projects/videos/tesla-landing-clone.webm"
+    },
+    "tic-tac-toe": {
+      "title": "Tres en Línea",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "Un simple juego de tres en línea hecho con React y TypeScript.",
+      "link": {
+        "github": "https://github.com/emapeire/tic-tac-toe",
+        "preview": "https://emapeire-tic-tac-toe.netlify.app"
+      },
+      "image": "/projects/images/tic-tac-toe.png"
+    },
+    "todo-app": {
+      "title": "Aplicación de Tareas",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "TypeScript" },
+        { "name": "Vite" }
+      ],
+      "description": "Una simple aplicación de tareas hecha con React y TypeScript.",
+      "link": {
+        "github": "https://github.com/emapeire/todo-app-ts",
+        "preview": "https://emapeire-todo-ts.netlify.app"
+      },
+      "image": "/projects/images/todo-app-ts.png"
+    },
+    "twitter-follow-card-ui": {
+      "title": "Interfaz de Tarjeta de Seguimiento de Twitter",
+      "tags": [
+        { "name": "CSS" },
+        { "name": "HTML" },
+        { "name": "JavaScript" },
+        { "name": "React" },
+        { "name": "Vite" }
+      ],
+      "description": "Una tarjeta de seguimiento de Twitter de código abierto construida con React y Vite.",
+      "link": {
+        "github": "https://github.com/emapeire/twitter-follow-card",
+        "preview": "https://emapeire-twitter-follow-card.netlify.app"
+      },
+      "image": "/projects/images/twitter-follow-card.png"
+    },
+    "twitter-ui": {
+      "title": "Interfaz de Usuario de Twitter",
+      "tags": [
+        { "name": "JavaScript" },
+        { "name": "Next.js" },
+        { "name": "React" },
+        { "name": "Supabase" },
+        { "name": "Tailwind CSS" },
+        { "name": "TypeScript" }
+      ],
+      "description": "Un clon de Twitter de código abierto construido con Next.js y Supabase.",
+      "link": {
+        "github": "https://github.com/emapeire/twitter-clone"
+      },
+      "image": "/projects/images/twitter-clone.png"
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "No dudes en ponerte en contacto conmigo para preguntas, consultas o colaboraciones. Estoy abierto a nuevas oportunidades y desafíos.",
+    "form": {
+      "message-watch": "El mensaje no debe contener URLs",
+      "on-submit": {
+        "title": "Spam detectado",
+        "description": "Por favor, completa el formulario correctamente y sin spam. ¡Gracias!"
+      },
+      "ok": {
+        "title": "Correo enviado",
+        "description": "¡Me pondré en contacto contigo lo antes posible!"
+      },
+      "error": {
+        "title": "Error",
+        "description": "Hubo un error al enviar el correo. Por favor, inténtalo de nuevo más tarde."
+      },
+      "card-description": "Por favor, completa el formulario a continuación y me pondré en contacto contigo lo antes posible.",
+      "first-name": "Nombre",
+      "first-name-placeholder": "Tu nombre",
+      "last-name": "Apellido",
+      "last-name-placeholder": "Tu apellido",
+      "email-placeholder": "Tu dirección de correo electrónico",
+      "message": "Mensaje",
+      "message-placeholder": "Escribe tu mensaje aquí...",
+      "submit": "Enviar",
+      "validation": {
+        "first-name": {
+          "min": "El nombre debe tener al menos 2 caracteres.",
+          "max": "El nombre debe tener menos de 50 caracteres.",
+          "regex": "El nombre debe contener solo letras."
+        },
+        "last-name": {
+          "min": "El apellido debe tener al menos 2 caracteres.",
+          "max": "El apellido debe tener menos de 50 caracteres.",
+          "regex": "El apellido debe contener solo letras."
+        },
+        "email": {
+          "email": "El correo electrónico debe ser una dirección válida.",
+          "min": "El correo electrónico debe tener al menos 5 caracteres.",
+          "max": "El correo electrónico debe tener menos de 100 caracteres."
+        },
+        "message": {
+          "min": "El mensaje debe tener al menos 10 caracteres.",
+          "max": "El mensaje debe tener menos de 500 caracteres.",
+          "refine": "El mensaje no debe contener URLs."
+        }
+      }
+    }
+  },
+  "pagination": {
+    "next": "Siguiente",
+    "previous": "Anterior"
+  },
+  "footer": {
+    "copyrights": "Todos los derechos reservados."
+  },
+  "lang-switcher": {
+    "label": "Idioma",
+    "options": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "mode-toggle": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "label": "Tema"
+  },
+  "not-found": {
+    "title": "404",
+    "description": "Felicitaciones! Encontraste una página que no existe. 🎉",
+    "button": "Volver al inicio"
+  }
+}
