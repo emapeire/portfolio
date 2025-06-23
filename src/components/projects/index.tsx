@@ -4,13 +4,32 @@ import { usePagination } from '@/hook/use-pagination'
 import { Button } from '../ui/button'
 import { ProjectCard } from './card'
 import { ProjectPagination } from './pagination'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useMessages } from 'next-intl'
 import { TerminalIcon } from 'lucide-react'
-import { type ProjectProps } from '@/types'
+import {
+  type ProjectProps,
+  type TranslationMessages,
+  type TranslationProject
+} from '@/types'
+import { iconMap } from '@/data'
 
 export function Projects() {
   const t = useTranslations()
-  const projectsItems = t('projects.items') as ProjectProps
+  const messages = useMessages() as TranslationMessages
+
+  const rawProjectsItems = messages?.projects?.items || []
+
+  const projectsItems: ProjectProps[] = rawProjectsItems.map(
+    (project: TranslationProject) => ({
+      ...project,
+      tags:
+        project.tags?.map((tag) => ({
+          ...tag,
+          icon: iconMap[tag.icon]!
+        })) || []
+    })
+  )
+
   const { currentProjects, page, totalPages, updatePage } = usePagination({
     projects: projectsItems
   })
