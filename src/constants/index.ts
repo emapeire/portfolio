@@ -1,15 +1,9 @@
-import { AVATAR, LINKS, PROJECTS } from '@/data'
-import type {
-  AvatarProps,
-  LinksProps,
-  ProjectProps,
-  TranslateProps
-} from '@/types'
+import { AVATAR, LINKS } from '@/data'
+import type { AvatarProps, LinksProps, TranslateProps } from '@/types'
 
 export const data = {
   avatar: AVATAR as AvatarProps,
-  links: LINKS as LinksProps[],
-  projects: PROJECTS as ProjectProps[]
+  links: LINKS as LinksProps[]
 }
 
 export const getNavItems = (t: TranslateProps) => [
