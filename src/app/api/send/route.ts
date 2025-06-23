@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import { ContactEmailTemplate } from '@/components/contact-email-template'
+import { ContactEmailTemplate } from '@/components/contact/email-template'
 import { type ContactEmailTemplateProps } from '@/types'
 
 export const runtime = 'edge'

@@ -12,22 +12,29 @@ import { Toaster } from '@/components/ui/sonner'
 import { Toaster as ToasterProvider } from '@/components/ui/toaster'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages } from 'next-intl/server'
+import { type Locale } from '@/i18n'
 import { cn } from '@/lib/utils'
-import './globals.css'
+import '../styles/globals.css'
 
 const metadata: Metadata = {
   title: 'Portfolio | Emanuel Peire',
   description: 'My personal portfolio: showcasing my work and skills.'
 }
 
-export default function RootLayout({
-  children
+export default async function RootLayout({
+  children,
+  params: { locale }
 }: {
   children: React.ReactNode
+  params: { locale: Locale }
 }) {
+  const messages = await getMessages()
+
   return (
     <html
-      lang='en'
+      lang={locale}
       className={cn(
         'min-h-screen bg-background font-sans antialiased overflow-y-scroll',
         GeistSans.variable,
@@ -37,26 +44,28 @@ export default function RootLayout({
     >
       <Head metadata={metadata} />
       <body className='w-full'>
-        <ViewTransitions>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='system'
-            enableSystem
-            disableTransitionOnChange
-          >
-            <TooltipProvider>
-              <main className='flex flex-col items-center justify-center min-h-screen pt-24 pb-8 px-4'>
-                <Header />
-                {children}
-                <Footer />
-              </main>
-            </TooltipProvider>
-            <Toaster />
-            <ToasterProvider />
-          </ThemeProvider>
-          <Analytics />
-          <SpeedInsights />
-        </ViewTransitions>
+        <NextIntlClientProvider messages={messages}>
+          <ViewTransitions>
+            <ThemeProvider
+              attribute='class'
+              defaultTheme='system'
+              enableSystem
+              disableTransitionOnChange
+            >
+              <TooltipProvider>
+                <main className='flex flex-col items-center justify-center min-h-screen pt-24 pb-8 px-4'>
+                  <Header />
+                  {children}
+                  <Footer />
+                </main>
+              </TooltipProvider>
+              <Toaster />
+              <ToasterProvider />
+            </ThemeProvider>
+            <Analytics />
+            <SpeedInsights />
+          </ViewTransitions>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

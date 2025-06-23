@@ -5,15 +5,17 @@ import {
   CardDescription,
   CardHeader,
   CardTitle
-} from './ui/card'
-import { Tooltip, TooltipTrigger, TooltipContent } from './ui/tooltip'
-import { Badge } from './ui/badge'
-import { Button } from './ui/button'
+} from '../ui/card'
+import { Tooltip, TooltipTrigger, TooltipContent } from '../ui/tooltip'
+import { Badge } from '../ui/badge'
+import { Button } from '../ui/button'
 import { ArrowUpRightIcon, LinkIcon } from 'lucide-react'
-import { GitHubIcon } from './icons/github'
+import { GitHubIcon } from '../icons/github'
+import { useTranslations } from 'next-intl'
 import type { ProjectProps } from '@/types'
 
 export function ProjectCard({ projects }: { projects: ProjectProps[] }) {
+  const t = useTranslations()
   return (
     <div className='flex flex-col gap-4'>
       {projects.map(({ title, description, tags, image, video, link }) => (
@@ -108,7 +110,7 @@ export function ProjectCard({ projects }: { projects: ProjectProps[] }) {
                     className='flex items-center gap-2'
                   >
                     <LinkIcon className='size-4' />
-                    <p>Preview</p>
+                    <p>{t('projects.preview')}</p>
                   </a>
                 </Button>
               )}
@@ -126,7 +128,7 @@ export function ProjectCard({ projects }: { projects: ProjectProps[] }) {
                     className='flex items-center gap-2'
                   >
                     <GitHubIcon className='size-4' />
-                    <p>GitHub</p>
+                    <p>{t('projects.github')}</p>
                   </a>
                 </Button>
               )}

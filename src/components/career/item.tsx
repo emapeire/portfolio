@@ -1,9 +1,11 @@
-import { Button } from './ui/button'
-import { Badge } from './ui/badge'
+import { Button } from '../ui/button'
+import { Badge } from '../ui/badge'
 import { ArrowRightIcon } from 'lucide-react'
 import { type CareerProps } from '@/types'
+import { useTranslations } from 'next-intl'
 
 export function CareerItem({ link, company, jobs, badges }: CareerProps) {
+  const t = useTranslations()
   return (
     <>
       <div className='absolute size-3 dark:bg-neutral-600 bg-neutral-400 rounded-full mt-[8.5px] -start-[6.5px] border border-white dark:border-black' />
@@ -26,7 +28,7 @@ export function CareerItem({ link, company, jobs, badges }: CareerProps) {
           </time>
           <ul className='mt-1 dark:text-neutral-400 text-neutral-600 text-pretty font-mono'>
             {job.description.map((item, index) => (
-              <li key={index}>• {item}</li>
+              <li key={index}>- {item}</li>
             ))}
           </ul>
         </div>
@@ -45,7 +47,7 @@ export function CareerItem({ link, company, jobs, badges }: CareerProps) {
             rel='noopener noreferrer'
             className='flex items-center'
           >
-            <p className='font-medium'>View more</p>
+            <p className='font-medium'>{t('career.viewMore')}</p>
             <ArrowRightIcon className='ms-2 size-4' />
           </a>
         </Button>

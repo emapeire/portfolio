@@ -1,20 +1,31 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { Link } from 'next-view-transitions'
-import { Button } from './ui/button'
 import { ModeToggle } from './mode-toggle'
+import { LangSwitcher } from './lang-switcher'
+import { Button } from './ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger
+} from './ui/dropdown-menu'
+import { getNavItems } from '@/constants'
+import { Cog } from 'lucide-react'
 import clsx from 'clsx'
-import { navLinks } from '@/constants'
 
 export function Header() {
   const pathname = usePathname()
+  const t = useTranslations()
+  const navItems = getNavItems(t)
 
   return (
     <header className='fixed top-0 z-10 flex items-center justify-center w-full mx-auto bg-white dark:bg-black border-b py-2'>
       <div className='flex items-center justify-between w-full md:max-w-3xl mx-4'>
         <nav className='flex justify-center items-center'>
-          {navLinks.map((link) => (
+          {navItems.map((link) => (
             <Button asChild variant='ghost' size={null} key={link.label}>
               <Link
                 key={link.label}
@@ -34,9 +45,25 @@ export function Header() {
             </Button>
           ))}
         </nav>
-        <div className='flex items-center'>
-          <ModeToggle />
-        </div>
+
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button
+              aria-label={t('header.settings')}
+              variant='ghost'
+              size='icon'
+              className='relative size-9 transition-transform duration-300 group'
+            >
+              <Cog className='h-[1.5rem] w-[1.5rem] stroke-[1.5] transform group-hover:rotate-45 transition-transform duration-300' />
+              <span className='sr-only'>{t('header.settings')}</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align='end' side='bottom' className='mt-4'>
+            <LangSwitcher />
+            <DropdownMenuSeparator />
+            <ModeToggle />
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   )

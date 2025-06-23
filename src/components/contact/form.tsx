@@ -21,12 +21,14 @@ import {
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { useToast } from '@/components/ui/use-toast'
+import { useTranslations } from 'next-intl'
 import { Loader2 } from 'lucide-react'
 import { getFormSchema, type FormValues } from '@/lib/validation'
 
 export function ContactForm() {
   const { toast } = useToast()
-  const formSchema = getFormSchema()
+  const t = useTranslations()
+  const formSchema = getFormSchema(t)
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -51,7 +53,7 @@ export function ContactForm() {
       if (name === 'message' && /http|www|href/.test(value.message ?? '')) {
         setError('message', {
           type: 'manual',
-          message: 'Message must not contain URLs'
+          message: t('contact.form.message-watch')
         })
       } else {
         clearErrors('message')
@@ -65,9 +67,8 @@ export function ContactForm() {
   async function onSubmit(data: FormValues) {
     if (data.honeypot) {
       toast({
-        title: 'Spam detected',
-        description:
-          'Please, fill out the form correctly and without spam. Thanks!',
+        title: t('contact.form.on-submit.title'),
+        description: t('contact.form.on-submit.description'),
         variant: 'destructive'
       })
       return
@@ -93,16 +94,15 @@ export function ContactForm() {
 
       await response.json()
       toast({
-        title: 'Email sent',
-        description: 'I will get back to you as soon as possible!',
+        title: t('contact.form.ok.title'),
+        description: t('contact.form.ok.description'),
         variant: 'default'
       })
       form.reset()
     } catch (error) {
       toast({
-        title: 'Error',
-        description:
-          'There was an error while submitting the email. Please try again later.',
+        title: t('contact.form.error.title'),
+        description: t('contact.form.error.description'),
         variant: 'destructive'
       })
     }
@@ -113,13 +113,11 @@ export function ContactForm() {
       <Card className='w-full max-w-3xl'>
         <CardHeader>
           <CardDescription className='font-mono text-pretty'>
-            Please, fill out the form below and I&apos;ll get back to you as
-            soon as possible.
+            {t('contact.form.card-description')}
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
-            {/* eslint-disable-next-line @typescript-eslint/no-misused-promises */}
             <form noValidate onSubmit={handleSubmit(onSubmit)}>
               <div className='space-y-4'>
                 <div className='grid grid-cols-2 gap-4'>
@@ -129,12 +127,14 @@ export function ContactForm() {
                       name='firstName'
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>First Name</FormLabel>
+                          <FormLabel>{t('contact.form.first-name')}</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
                               id='first-name'
-                              placeholder='Your first name'
+                              placeholder={t(
+                                'contact.form.first-name-placeholder'
+                              )}
                             />
                           </FormControl>
                           <FormMessage />
@@ -148,12 +148,14 @@ export function ContactForm() {
                       name='lastName'
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Last Name</FormLabel>
+                          <FormLabel>{t('contact.form.last-name')}</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
                               id='last-name'
-                              placeholder='Your last name'
+                              placeholder={t(
+                                'contact.form.last-name-placeholder'
+                              )}
                             />
                           </FormControl>
                           <FormMessage />
@@ -173,7 +175,7 @@ export function ContactForm() {
                           <Input
                             {...field}
                             id='email'
-                            placeholder='Your email address'
+                            placeholder={t('contact.form.email-placeholder')}
                           />
                         </FormControl>
                         <FormMessage />
@@ -187,12 +189,12 @@ export function ContactForm() {
                     name='message'
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>{t('contact.form.message')}</FormLabel>
                         <FormControl>
                           <Textarea
                             {...field}
                             id='message'
-                            placeholder='Enter your message here...'
+                            placeholder={t('contact.form.message-placeholder')}
                           />
                         </FormControl>
                         <FormMessage />
@@ -226,7 +228,7 @@ export function ContactForm() {
                 {isSubmitting && (
                   <Loader2 className='mr-2 h-4 w-4 animate-spin' />
                 )}
-                Submit
+                {t('contact.form.submit')}
               </Button>
             </form>
           </Form>

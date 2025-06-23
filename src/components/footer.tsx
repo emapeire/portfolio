@@ -1,11 +1,15 @@
 import { Link } from 'next-view-transitions'
-import { navLinks } from '@/constants'
+import { useTranslations } from 'next-intl'
+import { data, getNavItems } from '@/constants'
 
 export function Footer() {
+  const { avatar } = data
   const year = new Date().getFullYear()
+  const t = useTranslations()
+  const navItems = getNavItems(t)
 
   return (
-    <footer className='flex justify-center items-center w-full mx-auto md:max-w-3xl'>
+    <footer className='footer flex justify-center items-center w-full mx-auto md:max-w-3xl'>
       <div className='w-full mx-auto md:flex md:items-center md:justify-between text-sm font-medium text-neutral-700 dark:text-neutral-300'>
         <p>
           © {year}
@@ -16,14 +20,14 @@ export function Footer() {
             rel='noopener noreferrer'
             className='hover:underline hover:underline-offset-4'
           >
-            Emanuel Peire
+            {avatar.name}
           </a>
           <span className='ms-2 me-2'>—</span>
-          All rights reserved.
+          {t('footer.copyrights')}
         </p>
 
         <div className='flex flex-wrap items-center pt-2 md:pt-0'>
-          {navLinks.map((link, index) => (
+          {navItems.map((link, index) => (
             <div key={link.label}>
               <Link
                 key={link.label}
@@ -33,7 +37,7 @@ export function Footer() {
               >
                 {link.title}
               </Link>
-              {index < navLinks.length - 1 && <span className='mx-2'>|</span>}
+              {index < navItems.length - 1 && <span className='mx-2'>|</span>}
             </div>
           ))}
         </div>

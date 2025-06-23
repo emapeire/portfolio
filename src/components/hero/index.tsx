@@ -1,11 +1,13 @@
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
-import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
-import { Button } from './ui/button'
+import { useTranslations } from 'next-intl'
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
+import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
+import { Button } from '../ui/button'
 import { BadgeCheckIcon } from 'lucide-react'
-import { data } from '../constants'
+import { data } from '@/constants'
 
 export function Hero() {
-  const { avatar, about, links } = data
+  const { avatar, links } = data
+  const t = useTranslations()
 
   return (
     <>
@@ -27,7 +29,7 @@ export function Hero() {
 
       <div className='flex items-center flex-row gap-4'>
         <h1 className='flex dark:text-neutral-100 text-neutral-900 text-4xl font-bold text-balance'>
-          Emanuel Peire
+          {avatar.name}
         </h1>
         <Button
           variant='default'
@@ -41,7 +43,7 @@ export function Hero() {
             rel='noopener noreferrer'
             className='hidden md:flex'
           >
-            Available
+            {t('hero.available')}
           </a>
         </Button>
         <Tooltip>
@@ -50,21 +52,21 @@ export function Hero() {
               href='https://linkedin.com/in/emanuelpeire'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Available'
+              aria-label={t('hero.available')}
               className='md:hidden flex rounded-full hover:scale-105 transition-all ease-in-out duration-300'
             >
               <BadgeCheckIcon className='size-6 dark:fill-blue-400 fill-blue-300 stroke-[1.5]' />
             </a>
           </TooltipTrigger>
           <TooltipContent>
-            <p>Available</p>
+            <p>{t('hero.available')}</p>
           </TooltipContent>
         </Tooltip>
       </div>
 
       <div className='flex flex-col font-mono gap-4 dark:text-neutral-200 text-neutral-800 text-pretty'>
-        <h2>{about.title}</h2>
-        <h3>{about.description}</h3>
+        <h2>{t('hero.about.title')}</h2>
+        <h3>{t('hero.about.description')}</h3>
       </div>
 
       <nav className='flex gap-x-4 pt-4'>

@@ -3,11 +3,6 @@ export interface AvatarProps {
   initials: string
 }
 
-export interface AboutProps {
-  title: string
-  description: string
-}
-
 export interface LinksProps {
   title: string
   url: string
@@ -35,9 +30,11 @@ export interface CareerProps {
   jobs: JobsProps[]
 }
 
+export type IconComponent = React.ComponentType<React.SVGProps<SVGSVGElement>>
+
 export interface TagsProps {
   name: string
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
+  icon: IconComponent
 }
 
 export interface ProjectLinkProps {
@@ -53,3 +50,30 @@ export interface ProjectProps {
   image?: string
   video?: string
 }
+
+export interface TranslationTag {
+  name: string
+  icon: string
+}
+
+export interface TranslationProject {
+  title: string
+  tags: TranslationTag[]
+  description: string
+  link: ProjectLinkProps
+  image?: string
+  video?: string
+}
+
+export interface TranslationMessages {
+  projects: {
+    title: string
+    'not-found': string
+    preview: string
+    github: string
+    items: TranslationProject[]
+  }
+  [key: string]: unknown
+}
+
+export type TranslateProps = (key: string) => string
